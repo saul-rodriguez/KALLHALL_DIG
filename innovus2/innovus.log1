@@ -1,0 +1,47 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v18.16-s077_1, built Fri Nov 8 08:48:16 PST 2019
+Options:	
+Date:		Sun Jan 10 11:26:24 2021
+Host:		s2424 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 20480KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	18.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading PVS 16.15 fill procedures
+<CMD> win
+<CMD> set init_gnd_net VSS
+<CMD> set init_verilog ../genus/genus_output/counter_synth.v
+<CMD> set init_mmmc_file MMMC_no_RC.view
+<CMD> set init_oa_ref_lib KALLHALL_STD_LIB3
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+#% Begin Load MMMC data ... (date=01/10 11:32:15, mem=519.8M)
+#% End Load MMMC data ... (date=01/10 11:32:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=520.0M, current mem=520.0M)
+Reading tech data from OA library 'KALLHALL_STD_LIB3' ...
+**ERROR: (IMPOAX-496):	Error in opening attached technology library 'KALLHALL_STD_LIB_TECH': OA Exception: Unable to open library KALLHALL_STD_LIB_TECH at path KALLHALL_STD_LIB_TECH: Invalid Lib Path..
+**ERROR: (IMPOAX-335):	Could not open technology data. Refer to any earlier error messages.
+**ERROR: **ERROR: (IMPSYT-16006):	Fail to read LEF information from OA reference libraries. Check the OA database provided and your inputs.
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Jan 10 11:36:06 2021
+  Total CPU time:     0:01:26
+  Total real time:    0:09:43
+  Peak memory (main): 527.03MB
+
+
+*** Memory Usage v#1 (Current mem = 635.473M, initial mem = 253.809M) ***
+*** Message Summary: 0 warning(s), 4 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:27, real=0:09:42, mem=635.5M) ---

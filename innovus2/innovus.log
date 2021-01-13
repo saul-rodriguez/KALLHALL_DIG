@@ -1,0 +1,296 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v18.16-s077_1, built Fri Nov 8 08:48:16 PST 2019
+Options:	
+Date:		Sun Jan 10 10:55:02 2021
+Host:		s2424 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 20480KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	18.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading PVS 16.15 fill procedures
+<CMD> win
+<CMD> set init_gnd_net VSS
+<CMD> set init_verilog ../genus/genus_output/counter_synth.v
+<CMD> set init_mmmc_file MMMC_no_RC.view
+<CMD> set init_oa_ref_lib KALLHALL_STD_LIB2
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+#% Begin Load MMMC data ... (date=01/10 10:56:19, mem=523.4M)
+#% End Load MMMC data ... (date=01/10 10:56:19, total cpu=0:00:00.0, real=0:00:00.0, peak res=523.5M, current mem=523.5M)
+Reading tech data from OA library 'KALLHALL_STD_LIB2' ...
+FE units: 0.0005 microns/dbu, OA units: 0.0005 microns/dbu, Conversion factor: 1
+**WARN: (IMPOAX-775):	Layer 'OVERLAP' has already been defined in Innovus database, the contents will be skipped.
+**WARN: (IMPOAX-1645):	'minWidth' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+**WARN: (IMPOAX-1645):	'minSpacing' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+Set DBUPerIGU to M2 pitch 8000.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PO' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_DIFF' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PSUB' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NWELL' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+LEFDefaultRouteSpec(LDRS) is read from rule 'LEFDefaultRouteSpec' and library 'KALLHALL_STD_LIB2'. Only default vias, routing layers, pitch, routing width, routing direction, layer offset, wire extension constraints are read from it and rest of rules are read from foundry constraint group.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+
+viaInitial starts at Sun Jan 10 10:56:19 2021
+viaInitial ends at Sun Jan 10 10:56:19 2021
+Loading view definition file from MMMC_no_RC.view
+Reading slow_liberty timing library '/home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+Read 489 cells in library 'slow_vdd1v2' 
+Reading fast_liberty timing library '/home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+Read 489 cells in library 'fast_vdd1v2' 
+*** End library_loading (cpu=0.02min, real=0.02min, mem=12.7M, fe_cpu=0.33min, fe_real=1.30min, fe_mem=649.9M) ***
+#% Begin Load netlist data ... (date=01/10 10:56:20, mem=541.6M)
+*** Begin netlist parsing (mem=649.9M) ***
+Created 489 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../genus/genus_output/counter_synth.v'
+
+*** Memory Usage v#1 (Current mem = 649.902M, initial mem = 261.809M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=649.9M) ***
+#% End Load netlist data ... (date=01/10 10:56:20, total cpu=0:00:00.0, real=0:00:00.0, peak res=550.8M, current mem=550.8M)
+Top level cell is counter.
+Hooked 978 DB cells to tlib cells.
+** Removed 484 unused lib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell counter ...
+*** Netlist is unique.
+Set DBUPerIGU to techSite CoreSite width 20000.
+** info: there are 11 modules.
+** info: there are 80 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 685.324M, initial mem = 261.809M) ***
+**WARN: (IMPTRN-1101):	Could not determine power-rail locations in cells. Use default value GNDOnBtm.
+**WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.0736 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: slow_functional_mode
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: fast_functional_mode
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Checking Cells bindingReading timing constraints file '../genus/genus_output/design.sdc' ...
+Current (total cpu=0:00:20.5, real=0:01:19, peak res=711.1M, current mem=711.1M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../genus/genus_output/design.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../genus/genus_output/design.sdc, Line 10).
+
+counter
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../genus/genus_output/design.sdc, Line 50).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../genus/genus_output/design.sdc, Line 53).
+
+**WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../genus/genus_output/design.sdc, Line 55).
+
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view fast_functional_mode.
+**WARN: (IMPCTE-288):	Could not locate the library kallhall.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library slow_vdd1v2.
+**WARN: (EMS-27):	Message (IMPCTE-290) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (EMS-27):	Message (IMPCTE-288) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (EMS-27):	Message (IMPCTE-289) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+INFO (CTE): Reading of timing constraints file ../genus/genus_output/design.sdc completed, with 5 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=730.6M, current mem=730.6M)
+Current (total cpu=0:00:20.6, real=0:01:19, peak res=730.6M, current mem=730.6M)
+Total number of combinational cells: 4
+Total number of sequential cells: 1
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2
+Total number of usable buffers: 1
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPTRN-1101          1  Could not determine power-rail locations...
+WARNING   IMPFP-3961           3  The techSite '%s' has no related standar...
+WARNING   IMPEXT-2766          4  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          4  The via resistance between layers %s and...
+WARNING   IMPOAX-1637          6  Enclosure and width are supported on rou...
+WARNING   IMPOAX-1645          2  '%s' constraint is not supported on laye...
+WARNING   IMPOAX-775           1  Layer '%s' has already been defined in %...
+WARNING   IMPCTE-288          24  Could not locate the library %s.         
+WARNING   IMPCTE-289          24  set_driving_cell : %s Use the cell in li...
+WARNING   IMPCTE-290          24  Could not locate cell %s in any library ...
+WARNING   TCLCMD-1014          1  The SDC set_operating_conditions asserti...
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+WARNING   TCLNL-330            2  set_input_delay on clock root '%s' is no...
+WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+*** Message Summary: 118 warning(s), 0 error(s)
+
+<CMD> uiSetTool ruler
+<CMD> fit
+<CMD> uiSetTool ruler
+<CMD> fit
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Jan 10 11:14:02 2021
+  Total CPU time:     0:02:54
+  Total real time:    0:19:01
+  Peak memory (main): 767.86MB
+
+
+*** Memory Usage v#1 (Current mem = 891.684M, initial mem = 261.809M) ***
+*** Message Summary: 118 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:54, real=0:19:00, mem=891.7M) ---

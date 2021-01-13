@@ -1,0 +1,11 @@
+counter
+
+counter
+	BUFX2
+	INVX1
+	DFFX1
+	NOR2X1
+	NAND2X1
+	DECAP1
+	FILL1
+

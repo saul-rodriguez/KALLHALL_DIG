@@ -1,0 +1,66 @@
+[01/10 11:26:24      0s] 
+[01/10 11:26:24      0s] Cadence Innovus(TM) Implementation System.
+[01/10 11:26:24      0s] Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/10 11:26:24      0s] 
+[01/10 11:26:24      0s] Version:	v18.16-s077_1, built Fri Nov 8 08:48:16 PST 2019
+[01/10 11:26:24      0s] Options:	
+[01/10 11:26:24      0s] Date:		Sun Jan 10 11:26:24 2021
+[01/10 11:26:24      0s] Host:		s2424 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 20480KB)
+[01/10 11:26:24      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[01/10 11:26:24      0s] 
+[01/10 11:26:24      0s] License:
+[01/10 11:26:24      0s] 		invs	Innovus Implementation System	18.1	checkout succeeded
+[01/10 11:26:24      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[01/10 11:26:38     11s] @(#)CDS: Innovus v18.16-s077_1 (64bit) 11/08/2019 08:48 (Linux 2.6.18-194.el5)
+[01/10 11:26:38     11s] @(#)CDS: NanoRoute 18.16-s077_1 NR191106-2227/18_16-UB (database version 2.30, 475.7.1) {superthreading v1.47}
+[01/10 11:26:38     11s] @(#)CDS: AAE 18.16-s014 (64bit) 11/08/2019 (Linux 2.6.18-194.el5)
+[01/10 11:26:38     11s] @(#)CDS: CTE 18.16-s015_1 () Nov  7 2019 23:40:47 ( )
+[01/10 11:26:38     11s] @(#)CDS: SYNTECH 18.16-s012_1 () Oct 25 2019 10:46:42 ( )
+[01/10 11:26:38     11s] @(#)CDS: CPE v18.16-s043
+[01/10 11:26:38     11s] @(#)CDS: IQuantus/TQuantus 18.1.2-s824 (64bit) Thu Feb 28 20:18:51 PST 2019 (Linux 2.6.18-194.el5)
+[01/10 11:26:38     11s] @(#)CDS: OA 22.50-p102 Mon Sep 23 14:33:45 2019
+[01/10 11:26:38     11s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[01/10 11:26:38     11s] @(#)CDS: RCDB 11.14
+[01/10 11:26:38     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_10297_s2424_saul_M5LlFp.
+
+[01/10 11:26:38     11s] Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+[01/10 11:26:39     11s] 
+[01/10 11:26:39     11s] **INFO:  MMMC transition support version v31-84 
+[01/10 11:26:39     11s] 
+[01/10 11:26:39     11s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[01/10 11:26:39     11s] <CMD> suppressMessage ENCEXT-2799
+[01/10 11:26:40     11s] <CMD> getVersion
+[01/10 11:26:40     11s] [INFO] Loading PVS 16.15 fill procedures
+[01/10 11:26:40     12s] <CMD> win
+[01/10 11:32:15     56s] <CMD> set init_gnd_net VSS
+[01/10 11:32:15     56s] <CMD> set init_verilog ../genus/genus_output/counter_synth.v
+[01/10 11:32:15     56s] <CMD> set init_mmmc_file MMMC_no_RC.view
+[01/10 11:32:15     56s] <CMD> set init_oa_ref_lib KALLHALL_STD_LIB3
+[01/10 11:32:15     56s] <CMD> set init_pwr_net VDD
+[01/10 11:32:15     56s] <CMD> init_design
+[01/10 11:32:15     56s] #% Begin Load MMMC data ... (date=01/10 11:32:15, mem=519.8M)
+[01/10 11:32:15     56s] #% End Load MMMC data ... (date=01/10 11:32:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=520.0M, current mem=520.0M)
+[01/10 11:32:15     56s] Reading tech data from OA library 'KALLHALL_STD_LIB3' ...
+[01/10 11:32:15     56s] **ERROR: (IMPOAX-496):	Error in opening attached technology library 'KALLHALL_STD_LIB_TECH': OA Exception: Unable to open library KALLHALL_STD_LIB_TECH at path KALLHALL_STD_LIB_TECH: Invalid Lib Path..
+**ERROR: (IMPOAX-335):	Could not open technology data. Refer to any earlier error messages.
+**ERROR: **ERROR: (IMPSYT-16006):	Fail to read LEF information from OA reference libraries. Check the OA database provided and your inputs.
+[01/10 11:32:27     59s] 
+[01/10 11:36:06     86s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Jan 10 11:36:06 2021
+  Total CPU time:     0:01:26
+  Total real time:    0:09:43
+  Peak memory (main): 527.03MB
+
+[01/10 11:36:06     86s] 
+[01/10 11:36:06     86s] *** Memory Usage v#1 (Current mem = 635.473M, initial mem = 253.809M) ***
+[01/10 11:36:06     86s] 
+[01/10 11:36:06     86s] *** Summary of all messages that are not suppressed in this session:
+[01/10 11:36:06     86s] Severity  ID               Count  Summary                                  
+[01/10 11:36:06     86s] ERROR     IMPSYT-6729          1  %s                                       
+[01/10 11:36:06     86s] ERROR     IMPSYT-16006         1  Fail to read LEF information from OA ref...
+[01/10 11:36:06     86s] ERROR     IMPOAX-335           1  Could not open technology data. Refer to...
+[01/10 11:36:06     86s] ERROR     IMPOAX-496           1  Error in opening attached technology lib...
+[01/10 11:36:06     86s] *** Message Summary: 0 warning(s), 4 error(s)
+[01/10 11:36:06     86s] 
+[01/10 11:36:06     86s] --- Ending "Innovus" (totcpu=0:01:27, real=0:09:42, mem=635.5M) ---

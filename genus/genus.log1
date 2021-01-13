@@ -1,0 +1,43 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 18.15-s055_1, built Tue Sep 24 05:53:45 PDT 2019
+Options: -files synt.tcl 
+Date:    Thu Jan 07 23:34:16 2021
+Host:    s2424 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (8cores*32cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 20480KB) (65709336KB)
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (15 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source synt.tcl
+#@ Begin verbose source synt.tcl
+@file(synt.tcl) 10: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(synt.tcl) 12: set_db lib_search_path "../liberty/timing"
+  Setting attribute of root '/': 'lib_search_path' = ../liberty/timing
+@file(synt.tcl) 14: set_db library "kth_p20.lib"
+Error   : File error. [FILE-100] [set_db]
+        : Cannot open file 'kth_p20.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [set_db]
+        : File 'kth_p20.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_db]
+        : The value 'kth_p20.lib' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source synt.tcl
+1
+Encountered problems processing file: synt.tcl
+WARNING: This version of the tool is 471 days old.
+@genus:root: 2> 
+@genus:root: 2> 
+@genus:root: 2> clear
+@genus:root: 3> exit
+Normal exit.

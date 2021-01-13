@@ -1,0 +1,22 @@
+@(#)$CDS: ihdl version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $  Tue Jan 12 14:38:52 2021
+
+INFO (VERILOGIN-589): Using xmvlog binary for compilation.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module BUFX2. Therefore using library
+KALLHALL_STD_LIB3, cell BUFX2, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module INVX1. Therefore using library
+KALLHALL_STD_LIB3, cell INVX1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module DFFX1. Therefore using library
+KALLHALL_STD_LIB3, cell DFFX1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR2X1. Therefore using library
+KALLHALL_STD_LIB3, cell NOR2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND2X1. Therefore using library
+KALLHALL_STD_LIB3, cell NAND2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module DECAP2. Therefore using library
+KALLHALL_STD_LIB3, cell DECAP2, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module DECAP4. Therefore using library
+KALLHALL_STD_LIB3, cell DECAP4, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module DECAP1. Therefore using library
+KALLHALL_STD_LIB3, cell DECAP1, and view symbol as the symbol.
+INFO (VERILOGIN-357): Checked in symbol counter.
+INFO (VERILOGIN-372): Checked-in schematic counter.
+INFO (VERILOGIN-206): End of Logfile.

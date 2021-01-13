@@ -1,0 +1,2476 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : counter                                      *
+* Netlisted  : Tue Jan 12 14:46:53 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(g45n1svt) _nmos1v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 1 MN(g45n1hvt) _nmos1v_hvt ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 2 MN(g45n1lvt) _nmos1v_lvt ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 3 MN(g45n1nvt) _nmos_12_native ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 4 MN(g45n2svt) _nmos_25 ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 5 MN(g45n2nvt) _nmos_25_native ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 6 MN(g45ncap1) _nmoscap1v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 7 MN(g45ncap2) _nmoscap2v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 8 MP(g45p1svt) _pmos1v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 9 MP(g45p1hvt) _pmos1v_hvt pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 10 MP(g45p1lvt) _pmos1v_lvt pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 11 MP(g45p2svt) _pmos2v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 12 MP(g45pcap1) _pmoscap1v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 13 MP(g45pcap2) _pmoscap2v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 14 R(g45rm1) _resm1 metal1_conn(PLUS) metal1_conn(MINUS)
+*.DEVTMPLT 15 R(g45rm2) _resm2 metal2_conn(PLUS) metal2_conn(MINUS)
+*.DEVTMPLT 16 R(g45rm3) _resm3 metal3_conn(PLUS) metal3_conn(MINUS)
+*.DEVTMPLT 17 R(g45rm4) _resm4 metal4_conn(PLUS) metal4_conn(MINUS)
+*.DEVTMPLT 18 R(g45rm5) _resm5 metal5_conn(PLUS) metal5_conn(MINUS)
+*.DEVTMPLT 19 R(g45rm6) _resm6 metal6_conn(PLUS) metal6_conn(MINUS)
+*.DEVTMPLT 20 R(g45rm7) _resm7 metal7_conn(PLUS) metal7_conn(MINUS)
+*.DEVTMPLT 21 R(g45rm8) _resm8 metal8_conn(PLUS) metal8_conn(MINUS)
+*.DEVTMPLT 22 R(g45rm9) _resm9 metal9_conn(PLUS) metal9_conn(MINUS)
+*.DEVTMPLT 23 R(g45rm10) _resm10 metal10_conn(PLUS) metal10_conn(MINUS)
+*.DEVTMPLT 24 R(g45rm11) _resm11 metal11_conn(PLUS) metal11_conn(MINUS)
+*.DEVTMPLT 25 R(g45rsnd) _ressndiff ndiff_conn(PLUS) ndiff_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 26 R(g45rnsnd) _resnsndiff ndiff_conn(PLUS) ndiff_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 27 R(g45rsnp) _ressnpoly poly_conn(PLUS) poly_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 28 R(g45rsnp) _ressnpoly_nw poly_conn(PLUS) poly_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 29 R(g45rnsnp) _resnsnpoly poly_conn(PLUS) poly_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 30 R(g45rnsnp) _resnsnpoly_nw poly_conn(PLUS) poly_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 31 R(g45rspd) _resspdiff pdiff_conn(PLUS) pdiff_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 32 R(g45rnspd) _resnspdiff pdiff_conn(PLUS) pdiff_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 33 R(g45rspp) _ressppoly poly_conn(PLUS) poly_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 34 R(g45rspp) _ressppoly_nw poly_conn(PLUS) poly_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 35 R(g45rnspp) _resnsppoly poly_conn(PLUS) poly_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 36 R(g45rnspp) _resnsppoly_nw poly_conn(PLUS) poly_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 37 R(g45rnws) _resnwsti nwell_conn(PLUS) nwell_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 38 R(g45rnwo) _resnwoxide nwell_conn(PLUS) nwell_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 39 D(g45nd1svt) _ndio psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 40 D(g45nd1lvt) _ndio_lvt psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 41 D(g45nd1hvt) _ndio_hvt psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 42 D(g45nd1nvt) _ndio_nvt psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 43 D(g45nd2svt) _ndio_2v psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 44 D(g45nd2nvt) _ndio_2v_nvt psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 45 D(g45pd1svt) _pdio pdiff_conn(PLUS) nwell_conn(MINUS)
+*.DEVTMPLT 46 D(g45pd1lvt) _pdio_lvt pdiff_conn(PLUS) nwell_conn(MINUS)
+*.DEVTMPLT 47 D(g45pd1hvt) _pdio_hvt pdiff_conn(PLUS) nwell_conn(MINUS)
+*.DEVTMPLT 48 D(g45pd2svt) _pdio_2v pdiff_conn(PLUS) nwell_conn(MINUS)
+*.DEVTMPLT 49 Q(g45vpnp2) _vpnp2 psubstrate(C) nwell_conn(B) pdiff_conn(E)
+*.DEVTMPLT 50 Q(g45vpnp5) _vpnp5 psubstrate(C) nwell_conn(B) pdiff_conn(E)
+*.DEVTMPLT 51 Q(g45vpnp10) _vpnp10 psubstrate(C) nwell_conn(B) pdiff_conn(E)
+*.DEVTMPLT 52 Q(g45vnpn2) _npn2 nwell_conn(C) psubstrate(B) npn_emit(E)
+*.DEVTMPLT 53 Q(g45vnpn5) _npn5 nwell_conn(C) psubstrate(B) npn_emit(E)
+*.DEVTMPLT 54 Q(g45vnpn10) _npn10 nwell_conn(C) psubstrate(B) npn_emit(E)
+*.DEVTMPLT 55 C(g45cmim) _mimcap CapMetal(PLUS) metal10_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 56 L(g45inda) _ind_a ind10(PLUS) ind11(MINUS) psubstrate(B)
+*.DEVTMPLT 57 L(g45inds) _ind_s ind11(PLUS) ind11(MINUS) psubstrate(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: L                                               *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt L PLUS MINUS B
+.ends L
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M2_M1_CDNS_1                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M2_M1_CDNS_1 1
+** N=1 EP=1 FDC=0
+.ends M2_M1_CDNS_1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M2_M1_CDNS_2                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M2_M1_CDNS_2 1
+** N=1 EP=1 FDC=0
+.ends M2_M1_CDNS_2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M2_M1_HV                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M2_M1_HV 1
+** N=1 EP=1 FDC=0
+.ends M2_M1_HV
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M3_M2_VH                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M3_M2_VH 1
+** N=1 EP=1 FDC=0
+.ends M3_M2_VH
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M4_M3_HV                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M4_M3_HV 1
+** N=1 EP=1 FDC=0
+.ends M4_M3_HV
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_PSUB_CDNS_3                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_PSUB_CDNS_3 1
+** N=1 EP=1 FDC=0
+.ends M1_PSUB_CDNS_3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_NWELL_CDNS_4                                 *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_NWELL_CDNS_4 1 2
+** N=2 EP=2 FDC=0
+.ends M1_NWELL_CDNS_4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_PO_CDNS_5                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_PO_CDNS_5 1
+** N=1 EP=1 FDC=0
+.ends M1_PO_CDNS_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos4_CDNS_6                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos4_CDNS_6 1 2 3 4
+*.DEVICECLIMB
+** N=4 EP=4 FDC=0
+.ends nmos4_CDNS_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos4_CDNS_7                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos4_CDNS_7 1 2 3 4 5
+*.DEVICECLIMB
+** N=5 EP=5 FDC=0
+.ends pmos4_CDNS_7
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: BUFX2                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt BUFX2 A VSS VDD Y 5
+** N=5 EP=5 FDC=4
+X0 VSS M1_PSUB_CDNS_3 $T=20000 0 0 0 $X=3000 $Y=-3000
+X1 VDD VSS M1_NWELL_CDNS_4 $T=20000 56000 0 0 $X=3000 $Y=53000
+X2 A M1_PO_CDNS_5 $T=4000 20000 0 0 $X=2000 $Y=18000
+X3 5 M1_PO_CDNS_5 $T=24000 20000 0 0 $X=22000 $Y=18000
+X4 VSS A 5 VSS nmos4_CDNS_6 $T=3600 4000 0 0 $X=3600 $Y=4000
+X5 VSS 5 Y VSS nmos4_CDNS_6 $T=20000 4000 0 0 $X=20000 $Y=4000
+X6 5 VDD A VSS VDD pmos4_CDNS_7 $T=3600 24200 0 0 $X=3600 $Y=24200
+X7 Y VDD 5 VSS VDD pmos4_CDNS_7 $T=20000 24200 0 0 $X=20000 $Y=24200
+M0 5 A VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=5e-12 PD=9e-06 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=10600 $Y=6000 $dt=0
+M1 Y 5 VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=5e-12 PD=9e-06 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=27000 $Y=6000 $dt=0
+M2 5 A VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=1e-11 PD=1.3e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=10600 $Y=26200 $dt=8
+M3 Y 5 VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=1e-11 PD=1.3e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=27000 $Y=26200 $dt=8
+.ends BUFX2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_PSUB_CDNS_8                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_PSUB_CDNS_8 1
+** N=1 EP=1 FDC=0
+.ends M1_PSUB_CDNS_8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_NWELL_CDNS_9                                 *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_NWELL_CDNS_9 1
+** N=1 EP=1 FDC=0
+.ends M1_NWELL_CDNS_9
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: INVX1                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt INVX1 A Y VSS VDD
+** N=4 EP=4 FDC=2
+X0 A M1_PO_CDNS_5 $T=4000 20000 0 0 $X=2000 $Y=18000
+X1 VSS A Y VSS nmos4_CDNS_6 $T=2000 5800 0 0 $X=2000 $Y=5800
+X2 Y VDD A VSS VDD pmos4_CDNS_7 $T=2000 24200 0 0 $X=2000 $Y=24200
+X3 VSS M1_PSUB_CDNS_8 $T=10000 0 0 0 $X=1000 $Y=-3000
+X4 VDD M1_NWELL_CDNS_9 $T=10000 56000 0 0 $X=1000 $Y=53000
+M0 Y A VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=5e-12 PD=9e-06 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=9000 $Y=7800 $dt=0
+M1 Y A VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=1e-11 PD=1.3e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=9000 $Y=26200 $dt=8
+.ends INVX1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_PIMP_CDNS_11                                 *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_PIMP_CDNS_11 1
+** N=1 EP=1 FDC=0
+.ends M1_PIMP_CDNS_11
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DFFX1                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DFFX1 QN VDD VSS Q CK D 7 8 9 10
++ 11 12 13 16 17 18
+** N=19 EP=16 FDC=28
+X0 7 M1_PO_CDNS_5 $T=12600 18200 0 0 $X=10600 $Y=16200
+X1 8 M1_PO_CDNS_5 $T=46400 20000 0 0 $X=44400 $Y=18000
+X2 CK M1_PO_CDNS_5 $T=54400 28000 0 0 $X=52400 $Y=26000
+X3 9 M1_PO_CDNS_5 $T=77400 26000 0 0 $X=75400 $Y=24000
+X4 8 M1_PO_CDNS_5 $T=82400 17800 0 0 $X=80400 $Y=15800
+X5 10 M1_PO_CDNS_5 $T=102400 23600 0 0 $X=100400 $Y=21600
+X6 11 M1_PO_CDNS_5 $T=107600 42000 0 0 $X=105600 $Y=40000
+X7 10 M1_PO_CDNS_5 $T=113600 19600 0 0 $X=111600 $Y=17600
+X8 12 M1_PO_CDNS_5 $T=133400 27400 0 0 $X=131400 $Y=25400
+X9 13 M1_PO_CDNS_5 $T=137400 19200 0 0 $X=135400 $Y=17200
+X10 11 M1_PO_CDNS_5 $T=145400 42000 0 0 $X=143400 $Y=40000
+X11 11 M1_PO_CDNS_5 $T=157400 19400 0 0 $X=155400 $Y=17400
+X12 D M1_PO_CDNS_5 $T=170600 41600 0 0 $X=168600 $Y=39600
+X13 11 M1_PO_CDNS_5 $T=180000 21800 0 0 $X=178000 $Y=19800
+X14 10 M1_PO_CDNS_5 $T=196000 22000 0 0 $X=194000 $Y=20000
+X15 VSS 7 QN VSS nmos4_CDNS_6 $T=18400 5800 1 180 $X=2400 $Y=5800
+X16 VSS 8 7 VSS nmos4_CDNS_6 $T=10400 5800 0 0 $X=10400 $Y=5800
+X17 VSS 8 Q VSS nmos4_CDNS_6 $T=50400 5800 1 180 $X=34400 $Y=5800
+X18 VSS 9 8 VSS nmos4_CDNS_6 $T=82400 5800 1 180 $X=66400 $Y=5800
+X19 VSS 12 13 VSS nmos4_CDNS_6 $T=137400 7200 1 180 $X=121400 $Y=7200
+X20 VSS 13 14 VSS nmos4_CDNS_6 $T=129400 7200 0 0 $X=129400 $Y=7200
+X21 14 10 12 VSS nmos4_CDNS_6 $T=137400 7200 0 0 $X=137400 $Y=7200
+X22 15 11 12 VSS nmos4_CDNS_6 $T=161400 7200 1 180 $X=145400 $Y=7200
+X23 VSS D 15 VSS nmos4_CDNS_6 $T=169400 7200 1 180 $X=153400 $Y=7200
+X24 VSS 11 10 VSS nmos4_CDNS_6 $T=178000 7200 0 0 $X=178000 $Y=7200
+X25 QN VDD 7 VSS VDD pmos4_CDNS_7 $T=18400 30200 1 180 $X=2400 $Y=30200
+X26 7 VDD 8 VSS VDD pmos4_CDNS_7 $T=10400 30200 0 0 $X=10400 $Y=30200
+X27 VDD M1_PIMP_CDNS_11 $T=46400 50000 0 0 $X=43400 $Y=47000
+X28 VDD M1_PIMP_CDNS_11 $T=78400 50000 0 0 $X=75400 $Y=47000
+X29 VDD M1_PIMP_CDNS_11 $T=133400 50000 0 0 $X=130400 $Y=47000
+X30 VDD M1_PIMP_CDNS_11 $T=179400 50000 0 0 $X=176400 $Y=47000
+M0 VSS 7 QN VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=5e-12 PD=1e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=9400 $Y=7800 $dt=0
+M1 7 8 VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=6e-12 PD=9e-06 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=17400 $Y=7800 $dt=0
+M2 VSS 8 Q VSS g45n1svt L=1e-06 W=2e-06 AD=2.461e-11 AS=5e-12 PD=2.84e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=41400 $Y=7800 $dt=0
+M3 11 CK VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=2.461e-11 PD=9e-06 PS=2.84e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=57400 $Y=18000 $dt=0
+M4 VSS 9 8 VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=5e-12 PD=1e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=73400 $Y=7800 $dt=0
+M5 19 8 VSS VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=6e-12 PD=1e-05 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=81400 $Y=7800 $dt=0
+M6 9 11 19 VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=6e-12 PD=9e-06 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=89400 $Y=7800 $dt=0
+M7 13 10 9 VSS g45n1svt L=1e-06 W=2e-06 AD=1.48e-11 AS=5e-12 PD=1.88e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=111600 $Y=9200 $dt=0
+M8 VSS 12 13 VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=1.48e-11 PD=1e-05 PS=1.88e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=128400 $Y=9200 $dt=0
+M9 14 13 VSS VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=6e-12 PD=1e-05 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=136400 $Y=9200 $dt=0
+M10 12 10 14 VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=6e-12 PD=1e-05 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=144400 $Y=9200 $dt=0
+M11 15 11 12 VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=6e-12 PD=1e-05 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=152400 $Y=9200 $dt=0
+M12 VSS D 15 VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=6e-12 PD=9e-06 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=160400 $Y=9200 $dt=0
+M13 10 11 VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=5e-12 PD=9e-06 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=185000 $Y=9200 $dt=0
+M14 VDD 7 QN VDD g45p1svt L=1e-06 W=4e-06 AD=1.2e-11 AS=1e-11 PD=1.4e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=9400 $Y=32200 $dt=8
+M15 7 8 VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=1.2e-11 PD=1.3e-05 PS=1.4e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=17400 $Y=32200 $dt=8
+M16 VDD 8 Q VDD g45p1svt L=1e-06 W=4e-06 AD=3.98e-11 AS=1e-11 PD=3.38e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=41400 $Y=32200 $dt=8
+M17 11 CK VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=3.98e-11 PD=1.3e-05 PS=3.38e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=57400 $Y=34000 $dt=8
+M18 VDD 9 8 VDD g45p1svt L=1e-06 W=4e-06 AD=2.74e-11 AS=1e-11 PD=2.94e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=73400 $Y=29600 $dt=8
+M19 17 8 VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1.2e-11 AS=2.74e-11 PD=1.4e-05 PS=2.94e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=81400 $Y=29600 $dt=8
+M20 9 10 17 VDD g45p1svt L=1e-06 W=4e-06 AD=3.04e-11 AS=1.2e-11 PD=2.32e-05 PS=1.4e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=89400 $Y=29600 $dt=8
+M21 13 11 9 VDD g45p1svt L=1e-06 W=4e-06 AD=3.96e-11 AS=3.04e-11 PD=2.78e-05 PS=2.32e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=106600 $Y=29600 $dt=8
+M22 VDD 12 13 VDD g45p1svt L=1e-06 W=4e-06 AD=2.94e-11 AS=3.96e-11 PD=3.04e-05 PS=2.78e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=128400 $Y=29600 $dt=8
+M23 16 13 VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=2.94e-11 PD=1.3e-05 PS=3.04e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=137400 $Y=29600 $dt=8
+M24 12 11 16 VDD g45p1svt L=1e-06 W=4e-06 AD=2.84e-11 AS=1e-11 PD=2.22e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=144400 $Y=29600 $dt=8
+M25 18 10 12 VDD g45p1svt L=1e-06 W=4e-06 AD=1.2e-11 AS=2.84e-11 PD=1.4e-05 PS=2.22e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=160600 $Y=29600 $dt=8
+M26 VDD D 18 VDD g45p1svt L=1e-06 W=4e-06 AD=4.32e-11 AS=1.2e-11 PD=3.68e-05 PS=1.4e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=168600 $Y=29600 $dt=8
+M27 10 11 VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1.52e-11 AS=4.32e-11 PD=1.56e-05 PS=3.68e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=185000 $Y=29600 $dt=8
+.ends DFFX1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NOR2X1                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NOR2X1 A Y VSS VDD B 6
+** N=6 EP=6 FDC=4
+X0 VSS M1_PSUB_CDNS_3 $T=20000 0 0 0 $X=3000 $Y=-3000
+X1 VDD VSS M1_NWELL_CDNS_4 $T=20000 56000 0 0 $X=3000 $Y=53000
+X2 A M1_PO_CDNS_5 $T=4000 20000 0 0 $X=2000 $Y=18000
+X3 B M1_PO_CDNS_5 $T=36000 12000 0 0 $X=34000 $Y=10000
+X4 VSS A Y VSS nmos4_CDNS_6 $T=8000 6000 0 0 $X=8000 $Y=6000
+X5 VSS B Y VSS nmos4_CDNS_6 $T=32000 6000 1 180 $X=16000 $Y=6000
+X6 6 VDD A VSS VDD pmos4_CDNS_7 $T=8000 24600 0 0 $X=8000 $Y=24600
+X7 Y 6 B VSS VDD pmos4_CDNS_7 $T=16000 24600 0 0 $X=16000 $Y=24600
+M0 Y A VSS VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=5e-12 PD=1e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=15000 $Y=8000 $dt=0
+M1 VSS B Y VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=6e-12 PD=9e-06 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=23000 $Y=8000 $dt=0
+M2 6 A VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1.2e-11 AS=1e-11 PD=1.4e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=15000 $Y=26600 $dt=8
+M3 Y B 6 VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=1.2e-11 PD=1.3e-05 PS=1.4e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=23000 $Y=26600 $dt=8
+.ends NOR2X1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NAND2X1                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NAND2X1 A VSS VDD Y B
+** N=6 EP=5 FDC=4
+X0 VSS M1_PSUB_CDNS_3 $T=20000 0 0 0 $X=3000 $Y=-3000
+X1 VDD VSS M1_NWELL_CDNS_4 $T=20000 56000 0 0 $X=3000 $Y=53000
+X2 A M1_PO_CDNS_5 $T=4000 20000 0 0 $X=2000 $Y=18000
+X3 B M1_PO_CDNS_5 $T=36000 28000 0 0 $X=34000 $Y=26000
+X4 VSS A 6 VSS nmos4_CDNS_6 $T=7600 8000 0 0 $X=7600 $Y=8000
+X5 6 B Y VSS nmos4_CDNS_6 $T=15600 8000 0 0 $X=15600 $Y=8000
+X6 Y VDD A VSS VDD pmos4_CDNS_7 $T=7600 24200 0 0 $X=7600 $Y=24200
+X7 Y VDD B VSS VDD pmos4_CDNS_7 $T=31600 24200 1 180 $X=15600 $Y=24200
+M0 6 A VSS VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=5e-12 PD=1e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=14600 $Y=10000 $dt=0
+M1 Y B 6 VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=6e-12 PD=9e-06 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=22600 $Y=10000 $dt=0
+M2 Y A VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1.2e-11 AS=1e-11 PD=1.4e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=14600 $Y=26200 $dt=8
+M3 VDD B Y VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=1.2e-11 PD=1.3e-05 PS=1.4e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=22600 $Y=26200 $dt=8
+.ends NAND2X1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos4_CDNS_15                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos4_CDNS_15 1 2
+** N=4 EP=2 FDC=2
+M0 1 2 1 1 g45p1svt L=1e-05 W=4e-06 AD=1.2e-11 AS=1e-11 PD=1.4e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=0.581818 scb=3.49579e-06 scc=7.57474e-11 $X=7000 $Y=2000 $dt=8
+M1 1 2 1 1 g45p1svt L=1e-05 W=4e-06 AD=1e-11 AS=1.2e-11 PD=1.3e-05 PS=1.4e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=0.581818 scb=3.49579e-06 scc=7.57474e-11 $X=33000 $Y=2000 $dt=8
+.ends pmos4_CDNS_15
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos4_CDNS_16                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos4_CDNS_16 1 2
+** N=2 EP=2 FDC=2
+M0 1 2 1 1 g45n1svt L=1e-05 W=2e-06 AD=6e-12 AS=5e-12 PD=1e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=0.848485 scb=5.99279e-06 scc=1.29853e-10 $X=7000 $Y=2000 $dt=0
+M1 1 2 1 1 g45n1svt L=1e-05 W=2e-06 AD=5e-12 AS=6e-12 PD=9e-06 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=0.848485 scb=5.99279e-06 scc=1.29853e-10 $X=33000 $Y=2000 $dt=0
+.ends nmos4_CDNS_16
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DECAP4                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DECAP4 VDD VSS
+** N=4 EP=2 FDC=4
+X0 VDD M1_PO_CDNS_5 $T=6000 17800 0 0 $X=4000 $Y=15800
+X1 VSS M1_PO_CDNS_5 $T=58000 27200 0 0 $X=56000 $Y=25200
+X2 VDD VSS pmos4_CDNS_15 $T=2000 31600 0 0 $X=2000 $Y=31600
+X3 VSS VDD nmos4_CDNS_16 $T=2000 5800 0 0 $X=2000 $Y=5800
+.ends DECAP4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos4_CDNS_17                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos4_CDNS_17 1 2
+** N=2 EP=2 FDC=1
+M0 1 2 1 1 g45n1svt L=1e-05 W=2e-06 AD=5e-12 AS=5e-12 PD=9e-06 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=0.848485 scb=5.99279e-06 scc=1.29853e-10 $X=7000 $Y=2000 $dt=0
+.ends nmos4_CDNS_17
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos4_CDNS_18                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos4_CDNS_18 1 2
+** N=3 EP=2 FDC=1
+M0 1 2 1 1 g45p1svt L=1e-05 W=4e-06 AD=1e-11 AS=1e-11 PD=1.3e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=0.581818 scb=3.49579e-06 scc=7.57474e-11 $X=7000 $Y=2000 $dt=8
+.ends pmos4_CDNS_18
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DECAP2                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DECAP2 VSS VDD
+** N=3 EP=2 FDC=2
+X0 VSS M1_PSUB_CDNS_3 $T=18000 0 0 0 $X=1000 $Y=-3000
+X1 VDD VSS M1_NWELL_CDNS_4 $T=19000 56000 0 0 $X=2000 $Y=53000
+X2 VDD M1_PO_CDNS_5 $T=6000 17800 0 0 $X=4000 $Y=15800
+X3 VSS M1_PO_CDNS_5 $T=32000 27200 0 0 $X=30000 $Y=25200
+X4 VSS VDD nmos4_CDNS_17 $T=2000 5800 0 0 $X=2000 $Y=5800
+X5 VDD VSS pmos4_CDNS_18 $T=2000 31600 0 0 $X=2000 $Y=31600
+.ends DECAP2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DECAP1                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DECAP1 VDD VSS
+** N=3 EP=2 FDC=2
+X0 VDD M1_PO_CDNS_5 $T=6000 17800 0 0 $X=4000 $Y=15800
+X1 VSS M1_PO_CDNS_5 $T=14000 27200 0 0 $X=12000 $Y=25200
+X2 VSS VDD VSS VSS nmos4_CDNS_6 $T=2000 5800 0 0 $X=2000 $Y=5800
+X3 VDD VDD VSS VSS VDD pmos4_CDNS_7 $T=2000 31600 0 0 $X=2000 $Y=31600
+X4 VSS M1_PSUB_CDNS_8 $T=10000 0 0 0 $X=1000 $Y=-3000
+X5 VDD M1_NWELL_CDNS_9 $T=10000 56000 0 0 $X=1000 $Y=53000
+M0 VSS VDD VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=5e-12 PD=9e-06 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=9000 $Y=7800 $dt=0
+M1 VDD VSS VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=1e-11 PD=1.3e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=9000 $Y=33600 $dt=8
+.ends DECAP1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A1                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A1 1 2 3 4 5 6
+** N=8 EP=6 FDC=8
+X0 1 3 2 4 7 BUFX2 $T=0 3000 0 0 $X=0 $Y=0
+X1 5 3 2 6 8 BUFX2 $T=40000 3000 0 0 $X=40000 $Y=0
+.ends MASCO__A1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A2                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A2 1 2 3 4 5 6 7
+** N=9 EP=7 FDC=8
+X0 1 3 2 4 8 BUFX2 $T=0 59000 1 0 $X=0 $Y=0
+X1 5 6 3 2 7 9 NOR2X1 $T=40000 59000 1 0 $X=40000 $Y=0
+.ends MASCO__A2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A3                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A3 1 2 3 4
+** N=6 EP=4 FDC=6
+X0 1 3 2 4 5 BUFX2 $T=20000 59000 1 0 $X=20000 $Y=0
+X1 2 3 DECAP1 $T=0 59000 1 0 $X=0 $Y=0
+.ends MASCO__A3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A4                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A4 1 2 3 4 5 6
+** N=8 EP=6 FDC=8
+X0 1 3 2 4 7 BUFX2 $T=0 59000 1 0 $X=0 $Y=0
+X1 5 3 2 6 8 BUFX2 $T=40000 59000 1 0 $X=40000 $Y=0
+.ends MASCO__A4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A5                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A5 1 2 3 4 5 6 7
+** N=9 EP=7 FDC=8
+X0 6 4 3 7 8 BUFX2 $T=40000 3000 0 0 $X=40000 $Y=0
+X1 1 2 4 3 5 9 NOR2X1 $T=0 3000 0 0 $X=0 $Y=0
+.ends MASCO__A5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A6                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A6 1 2 3 4 5 6 7
+** N=9 EP=7 FDC=8
+X0 1 3 2 4 8 BUFX2 $T=0 3000 0 0 $X=0 $Y=0
+X1 5 6 3 2 7 9 NOR2X1 $T=40000 3000 0 0 $X=40000 $Y=0
+.ends MASCO__A6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__B7                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__B7 1 2 3 4 5 6 7 8 9 10
+** N=14 EP=10 FDC=16
+X0 2 3 4 6 8 10 MASCO__A1 $T=0 0 0 0 $X=0 $Y=0
+X1 1 3 4 5 7 9 MASCO__A4 $T=0 56000 0 0 $X=0 $Y=56000
+.ends MASCO__B7
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A9                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A9 1 2 3 4 5 6 7 8 9 10
+** N=14 EP=10 FDC=16
+X0 1 4 3 2 5 6 MASCO__A4 $T=0 0 0 0 $X=0 $Y=0
+X1 7 4 3 8 9 10 MASCO__A4 $T=80000 0 0 0 $X=80000 $Y=0
+.ends MASCO__A9
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A10                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A10 1 2 3 4 5 6 7 8 9 10
+** N=14 EP=10 FDC=16
+X0 1 3 4 2 5 6 MASCO__A1 $T=0 0 0 0 $X=0 $Y=0
+X1 7 3 4 8 9 10 MASCO__A1 $T=80000 0 0 0 $X=80000 $Y=0
+.ends MASCO__A10
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: counter                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt counter VDD VSS clk enable out<0> out<1> out<2> out<3> out<4> out<5>
++ out<6> out<7> reset
+** N=848 EP=13 FDC=1998
+X0 VSS M2_M1_CDNS_1 $T=18000 18000 0 0 $X=8000 $Y=8000
+X1 VSS M2_M1_CDNS_1 $T=18000 1118000 0 0 $X=8000 $Y=1108000
+X2 VDD M2_M1_CDNS_1 $T=46000 46000 0 0 $X=36000 $Y=36000
+X3 VDD M2_M1_CDNS_1 $T=46000 1090000 0 0 $X=36000 $Y=1080000
+X4 VDD M2_M1_CDNS_1 $T=1262000 46000 0 0 $X=1252000 $Y=36000
+X5 VDD M2_M1_CDNS_1 $T=1262000 1090000 0 0 $X=1252000 $Y=1080000
+X6 VSS M2_M1_CDNS_1 $T=1290000 18000 0 0 $X=1280000 $Y=8000
+X7 VSS M2_M1_CDNS_1 $T=1290000 1118000 0 0 $X=1280000 $Y=1108000
+X8 VSS M2_M1_CDNS_2 $T=18000 120000 0 0 $X=8000 $Y=118000
+X9 VSS M2_M1_CDNS_2 $T=18000 232000 0 0 $X=8000 $Y=230000
+X10 VSS M2_M1_CDNS_2 $T=18000 344000 0 0 $X=8000 $Y=342000
+X11 VSS M2_M1_CDNS_2 $T=18000 456000 0 0 $X=8000 $Y=454000
+X12 VSS M2_M1_CDNS_2 $T=18000 568000 0 0 $X=8000 $Y=566000
+X13 VSS M2_M1_CDNS_2 $T=18000 680000 0 0 $X=8000 $Y=678000
+X14 VSS M2_M1_CDNS_2 $T=18000 792000 0 0 $X=8000 $Y=790000
+X15 VSS M2_M1_CDNS_2 $T=18000 904000 0 0 $X=8000 $Y=902000
+X16 VSS M2_M1_CDNS_2 $T=18000 1016000 0 0 $X=8000 $Y=1014000
+X17 VDD M2_M1_CDNS_2 $T=46000 64000 0 0 $X=36000 $Y=62000
+X18 VDD M2_M1_CDNS_2 $T=46000 176000 0 0 $X=36000 $Y=174000
+X19 VDD M2_M1_CDNS_2 $T=46000 288000 0 0 $X=36000 $Y=286000
+X20 VDD M2_M1_CDNS_2 $T=46000 400000 0 0 $X=36000 $Y=398000
+X21 VDD M2_M1_CDNS_2 $T=46000 512000 0 0 $X=36000 $Y=510000
+X22 VDD M2_M1_CDNS_2 $T=46000 624000 0 0 $X=36000 $Y=622000
+X23 VDD M2_M1_CDNS_2 $T=46000 736000 0 0 $X=36000 $Y=734000
+X24 VDD M2_M1_CDNS_2 $T=46000 848000 0 0 $X=36000 $Y=846000
+X25 VDD M2_M1_CDNS_2 $T=46000 960000 0 0 $X=36000 $Y=958000
+X26 VDD M2_M1_CDNS_2 $T=46000 1072000 0 0 $X=36000 $Y=1070000
+X27 VDD M2_M1_CDNS_2 $T=1262000 64000 0 0 $X=1252000 $Y=62000
+X28 VDD M2_M1_CDNS_2 $T=1262000 176000 0 0 $X=1252000 $Y=174000
+X29 VDD M2_M1_CDNS_2 $T=1262000 288000 0 0 $X=1252000 $Y=286000
+X30 VDD M2_M1_CDNS_2 $T=1262000 400000 0 0 $X=1252000 $Y=398000
+X31 VDD M2_M1_CDNS_2 $T=1262000 512000 0 0 $X=1252000 $Y=510000
+X32 VDD M2_M1_CDNS_2 $T=1262000 624000 0 0 $X=1252000 $Y=622000
+X33 VDD M2_M1_CDNS_2 $T=1262000 736000 0 0 $X=1252000 $Y=734000
+X34 VDD M2_M1_CDNS_2 $T=1262000 848000 0 0 $X=1252000 $Y=846000
+X35 VDD M2_M1_CDNS_2 $T=1262000 960000 0 0 $X=1252000 $Y=958000
+X36 VDD M2_M1_CDNS_2 $T=1262000 1072000 0 0 $X=1252000 $Y=1070000
+X37 VSS M2_M1_CDNS_2 $T=1290000 120000 0 0 $X=1280000 $Y=118000
+X38 VSS M2_M1_CDNS_2 $T=1290000 232000 0 0 $X=1280000 $Y=230000
+X39 VSS M2_M1_CDNS_2 $T=1290000 344000 0 0 $X=1280000 $Y=342000
+X40 VSS M2_M1_CDNS_2 $T=1290000 456000 0 0 $X=1280000 $Y=454000
+X41 VSS M2_M1_CDNS_2 $T=1290000 568000 0 0 $X=1280000 $Y=566000
+X42 VSS M2_M1_CDNS_2 $T=1290000 680000 0 0 $X=1280000 $Y=678000
+X43 VSS M2_M1_CDNS_2 $T=1290000 792000 0 0 $X=1280000 $Y=790000
+X44 VSS M2_M1_CDNS_2 $T=1290000 904000 0 0 $X=1280000 $Y=902000
+X45 VSS M2_M1_CDNS_2 $T=1290000 1016000 0 0 $X=1280000 $Y=1014000
+X46 3 M2_M1_HV $T=68000 364000 0 0 $X=66000 $Y=362000
+X47 4 M2_M1_HV $T=68000 884000 0 0 $X=66000 $Y=882000
+X48 enable M2_M1_HV $T=88000 476000 0 0 $X=86000 $Y=474000
+X49 6 M2_M1_HV $T=88000 548000 0 0 $X=86000 $Y=546000
+X50 7 M2_M1_HV $T=89000 324000 0 0 $X=87000 $Y=322000
+X51 8 M2_M1_HV $T=89000 588000 0 0 $X=87000 $Y=586000
+X52 9 M2_M1_HV $T=89000 660000 0 0 $X=87000 $Y=658000
+X53 10 M2_M1_HV $T=92000 372000 0 0 $X=90000 $Y=370000
+X54 11 M2_M1_HV $T=100000 356000 0 0 $X=98000 $Y=354000
+X55 12 M2_M1_HV $T=100000 884000 0 0 $X=98000 $Y=882000
+X56 10 M2_M1_HV $T=108000 364000 0 0 $X=106000 $Y=362000
+X57 13 M2_M1_HV $T=108000 700000 0 0 $X=106000 $Y=698000
+X58 14 M2_M1_HV $T=108000 884000 0 0 $X=106000 $Y=882000
+X59 15 M2_M1_HV $T=116000 324000 0 0 $X=114000 $Y=322000
+X60 16 M2_M1_HV $T=116000 476000 0 0 $X=114000 $Y=474000
+X61 9 M2_M1_HV $T=116000 548000 0 0 $X=114000 $Y=546000
+X62 17 M2_M1_HV $T=116000 588000 0 0 $X=114000 $Y=586000
+X63 8 M2_M1_HV $T=116000 649310 0 0 $X=114000 $Y=647310
+X64 18 M2_M1_HV $T=128000 324000 0 0 $X=126000 $Y=322000
+X65 19 M2_M1_HV $T=128000 436000 0 0 $X=126000 $Y=434000
+X66 20 M2_M1_HV $T=128000 476000 0 0 $X=126000 $Y=474000
+X67 17 M2_M1_HV $T=128000 549200 0 0 $X=126000 $Y=547200
+X68 13 M2_M1_HV $T=128000 588000 0 0 $X=126000 $Y=586000
+X69 21 M2_M1_HV $T=129000 660000 0 0 $X=127000 $Y=658000
+X70 7 M2_M1_HV $T=140000 364000 0 0 $X=138000 $Y=362000
+X71 22 M2_M1_HV $T=140000 884000 0 0 $X=138000 $Y=882000
+X72 21 M2_M1_HV $T=142000 692000 0 0 $X=140000 $Y=690000
+X73 16 M2_M1_HV $T=148000 252000 0 0 $X=146000 $Y=250000
+X74 23 M2_M1_HV $T=148000 364000 0 0 $X=146000 $Y=362000
+X75 24 M2_M1_HV $T=148000 812000 0 0 $X=146000 $Y=810000
+X76 25 M2_M1_HV $T=148000 884000 0 0 $X=146000 $Y=882000
+X77 26 M2_M1_HV $T=156000 324000 0 0 $X=154000 $Y=322000
+X78 27 M2_M1_HV $T=156000 436000 0 0 $X=154000 $Y=434000
+X79 19 M2_M1_HV $T=156000 474800 0 0 $X=154000 $Y=472800
+X80 28 M2_M1_HV $T=156000 558000 0 0 $X=154000 $Y=556000
+X81 29 M2_M1_HV $T=156000 660000 0 0 $X=154000 $Y=658000
+X82 30 M2_M1_HV $T=158000 588000 0 0 $X=156000 $Y=586000
+X83 31 M2_M1_HV $T=158400 708000 0 0 $X=156400 $Y=706000
+X84 32 M2_M1_HV $T=168000 325200 0 0 $X=166000 $Y=323200
+X85 33 M2_M1_HV $T=168000 436000 0 0 $X=166000 $Y=434000
+X86 34 M2_M1_HV $T=168000 476000 0 0 $X=166000 $Y=474000
+X87 16 M2_M1_HV $T=168000 546900 0 0 $X=166000 $Y=544900
+X88 35 M2_M1_HV $T=168000 660000 0 0 $X=166000 $Y=658000
+X89 18 M2_M1_HV $T=180000 252000 0 0 $X=178000 $Y=250000
+X90 36 M2_M1_HV $T=180000 364000 0 0 $X=178000 $Y=362000
+X91 37 M2_M1_HV $T=180000 812000 0 0 $X=178000 $Y=810000
+X92 24 M2_M1_HV $T=180000 884000 0 0 $X=178000 $Y=882000
+X93 38 M2_M1_HV $T=188000 252000 0 0 $X=186000 $Y=250000
+X94 38 M2_M1_HV $T=188000 324000 0 0 $X=186000 $Y=322000
+X95 39 M2_M1_HV $T=188000 364000 0 0 $X=186000 $Y=362000
+X96 40 M2_M1_HV $T=188000 437200 0 0 $X=186000 $Y=435200
+X97 41 M2_M1_HV $T=188000 474800 0 0 $X=186000 $Y=472800
+X98 33 M2_M1_HV $T=188000 549200 0 0 $X=186000 $Y=547200
+X99 reset M2_M1_HV $T=188000 588000 0 0 $X=186000 $Y=586000
+X100 43 M2_M1_HV $T=188000 661200 0 0 $X=186000 $Y=659200
+X101 44 M2_M1_HV $T=188000 812000 0 0 $X=186000 $Y=810000
+X102 45 M2_M1_HV $T=188000 884000 0 0 $X=186000 $Y=882000
+X103 46 M2_M1_HV $T=200000 316000 0 0 $X=198000 $Y=314000
+X104 15 M2_M1_HV $T=200000 444000 0 0 $X=198000 $Y=442000
+X105 47 M2_M1_HV $T=200000 468000 0 0 $X=198000 $Y=466000
+X106 48 M2_M1_HV $T=200000 556000 0 0 $X=198000 $Y=554000
+X107 49 M2_M1_HV $T=200000 668000 0 0 $X=198000 $Y=666000
+X108 26 M2_M1_HV $T=208000 324000 0 0 $X=206000 $Y=322000
+X109 40 M2_M1_HV $T=208000 436000 0 0 $X=206000 $Y=434000
+X110 41 M2_M1_HV $T=208000 476000 0 0 $X=206000 $Y=474000
+X111 50 M2_M1_HV $T=208000 548000 0 0 $X=206000 $Y=546000
+X112 43 M2_M1_HV $T=208000 661200 0 0 $X=206000 $Y=659200
+X113 28 M2_M1_HV $T=208000 772000 0 0 $X=206000 $Y=770000
+X114 51 M2_M1_HV $T=212000 876000 0 0 $X=210000 $Y=874000
+X115 11 M2_M1_HV $T=220000 252000 0 0 $X=218000 $Y=250000
+X116 52 M2_M1_HV $T=220000 364000 0 0 $X=218000 $Y=362000
+X117 6 M2_M1_HV $T=220000 588000 0 0 $X=218000 $Y=586000
+X118 53 M2_M1_HV $T=220000 812000 0 0 $X=218000 $Y=810000
+X119 54 M2_M1_HV $T=220000 892000 0 0 $X=218000 $Y=890000
+X120 55 M2_M1_HV $T=228000 252000 0 0 $X=226000 $Y=250000
+X121 56 M2_M1_HV $T=228000 364000 0 0 $X=226000 $Y=362000
+X122 clk M2_M1_HV $T=228000 588000 0 0 $X=226000 $Y=586000
+X123 4 M2_M1_HV $T=228000 812000 0 0 $X=226000 $Y=810000
+X124 14 M2_M1_HV $T=228000 884000 0 0 $X=226000 $Y=882000
+X125 58 M2_M1_HV $T=236000 324000 0 0 $X=234000 $Y=322000
+X126 49 M2_M1_HV $T=236000 436000 0 0 $X=234000 $Y=434000
+X127 59 M2_M1_HV $T=236000 476000 0 0 $X=234000 $Y=474000
+X128 35 M2_M1_HV $T=236000 548000 0 0 $X=234000 $Y=546000
+X129 60 M2_M1_HV $T=236000 660000 0 0 $X=234000 $Y=658000
+X130 50 M2_M1_HV $T=236000 772000 0 0 $X=234000 $Y=770000
+X131 61 M2_M1_HV $T=248000 324000 0 0 $X=246000 $Y=322000
+X132 27 M2_M1_HV $T=248000 436000 0 0 $X=246000 $Y=434000
+X133 62 M2_M1_HV $T=248000 476000 0 0 $X=246000 $Y=474000
+X134 30 M2_M1_HV $T=248000 548000 0 0 $X=246000 $Y=546000
+X135 60 M2_M1_HV $T=248000 660000 0 0 $X=246000 $Y=658000
+X136 39 M2_M1_HV $T=260000 252000 0 0 $X=258000 $Y=250000
+X137 63 M2_M1_HV $T=260000 364000 0 0 $X=258000 $Y=362000
+X138 64 M2_M1_HV $T=260000 588000 0 0 $X=258000 $Y=586000
+X139 25 M2_M1_HV $T=260000 884000 0 0 $X=258000 $Y=882000
+X140 65 M2_M1_HV $T=262000 804000 0 0 $X=260000 $Y=802000
+X141 36 M2_M1_HV $T=268000 252000 0 0 $X=266000 $Y=250000
+X142 66 M2_M1_HV $T=268000 364000 0 0 $X=266000 $Y=362000
+X143 67 M2_M1_HV $T=268000 588000 0 0 $X=266000 $Y=586000
+X144 68 M2_M1_HV $T=268000 772000 0 0 $X=266000 $Y=770000
+X145 69 M2_M1_HV $T=268000 884000 0 0 $X=266000 $Y=882000
+X146 70 M2_M1_HV $T=276000 324000 0 0 $X=274000 $Y=322000
+X147 67 M2_M1_HV $T=276000 436000 0 0 $X=274000 $Y=434000
+X148 34 M2_M1_HV $T=276000 476000 0 0 $X=274000 $Y=474000
+X149 48 M2_M1_HV $T=276000 548000 0 0 $X=274000 $Y=546000
+X150 20 M2_M1_HV $T=276000 649310 0 0 $X=274000 $Y=647310
+X151 71 M2_M1_HV $T=276580 722000 0 0 $X=274580 $Y=720000
+X152 31 M2_M1_HV $T=278400 820000 0 0 $X=276400 $Y=818000
+X153 52 M2_M1_HV $T=288000 324000 0 0 $X=286000 $Y=322000
+X154 72 M2_M1_HV $T=288000 437200 0 0 $X=286000 $Y=435200
+X155 59 M2_M1_HV $T=288000 476000 0 0 $X=286000 $Y=474000
+X156 73 M2_M1_HV $T=288000 548000 0 0 $X=286000 $Y=546000
+X157 74 M2_M1_HV $T=288000 660000 0 0 $X=286000 $Y=658000
+X158 75 M2_M1_HV $T=300000 252000 0 0 $X=298000 $Y=250000
+X159 56 M2_M1_HV $T=300000 364000 0 0 $X=298000 $Y=362000
+X160 71 M2_M1_HV $T=300000 588000 0 0 $X=298000 $Y=586000
+X161 31 M2_M1_HV $T=300000 772000 0 0 $X=298000 $Y=770000
+X162 76 M2_M1_HV $T=300000 884000 0 0 $X=298000 $Y=882000
+X163 77 M2_M1_HV $T=308000 252000 0 0 $X=306000 $Y=250000
+X164 78 M2_M1_HV $T=308000 364000 0 0 $X=306000 $Y=362000
+X165 35 M2_M1_HV $T=308000 588000 0 0 $X=306000 $Y=586000
+X166 65 M2_M1_HV $T=308000 700000 0 0 $X=306000 $Y=698000
+X167 76 M2_M1_HV $T=308000 772000 0 0 $X=306000 $Y=770000
+X168 79 M2_M1_HV $T=308000 884000 0 0 $X=306000 $Y=882000
+X169 3 M2_M1_HV $T=316000 324000 0 0 $X=314000 $Y=322000
+X170 32 M2_M1_HV $T=316000 436000 0 0 $X=314000 $Y=434000
+X171 23 M2_M1_HV $T=316000 476000 0 0 $X=314000 $Y=474000
+X172 74 M2_M1_HV $T=316000 548000 0 0 $X=314000 $Y=546000
+X173 80 M2_M1_HV $T=316000 660000 0 0 $X=314000 $Y=658000
+X174 81 M2_M1_HV $T=328000 324000 0 0 $X=326000 $Y=322000
+X175 82 M2_M1_HV $T=328000 436000 0 0 $X=326000 $Y=434000
+X176 83 M2_M1_HV $T=328000 476000 0 0 $X=326000 $Y=474000
+X177 48 M2_M1_HV $T=328000 548000 0 0 $X=326000 $Y=546000
+X178 37 M2_M1_HV $T=328000 661200 0 0 $X=326000 $Y=659200
+X179 84 M2_M1_HV $T=332000 772000 0 0 $X=330000 $Y=770000
+X180 55 M2_M1_HV $T=340000 252000 0 0 $X=338000 $Y=250000
+X181 85 M2_M1_HV $T=340000 364000 0 0 $X=338000 $Y=362000
+X182 66 M2_M1_HV $T=340000 428000 0 0 $X=338000 $Y=426000
+X183 86 M2_M1_HV $T=340000 588000 0 0 $X=338000 $Y=586000
+X184 87 M2_M1_HV $T=340000 700000 0 0 $X=338000 $Y=698000
+X185 22 M2_M1_HV $T=340000 764000 0 0 $X=338000 $Y=762000
+X186 88 M2_M1_HV $T=340000 884000 0 0 $X=338000 $Y=882000
+X187 46 M2_M1_HV $T=348000 252000 0 0 $X=346000 $Y=250000
+X188 70 M2_M1_HV $T=348000 364000 0 0 $X=346000 $Y=362000
+X189 58 M2_M1_HV $T=348000 436000 0 0 $X=346000 $Y=434000
+X190 89 M2_M1_HV $T=348000 588000 0 0 $X=346000 $Y=586000
+X191 80 M2_M1_HV $T=348000 700000 0 0 $X=346000 $Y=698000
+X192 90 M2_M1_HV $T=348000 772000 0 0 $X=346000 $Y=770000
+X193 91 M2_M1_HV $T=348000 884000 0 0 $X=346000 $Y=882000
+X194 92 M2_M1_HV $T=356000 324000 0 0 $X=354000 $Y=322000
+X195 72 M2_M1_HV $T=356000 474800 0 0 $X=354000 $Y=472800
+X196 62 M2_M1_HV $T=356000 548000 0 0 $X=354000 $Y=546000
+X197 89 M2_M1_HV $T=356000 660000 0 0 $X=354000 $Y=658000
+X198 75 M2_M1_HV $T=368000 212000 0 0 $X=366000 $Y=210000
+X199 85 M2_M1_HV $T=368000 325200 0 0 $X=366000 $Y=323200
+X200 52 M2_M1_HV $T=368000 474800 0 0 $X=366000 $Y=472800
+X201 34 M2_M1_HV $T=368000 548000 0 0 $X=366000 $Y=546000
+X202 87 M2_M1_HV $T=368000 660000 0 0 $X=366000 $Y=658000
+X203 93 M2_M1_HV $T=368000 924000 0 0 $X=366000 $Y=922000
+X204 94 M2_M1_HV $T=372000 372000 0 0 $X=370000 $Y=370000
+X205 95 M2_M1_HV $T=380000 212000 0 0 $X=378000 $Y=210000
+X206 96 M2_M1_HV $T=380000 252000 0 0 $X=378000 $Y=250000
+X207 85 M2_M1_HV $T=380000 356000 0 0 $X=378000 $Y=354000
+X208 82 M2_M1_HV $T=380000 436000 0 0 $X=378000 $Y=434000
+X209 47 M2_M1_HV $T=380000 588000 0 0 $X=378000 $Y=586000
+X210 68 M2_M1_HV $T=380000 700000 0 0 $X=378000 $Y=698000
+X211 97 M2_M1_HV $T=380000 772000 0 0 $X=378000 $Y=770000
+X212 98 M2_M1_HV $T=380000 884000 0 0 $X=378000 $Y=882000
+X213 95 M2_M1_HV $T=388000 212000 0 0 $X=386000 $Y=210000
+X214 99 M2_M1_HV $T=388000 252000 0 0 $X=386000 $Y=250000
+X215 100 M2_M1_HV $T=388000 324000 0 0 $X=386000 $Y=322000
+X216 94 M2_M1_HV $T=388000 364000 0 0 $X=386000 $Y=362000
+X217 101 M2_M1_HV $T=388000 436000 0 0 $X=386000 $Y=434000
+X218 83 M2_M1_HV $T=388000 548000 0 0 $X=386000 $Y=546000
+X219 102 M2_M1_HV $T=388000 588000 0 0 $X=386000 $Y=586000
+X220 103 M2_M1_HV $T=388000 700000 0 0 $X=386000 $Y=698000
+X221 12 M2_M1_HV $T=388000 772000 0 0 $X=386000 $Y=770000
+X222 104 M2_M1_HV $T=388000 884000 0 0 $X=386000 $Y=882000
+X223 105 M2_M1_HV $T=396000 476000 0 0 $X=394000 $Y=474000
+X224 106 M2_M1_HV $T=396000 660000 0 0 $X=394000 $Y=658000
+X225 107 M2_M1_HV $T=396000 834000 0 0 $X=394000 $Y=832000
+X226 54 M2_M1_HV $T=396000 924000 0 0 $X=394000 $Y=922000
+X227 108 M2_M1_HV $T=400000 316000 0 0 $X=398000 $Y=314000
+X228 47 M2_M1_HV $T=400000 540000 0 0 $X=398000 $Y=538000
+X229 109 M2_M1_HV $T=408000 324000 0 0 $X=406000 $Y=322000
+X230 110 M2_M1_HV $T=408000 476000 0 0 $X=406000 $Y=474000
+X231 29 M2_M1_HV $T=408000 549200 0 0 $X=406000 $Y=547200
+X232 84 M2_M1_HV $T=408000 661200 0 0 $X=406000 $Y=659200
+X233 53 M2_M1_HV $T=408000 924000 0 0 $X=406000 $Y=922000
+X234 111 M2_M1_HV $T=412000 876000 0 0 $X=410000 $Y=874000
+X235 46 M2_M1_HV $T=420000 212000 0 0 $X=418000 $Y=210000
+X236 112 M2_M1_HV $T=420000 252000 0 0 $X=418000 $Y=250000
+X237 81 M2_M1_HV $T=420000 364000 0 0 $X=418000 $Y=362000
+X238 113 M2_M1_HV $T=420000 436000 0 0 $X=418000 $Y=434000
+X239 103 M2_M1_HV $T=420000 588000 0 0 $X=418000 $Y=586000
+X240 114 M2_M1_HV $T=420000 700000 0 0 $X=418000 $Y=698000
+X241 79 M2_M1_HV $T=420000 772000 0 0 $X=418000 $Y=770000
+X242 115 M2_M1_HV $T=420000 892000 0 0 $X=418000 $Y=890000
+X243 63 M2_M1_HV $T=428000 252000 0 0 $X=426000 $Y=250000
+X244 116 M2_M1_HV $T=428000 364000 0 0 $X=426000 $Y=362000
+X245 82 M2_M1_HV $T=428000 436000 0 0 $X=426000 $Y=434000
+X246 64 M2_M1_HV $T=428000 588000 0 0 $X=426000 $Y=586000
+X247 114 M2_M1_HV $T=428000 700000 0 0 $X=426000 $Y=698000
+X248 117 M2_M1_HV $T=428000 772000 0 0 $X=426000 $Y=770000
+X249 51 M2_M1_HV $T=428000 812000 0 0 $X=426000 $Y=810000
+X250 45 M2_M1_HV $T=428000 884000 0 0 $X=426000 $Y=882000
+X251 61 M2_M1_HV $T=436000 324000 0 0 $X=434000 $Y=322000
+X252 118 M2_M1_HV $T=436000 476000 0 0 $X=434000 $Y=474000
+X253 102 M2_M1_HV $T=436000 548000 0 0 $X=434000 $Y=546000
+X254 93 M2_M1_HV $T=436000 660000 0 0 $X=434000 $Y=658000
+X255 14 M2_M1_HV $T=436000 924000 0 0 $X=434000 $Y=922000
+X256 85 M2_M1_HV $T=448000 213200 0 0 $X=446000 $Y=211200
+X257 100 M2_M1_HV $T=448000 325200 0 0 $X=446000 $Y=323200
+X258 86 M2_M1_HV $T=448000 476000 0 0 $X=446000 $Y=474000
+X259 119 M2_M1_HV $T=448000 548000 0 0 $X=446000 $Y=546000
+X260 120 M2_M1_HV $T=448000 661200 0 0 $X=446000 $Y=659200
+X261 121 M2_M1_HV $T=448000 924000 0 0 $X=446000 $Y=922000
+X262 122 M2_M1_HV $T=460000 252000 0 0 $X=458000 $Y=250000
+X263 123 M2_M1_HV $T=460000 364000 0 0 $X=458000 $Y=362000
+X264 124 M2_M1_HV $T=460000 436000 0 0 $X=458000 $Y=434000
+X265 73 M2_M1_HV $T=460000 588000 0 0 $X=458000 $Y=586000
+X266 90 M2_M1_HV $T=460000 700000 0 0 $X=458000 $Y=698000
+X267 125 M2_M1_HV $T=460000 772000 0 0 $X=458000 $Y=770000
+X268 126 M2_M1_HV $T=460000 812000 0 0 $X=458000 $Y=810000
+X269 127 M2_M1_HV $T=460000 884000 0 0 $X=458000 $Y=882000
+X270 128 M2_M1_HV $T=460000 932000 0 0 $X=458000 $Y=930000
+X271 129 M2_M1_HV $T=468000 252000 0 0 $X=466000 $Y=250000
+X272 130 M2_M1_HV $T=468000 364000 0 0 $X=466000 $Y=362000
+X273 131 M2_M1_HV $T=468000 436000 0 0 $X=466000 $Y=434000
+X274 132 M2_M1_HV $T=468000 700000 0 0 $X=466000 $Y=698000
+X275 88 M2_M1_HV $T=468000 772000 0 0 $X=466000 $Y=770000
+X276 133 M2_M1_HV $T=468000 812000 0 0 $X=466000 $Y=810000
+X277 134 M2_M1_HV $T=468000 884000 0 0 $X=466000 $Y=882000
+X278 135 M2_M1_HV $T=468000 924000 0 0 $X=466000 $Y=922000
+X279 99 M2_M1_HV $T=476000 212000 0 0 $X=474000 $Y=210000
+X280 136 M2_M1_HV $T=476000 324000 0 0 $X=474000 $Y=322000
+X281 101 M2_M1_HV $T=476000 436000 0 0 $X=474000 $Y=434000
+X282 110 M2_M1_HV $T=476000 476000 0 0 $X=474000 $Y=474000
+X283 107 M2_M1_HV $T=476000 548000 0 0 $X=474000 $Y=546000
+X284 137 M2_M1_HV $T=476000 660000 0 0 $X=474000 $Y=658000
+X285 112 M2_M1_HV $T=488000 212000 0 0 $X=486000 $Y=210000
+X286 92 M2_M1_HV $T=488000 324000 0 0 $X=486000 $Y=322000
+X287 124 M2_M1_HV $T=488000 436000 0 0 $X=486000 $Y=434000
+X288 138 M2_M1_HV $T=488000 476000 0 0 $X=486000 $Y=474000
+X289 86 M2_M1_HV $T=488000 548000 0 0 $X=486000 $Y=546000
+X290 64 M2_M1_HV $T=488000 588000 0 0 $X=486000 $Y=586000
+X291 105 M2_M1_HV $T=488000 660000 0 0 $X=486000 $Y=658000
+X292 128 M2_M1_HV $T=488000 996000 0 0 $X=486000 $Y=994000
+X293 139 M2_M1_HV $T=488000 1036000 0 0 $X=486000 $Y=1034000
+X294 120 M2_M1_HV $T=492000 708000 0 0 $X=490000 $Y=706000
+X295 78 M2_M1_HV $T=500000 252000 0 0 $X=498000 $Y=250000
+X296 140 M2_M1_HV $T=500000 364000 0 0 $X=498000 $Y=362000
+X297 126 M2_M1_HV $T=500000 692000 0 0 $X=498000 $Y=690000
+X298 91 M2_M1_HV $T=500000 772000 0 0 $X=498000 $Y=770000
+X299 45 M2_M1_HV $T=500000 812000 0 0 $X=498000 $Y=810000
+X300 141 M2_M1_HV $T=500000 884000 0 0 $X=498000 $Y=882000
+X301 44 M2_M1_HV $T=500000 924000 0 0 $X=498000 $Y=922000
+X302 124 M2_M1_HV $T=508000 252000 0 0 $X=506000 $Y=250000
+X303 142 M2_M1_HV $T=508000 325200 0 0 $X=506000 $Y=323200
+X304 129 M2_M1_HV $T=508000 364000 0 0 $X=506000 $Y=362000
+X305 119 M2_M1_HV $T=508000 549200 0 0 $X=506000 $Y=547200
+X306 80 M2_M1_HV $T=508000 700000 0 0 $X=506000 $Y=698000
+X307 98 M2_M1_HV $T=508000 772000 0 0 $X=506000 $Y=770000
+X308 141 M2_M1_HV $T=508000 812000 0 0 $X=506000 $Y=810000
+X309 143 M2_M1_HV $T=508000 884000 0 0 $X=506000 $Y=882000
+X310 121 M2_M1_HV $T=508000 924000 0 0 $X=506000 $Y=922000
+X311 139 M2_M1_HV $T=508000 996000 0 0 $X=506000 $Y=994000
+X312 144 M2_M1_HV $T=516000 212000 0 0 $X=514000 $Y=210000
+X313 145 M2_M1_HV $T=516000 436000 0 0 $X=514000 $Y=434000
+X314 116 M2_M1_HV $T=516000 476000 0 0 $X=514000 $Y=474000
+X315 146 M2_M1_HV $T=516000 588000 0 0 $X=514000 $Y=586000
+X316 133 M2_M1_HV $T=516000 660000 0 0 $X=514000 $Y=658000
+X317 135 M2_M1_HV $T=516000 1036000 0 0 $X=514000 $Y=1034000
+X318 147 M2_M1_HV $T=520000 332000 0 0 $X=518000 $Y=330000
+X319 148 M2_M1_HV $T=520000 556000 0 0 $X=518000 $Y=554000
+X320 149 M2_M1_HV $T=520000 988000 0 0 $X=518000 $Y=986000
+X321 122 M2_M1_HV $T=528000 212000 0 0 $X=526000 $Y=210000
+X322 142 M2_M1_HV $T=528000 324000 0 0 $X=526000 $Y=322000
+X323 150 M2_M1_HV $T=528000 436000 0 0 $X=526000 $Y=434000
+X324 151 M2_M1_HV $T=528000 474800 0 0 $X=526000 $Y=472800
+X325 123 M2_M1_HV $T=528000 548000 0 0 $X=526000 $Y=546000
+X326 137 M2_M1_HV $T=528000 588000 0 0 $X=526000 $Y=586000
+X327 152 M2_M1_HV $T=528000 660000 0 0 $X=526000 $Y=658000
+X328 153 M2_M1_HV $T=528000 996000 0 0 $X=526000 $Y=994000
+X329 149 M2_M1_HV $T=528000 1036000 0 0 $X=526000 $Y=1034000
+X330 154 M2_M1_HV $T=532000 876000 0 0 $X=530000 $Y=874000
+X331 109 M2_M1_HV $T=540000 252000 0 0 $X=538000 $Y=250000
+X332 155 M2_M1_HV $T=540000 700000 0 0 $X=538000 $Y=698000
+X333 121 M2_M1_HV $T=540000 772000 0 0 $X=538000 $Y=770000
+X334 156 M2_M1_HV $T=540000 812000 0 0 $X=538000 $Y=810000
+X335 157 M2_M1_HV $T=540000 892000 0 0 $X=538000 $Y=890000
+X336 158 M2_M1_HV $T=540000 916000 0 0 $X=538000 $Y=914000
+X337 159 M2_M1_HV $T=540000 932000 0 0 $X=538000 $Y=930000
+X338 153 M2_M1_HV $T=540000 1044000 0 0 $X=538000 $Y=1042000
+X339 131 M2_M1_HV $T=542000 356000 0 0 $X=540000 $Y=354000
+X340 122 M2_M1_HV $T=548000 252000 0 0 $X=546000 $Y=250000
+X341 97 M2_M1_HV $T=548000 700000 0 0 $X=546000 $Y=698000
+X342 125 M2_M1_HV $T=548000 772000 0 0 $X=546000 $Y=770000
+X343 160 M2_M1_HV $T=548000 812000 0 0 $X=546000 $Y=810000
+X344 161 M2_M1_HV $T=548000 884000 0 0 $X=546000 $Y=882000
+X345 158 M2_M1_HV $T=548000 924000 0 0 $X=546000 $Y=922000
+X346 162 M2_M1_HV $T=548000 1036000 0 0 $X=546000 $Y=1034000
+X347 163 M2_M1_HV $T=556000 212000 0 0 $X=554000 $Y=210000
+X348 164 M2_M1_HV $T=556000 324000 0 0 $X=554000 $Y=322000
+X349 151 M2_M1_HV $T=556000 436000 0 0 $X=554000 $Y=434000
+X350 165 M2_M1_HV $T=556000 476000 0 0 $X=554000 $Y=474000
+X351 166 M2_M1_HV $T=556000 548000 0 0 $X=554000 $Y=546000
+X352 117 M2_M1_HV $T=556000 588000 0 0 $X=554000 $Y=586000
+X353 167 M2_M1_HV $T=556000 661200 0 0 $X=554000 $Y=659200
+X354 159 M2_M1_HV $T=556000 996000 0 0 $X=554000 $Y=994000
+X355 168 M2_M1_HV $T=558400 372000 0 0 $X=556400 $Y=370000
+X356 169 M2_M1_HV $T=568000 212000 0 0 $X=566000 $Y=210000
+X357 70 M2_M1_HV $T=568000 325200 0 0 $X=566000 $Y=323200
+X358 170 M2_M1_HV $T=568000 437200 0 0 $X=566000 $Y=435200
+X359 170 M2_M1_HV $T=568000 476000 0 0 $X=566000 $Y=474000
+X360 110 M2_M1_HV $T=568000 549200 0 0 $X=566000 $Y=547200
+X361 106 M2_M1_HV $T=568000 588000 0 0 $X=566000 $Y=586000
+X362 167 M2_M1_HV $T=568000 661200 0 0 $X=566000 $Y=659200
+X363 171 M2_M1_HV $T=572000 820000 0 0 $X=570000 $Y=818000
+X364 172 M2_M1_HV $T=572000 876000 0 0 $X=570000 $Y=874000
+X365 77 M2_M1_HV $T=580000 252000 0 0 $X=578000 $Y=250000
+X366 152 M2_M1_HV $T=580000 596000 0 0 $X=578000 $Y=594000
+X367 173 M2_M1_HV $T=580000 700000 0 0 $X=578000 $Y=698000
+X368 148 M2_M1_HV $T=580000 772000 0 0 $X=578000 $Y=770000
+X369 98 M2_M1_HV $T=580000 804000 0 0 $X=578000 $Y=802000
+X370 174 M2_M1_HV $T=580000 892000 0 0 $X=578000 $Y=890000
+X371 69 M2_M1_HV $T=580000 924000 0 0 $X=578000 $Y=922000
+X372 149 M2_M1_HV $T=580000 1036000 0 0 $X=578000 $Y=1034000
+X373 136 M2_M1_HV $T=588000 140000 0 0 $X=586000 $Y=138000
+X374 96 M2_M1_HV $T=588000 252000 0 0 $X=586000 $Y=250000
+X375 118 M2_M1_HV $T=588000 588000 0 0 $X=586000 $Y=586000
+X376 173 M2_M1_HV $T=588000 700000 0 0 $X=586000 $Y=698000
+X377 171 M2_M1_HV $T=588000 772000 0 0 $X=586000 $Y=770000
+X378 175 M2_M1_HV $T=588000 812000 0 0 $X=586000 $Y=810000
+X379 172 M2_M1_HV $T=588000 884000 0 0 $X=586000 $Y=882000
+X380 176 M2_M1_HV $T=588000 1036000 0 0 $X=586000 $Y=1034000
+X381 108 M2_M1_HV $T=596000 212000 0 0 $X=594000 $Y=210000
+X382 177 M2_M1_HV $T=596000 325200 0 0 $X=594000 $Y=323200
+X383 178 M2_M1_HV $T=596000 476000 0 0 $X=594000 $Y=474000
+X384 179 M2_M1_HV $T=596000 548000 0 0 $X=594000 $Y=546000
+X385 180 M2_M1_HV $T=596000 660000 0 0 $X=594000 $Y=658000
+X386 181 M2_M1_HV $T=604000 428000 0 0 $X=602000 $Y=426000
+X387 144 M2_M1_HV $T=608000 212000 0 0 $X=606000 $Y=210000
+X388 177 M2_M1_HV $T=608000 325200 0 0 $X=606000 $Y=323200
+X389 181 M2_M1_HV $T=608000 474800 0 0 $X=606000 $Y=472800
+X390 113 M2_M1_HV $T=608000 548000 0 0 $X=606000 $Y=546000
+X391 166 M2_M1_HV $T=608000 660000 0 0 $X=606000 $Y=658000
+X392 182 M2_M1_HV $T=608000 996000 0 0 $X=606000 $Y=994000
+X393 168 M2_M1_HV $T=612000 428000 0 0 $X=610000 $Y=426000
+X394 183 M2_M1_HV $T=620000 140000 0 0 $X=618000 $Y=138000
+X395 169 M2_M1_HV $T=620000 252000 0 0 $X=618000 $Y=250000
+X396 184 M2_M1_HV $T=620000 588000 0 0 $X=618000 $Y=586000
+X397 185 M2_M1_HV $T=620000 700000 0 0 $X=618000 $Y=698000
+X398 132 M2_M1_HV $T=620000 772000 0 0 $X=618000 $Y=770000
+X399 186 M2_M1_HV $T=620000 812000 0 0 $X=618000 $Y=810000
+X400 187 M2_M1_HV $T=620000 884000 0 0 $X=618000 $Y=882000
+X401 182 M2_M1_HV $T=620000 1036000 0 0 $X=618000 $Y=1034000
+X402 188 M2_M1_HV $T=628000 213200 0 0 $X=626000 $Y=211200
+X403 189 M2_M1_HV $T=628000 252000 0 0 $X=626000 $Y=250000
+X404 145 M2_M1_HV $T=628000 588000 0 0 $X=626000 $Y=586000
+X405 111 M2_M1_HV $T=628000 700000 0 0 $X=626000 $Y=698000
+X406 160 M2_M1_HV $T=628000 772000 0 0 $X=626000 $Y=770000
+X407 190 M2_M1_HV $T=628000 812000 0 0 $X=626000 $Y=810000
+X408 191 M2_M1_HV $T=628000 884000 0 0 $X=626000 $Y=882000
+X409 127 M2_M1_HV $T=628000 924000 0 0 $X=626000 $Y=922000
+X410 192 M2_M1_HV $T=628000 996000 0 0 $X=626000 $Y=994000
+X411 193 M2_M1_HV $T=628000 1036000 0 0 $X=626000 $Y=1034000
+X412 194 M2_M1_HV $T=636000 324000 0 0 $X=634000 $Y=322000
+X413 150 M2_M1_HV $T=636000 476000 0 0 $X=634000 $Y=474000
+X414 195 M2_M1_HV $T=636000 548000 0 0 $X=634000 $Y=546000
+X415 196 M2_M1_HV $T=636000 660000 0 0 $X=634000 $Y=658000
+X416 169 M2_M1_HV $T=640000 220000 0 0 $X=638000 $Y=218000
+X417 159 M2_M1_HV $T=640000 988000 0 0 $X=638000 $Y=986000
+X418 188 M2_M1_HV $T=648000 212000 0 0 $X=646000 $Y=210000
+X419 197 M2_M1_HV $T=648000 324000 0 0 $X=646000 $Y=322000
+X420 198 M2_M1_HV $T=648000 476000 0 0 $X=646000 $Y=474000
+X421 155 M2_M1_HV $T=648000 548000 0 0 $X=646000 $Y=546000
+X422 185 M2_M1_HV $T=648000 661200 0 0 $X=646000 $Y=659200
+X423 192 M2_M1_HV $T=648000 996000 0 0 $X=646000 $Y=994000
+X424 199 M2_M1_HV $T=660000 252000 0 0 $X=658000 $Y=250000
+X425 200 M2_M1_HV $T=660000 588000 0 0 $X=658000 $Y=586000
+X426 174 M2_M1_HV $T=660000 700000 0 0 $X=658000 $Y=698000
+X427 143 M2_M1_HV $T=660000 772000 0 0 $X=658000 $Y=770000
+X428 134 M2_M1_HV $T=660000 812000 0 0 $X=658000 $Y=810000
+X429 157 M2_M1_HV $T=660000 884000 0 0 $X=658000 $Y=882000
+X430 104 M2_M1_HV $T=660000 924000 0 0 $X=658000 $Y=922000
+X431 201 M2_M1_HV $T=660000 1028000 0 0 $X=658000 $Y=1026000
+X432 202 M2_M1_HV $T=660000 1044000 0 0 $X=658000 $Y=1042000
+X433 203 M2_M1_HV $T=668000 100000 0 0 $X=666000 $Y=98000
+X434 183 M2_M1_HV $T=668000 140000 0 0 $X=666000 $Y=138000
+X435 194 M2_M1_HV $T=668000 252000 0 0 $X=666000 $Y=250000
+X436 204 M2_M1_HV $T=668000 325200 0 0 $X=666000 $Y=323200
+X437 205 M2_M1_HV $T=668000 588000 0 0 $X=666000 $Y=586000
+X438 184 M2_M1_HV $T=668000 700000 0 0 $X=666000 $Y=698000
+X439 200 M2_M1_HV $T=668000 772000 0 0 $X=666000 $Y=770000
+X440 154 M2_M1_HV $T=668000 812000 0 0 $X=666000 $Y=810000
+X441 206 M2_M1_HV $T=668000 884000 0 0 $X=666000 $Y=882000
+X442 156 M2_M1_HV $T=668000 924000 0 0 $X=666000 $Y=922000
+X443 201 M2_M1_HV $T=668000 1036000 0 0 $X=666000 $Y=1034000
+X444 207 M2_M1_HV $T=676000 100000 0 0 $X=674000 $Y=98000
+X445 203 M2_M1_HV $T=676000 212000 0 0 $X=674000 $Y=210000
+X446 140 M2_M1_HV $T=676000 386000 0 0 $X=674000 $Y=384000
+X447 208 M2_M1_HV $T=676000 476000 0 0 $X=674000 $Y=474000
+X448 168 M2_M1_HV $T=676000 548000 0 0 $X=674000 $Y=546000
+X449 209 M2_M1_HV $T=676000 660000 0 0 $X=674000 $Y=658000
+X450 210 M2_M1_HV $T=676000 924000 0 0 $X=674000 $Y=922000
+X451 115 M2_M1_HV $T=676000 996000 0 0 $X=674000 $Y=994000
+X452 211 M2_M1_HV $T=680000 332000 0 0 $X=678000 $Y=330000
+X453 207 M2_M1_HV $T=688000 100000 0 0 $X=686000 $Y=98000
+X454 163 M2_M1_HV $T=688000 212000 0 0 $X=686000 $Y=210000
+X455 204 M2_M1_HV $T=688000 324000 0 0 $X=686000 $Y=322000
+X456 179 M2_M1_HV $T=688000 476000 0 0 $X=686000 $Y=474000
+X457 178 M2_M1_HV $T=688000 548000 0 0 $X=686000 $Y=546000
+X458 208 M2_M1_HV $T=688000 660000 0 0 $X=686000 $Y=658000
+X459 104 M2_M1_HV $T=688000 924000 0 0 $X=686000 $Y=922000
+X460 193 M2_M1_HV $T=688000 996000 0 0 $X=686000 $Y=994000
+X461 212 M2_M1_HV $T=692000 260000 0 0 $X=690000 $Y=258000
+X462 213 M2_M1_HV $T=692000 708000 0 0 $X=690000 $Y=706000
+X463 214 M2_M1_HV $T=700000 132000 0 0 $X=698000 $Y=130000
+X464 215 M2_M1_HV $T=700000 148000 0 0 $X=698000 $Y=146000
+X465 189 M2_M1_HV $T=700000 244000 0 0 $X=698000 $Y=242000
+X466 216 M2_M1_HV $T=700000 588000 0 0 $X=698000 $Y=586000
+X467 205 M2_M1_HV $T=700000 652000 0 0 $X=698000 $Y=650000
+X468 217 M2_M1_HV $T=700000 692000 0 0 $X=698000 $Y=690000
+X469 160 M2_M1_HV $T=700000 772000 0 0 $X=698000 $Y=770000
+X470 161 M2_M1_HV $T=700000 812000 0 0 $X=698000 $Y=810000
+X471 218 M2_M1_HV $T=700000 884000 0 0 $X=698000 $Y=882000
+X472 176 M2_M1_HV $T=700000 1036000 0 0 $X=698000 $Y=1034000
+X473 214 M2_M1_HV $T=708000 140000 0 0 $X=706000 $Y=138000
+X474 219 M2_M1_HV $T=708000 213200 0 0 $X=706000 $Y=211200
+X475 219 M2_M1_HV $T=708000 252000 0 0 $X=706000 $Y=250000
+X476 220 M2_M1_HV $T=708000 364000 0 0 $X=706000 $Y=362000
+X477 213 M2_M1_HV $T=708000 588000 0 0 $X=706000 $Y=586000
+X478 184 M2_M1_HV $T=708000 660000 0 0 $X=706000 $Y=658000
+X479 221 M2_M1_HV $T=708000 700000 0 0 $X=706000 $Y=698000
+X480 222 M2_M1_HV $T=708000 772000 0 0 $X=706000 $Y=770000
+X481 218 M2_M1_HV $T=708000 812000 0 0 $X=706000 $Y=810000
+X482 223 M2_M1_HV $T=708000 884000 0 0 $X=706000 $Y=882000
+X483 224 M2_M1_HV $T=708000 997200 0 0 $X=706000 $Y=995200
+X484 225 M2_M1_HV $T=708000 1036000 0 0 $X=706000 $Y=1034000
+X485 215 M2_M1_HV $T=716000 100000 0 0 $X=714000 $Y=98000
+X486 226 M2_M1_HV $T=716000 324000 0 0 $X=714000 $Y=322000
+X487 227 M2_M1_HV $T=716000 476000 0 0 $X=714000 $Y=474000
+X488 138 M2_M1_HV $T=716000 548000 0 0 $X=714000 $Y=546000
+X489 206 M2_M1_HV $T=716000 924000 0 0 $X=714000 $Y=922000
+X490 228 M2_M1_HV $T=720000 220000 0 0 $X=718000 $Y=218000
+X491 202 M2_M1_HV $T=720000 1004000 0 0 $X=718000 $Y=1002000
+X492 164 M2_M1_HV $T=728000 324000 0 0 $X=726000 $Y=322000
+X493 195 M2_M1_HV $T=728000 476000 0 0 $X=726000 $Y=474000
+X494 227 M2_M1_HV $T=728000 548000 0 0 $X=726000 $Y=546000
+X495 210 M2_M1_HV $T=728000 924000 0 0 $X=726000 $Y=922000
+X496 224 M2_M1_HV $T=728000 996000 0 0 $X=726000 $Y=994000
+X497 229 M2_M1_HV $T=734600 412000 0 0 $X=732600 $Y=410000
+X498 228 M2_M1_HV $T=740000 140000 0 0 $X=738000 $Y=138000
+X499 147 M2_M1_HV $T=740000 252000 0 0 $X=738000 $Y=250000
+X500 230 M2_M1_HV $T=740000 364000 0 0 $X=738000 $Y=362000
+X501 221 M2_M1_HV $T=740000 588000 0 0 $X=738000 $Y=586000
+X502 231 M2_M1_HV $T=740000 660000 0 0 $X=738000 $Y=658000
+X503 232 M2_M1_HV $T=740000 700000 0 0 $X=738000 $Y=698000
+X504 190 M2_M1_HV $T=740000 772000 0 0 $X=738000 $Y=770000
+X505 233 M2_M1_HV $T=740000 812000 0 0 $X=738000 $Y=810000
+X506 234 M2_M1_HV $T=740000 884000 0 0 $X=738000 $Y=882000
+X507 235 M2_M1_HV $T=740000 1036000 0 0 $X=738000 $Y=1034000
+X508 203 M2_M1_HV $T=748000 100000 0 0 $X=746000 $Y=98000
+X509 236 M2_M1_HV $T=748000 140000 0 0 $X=746000 $Y=138000
+X510 237 M2_M1_HV $T=748000 212000 0 0 $X=746000 $Y=210000
+X511 212 M2_M1_HV $T=748000 252000 0 0 $X=746000 $Y=250000
+X512 238 M2_M1_HV $T=748000 364000 0 0 $X=746000 $Y=362000
+X513 146 M2_M1_HV $T=748000 588000 0 0 $X=746000 $Y=586000
+X514 239 M2_M1_HV $T=748000 660000 0 0 $X=746000 $Y=658000
+X515 232 M2_M1_HV $T=748000 700000 0 0 $X=746000 $Y=698000
+X516 240 M2_M1_HV $T=748000 772000 0 0 $X=746000 $Y=770000
+X517 143 M2_M1_HV $T=748000 812000 0 0 $X=746000 $Y=810000
+X518 241 M2_M1_HV $T=748000 884000 0 0 $X=746000 $Y=882000
+X519 202 M2_M1_HV $T=748000 1036000 0 0 $X=746000 $Y=1034000
+X520 211 M2_M1_HV $T=756000 325200 0 0 $X=754000 $Y=323200
+X521 242 M2_M1_HV $T=756000 476000 0 0 $X=754000 $Y=474000
+X522 220 M2_M1_HV $T=756000 548000 0 0 $X=754000 $Y=546000
+X523 222 M2_M1_HV $T=756000 772000 0 0 $X=754000 $Y=770000
+X524 193 M2_M1_HV $T=756000 924000 0 0 $X=754000 $Y=922000
+X525 162 M2_M1_HV $T=756000 996000 0 0 $X=754000 $Y=994000
+X526 226 M2_M1_HV $T=768000 324000 0 0 $X=766000 $Y=322000
+X527 243 M2_M1_HV $T=768000 437200 0 0 $X=766000 $Y=435200
+X528 244 M2_M1_HV $T=768000 476000 0 0 $X=766000 $Y=474000
+X529 165 M2_M1_HV $T=768000 548000 0 0 $X=766000 $Y=546000
+X530 190 M2_M1_HV $T=768000 772000 0 0 $X=766000 $Y=770000
+X531 218 M2_M1_HV $T=768000 924000 0 0 $X=766000 $Y=922000
+X532 245 M2_M1_HV $T=768000 996000 0 0 $X=766000 $Y=994000
+X533 246 M2_M1_HV $T=780000 100000 0 0 $X=778000 $Y=98000
+X534 247 M2_M1_HV $T=780000 132000 0 0 $X=778000 $Y=130000
+X535 215 M2_M1_HV $T=780000 148000 0 0 $X=778000 $Y=146000
+X536 248 M2_M1_HV $T=780000 212000 0 0 $X=778000 $Y=210000
+X537 249 M2_M1_HV $T=780000 252000 0 0 $X=778000 $Y=250000
+X538 189 M2_M1_HV $T=780000 364000 0 0 $X=778000 $Y=362000
+X539 250 M2_M1_HV $T=780000 588000 0 0 $X=778000 $Y=586000
+X540 251 M2_M1_HV $T=780000 660000 0 0 $X=778000 $Y=658000
+X541 175 M2_M1_HV $T=780000 700000 0 0 $X=778000 $Y=698000
+X542 191 M2_M1_HV $T=780000 780000 0 0 $X=778000 $Y=778000
+X543 252 M2_M1_HV $T=780000 812000 0 0 $X=778000 $Y=810000
+X544 253 M2_M1_HV $T=780000 884000 0 0 $X=778000 $Y=882000
+X545 254 M2_M1_HV $T=780000 1028000 0 0 $X=778000 $Y=1026000
+X546 255 M2_M1_HV $T=780000 1044000 0 0 $X=778000 $Y=1042000
+X547 256 M2_M1_HV $T=788000 100000 0 0 $X=786000 $Y=98000
+X548 247 M2_M1_HV $T=788000 140000 0 0 $X=786000 $Y=138000
+X549 237 M2_M1_HV $T=788000 212000 0 0 $X=786000 $Y=210000
+X550 163 M2_M1_HV $T=788000 252000 0 0 $X=786000 $Y=250000
+X551 230 M2_M1_HV $T=788000 364000 0 0 $X=786000 $Y=362000
+X552 244 M2_M1_HV $T=788000 588000 0 0 $X=786000 $Y=586000
+X553 257 M2_M1_HV $T=788000 660000 0 0 $X=786000 $Y=658000
+X554 196 M2_M1_HV $T=788000 700000 0 0 $X=786000 $Y=698000
+X555 180 M2_M1_HV $T=788000 772000 0 0 $X=786000 $Y=770000
+X556 258 M2_M1_HV $T=788000 812000 0 0 $X=786000 $Y=810000
+X557 252 M2_M1_HV $T=788000 884000 0 0 $X=786000 $Y=882000
+X558 254 M2_M1_HV $T=788000 1036000 0 0 $X=786000 $Y=1034000
+X559 259 M2_M1_HV $T=796000 212000 0 0 $X=794000 $Y=210000
+X560 130 M2_M1_HV $T=796000 324000 0 0 $X=794000 $Y=322000
+X561 260 M2_M1_HV $T=796000 436000 0 0 $X=794000 $Y=434000
+X562 198 M2_M1_HV $T=796000 548000 0 0 $X=794000 $Y=546000
+X563 261 M2_M1_HV $T=796000 924000 0 0 $X=794000 $Y=922000
+X564 202 M2_M1_HV $T=796000 996000 0 0 $X=794000 $Y=994000
+X565 243 M2_M1_HV $T=804000 484000 0 0 $X=802000 $Y=482000
+X566 248 M2_M1_HV $T=808000 212000 0 0 $X=806000 $Y=210000
+X567 230 M2_M1_HV $T=808000 325200 0 0 $X=806000 $Y=323200
+X568 260 M2_M1_HV $T=808000 436000 0 0 $X=806000 $Y=434000
+X569 262 M2_M1_HV $T=808000 548000 0 0 $X=806000 $Y=546000
+X570 263 M2_M1_HV $T=812000 484000 0 0 $X=810000 $Y=482000
+X571 264 M2_M1_HV $T=812000 820000 0 0 $X=810000 $Y=818000
+X572 265 M2_M1_HV $T=820000 100000 0 0 $X=818000 $Y=98000
+X573 266 M2_M1_HV $T=820000 140000 0 0 $X=818000 $Y=138000
+X574 267 M2_M1_HV $T=820000 252000 0 0 $X=818000 $Y=250000
+X575 268 M2_M1_HV $T=820000 364000 0 0 $X=818000 $Y=362000
+X576 238 M2_M1_HV $T=820000 588000 0 0 $X=818000 $Y=586000
+X577 229 M2_M1_HV $T=820000 660000 0 0 $X=818000 $Y=658000
+X578 240 M2_M1_HV $T=820000 700000 0 0 $X=818000 $Y=698000
+X579 269 M2_M1_HV $T=820000 772000 0 0 $X=818000 $Y=770000
+X580 253 M2_M1_HV $T=820000 804000 0 0 $X=818000 $Y=802000
+X581 270 M2_M1_HV $T=820000 884000 0 0 $X=818000 $Y=882000
+X582 271 M2_M1_HV $T=820000 1036000 0 0 $X=818000 $Y=1034000
+X583 272 M2_M1_HV $T=828000 100000 0 0 $X=826000 $Y=98000
+X584 259 M2_M1_HV $T=828000 140000 0 0 $X=826000 $Y=138000
+X585 199 M2_M1_HV $T=828000 252000 0 0 $X=826000 $Y=250000
+X586 273 M2_M1_HV $T=828000 364000 0 0 $X=826000 $Y=362000
+X587 262 M2_M1_HV $T=828000 588000 0 0 $X=826000 $Y=586000
+X588 209 M2_M1_HV $T=828000 660000 0 0 $X=826000 $Y=658000
+X589 186 M2_M1_HV $T=828000 700000 0 0 $X=826000 $Y=698000
+X590 187 M2_M1_HV $T=828000 772000 0 0 $X=826000 $Y=770000
+X591 252 M2_M1_HV $T=828000 812000 0 0 $X=826000 $Y=810000
+X592 264 M2_M1_HV $T=828000 884000 0 0 $X=826000 $Y=882000
+X593 261 M2_M1_HV $T=828000 924000 0 0 $X=826000 $Y=922000
+X594 271 M2_M1_HV $T=828000 996000 0 0 $X=826000 $Y=994000
+X595 235 M2_M1_HV $T=828000 1036000 0 0 $X=826000 $Y=1034000
+X596 236 M2_M1_HV $T=836000 212000 0 0 $X=834000 $Y=210000
+X597 197 M2_M1_HV $T=836000 324000 0 0 $X=834000 $Y=322000
+X598 274 M2_M1_HV $T=836000 436000 0 0 $X=834000 $Y=434000
+X599 275 M2_M1_HV $T=836000 548000 0 0 $X=834000 $Y=546000
+X600 249 M2_M1_HV $T=848000 212000 0 0 $X=846000 $Y=210000
+X601 276 M2_M1_HV $T=848000 324000 0 0 $X=846000 $Y=322000
+X602 277 M2_M1_HV $T=848000 436000 0 0 $X=846000 $Y=434000
+X603 278 M2_M1_HV $T=848000 548000 0 0 $X=846000 $Y=546000
+X604 279 M2_M1_HV $T=852000 372000 0 0 $X=850000 $Y=370000
+X605 280 M2_M1_HV $T=852000 820000 0 0 $X=850000 $Y=818000
+X606 241 M2_M1_HV $T=852000 932000 0 0 $X=850000 $Y=930000
+X607 246 M2_M1_HV $T=860000 92000 0 0 $X=858000 $Y=90000
+X608 281 M2_M1_HV $T=860000 108000 0 0 $X=858000 $Y=106000
+X609 272 M2_M1_HV $T=860000 140000 0 0 $X=858000 $Y=138000
+X610 237 M2_M1_HV $T=860000 252000 0 0 $X=858000 $Y=250000
+X611 282 M2_M1_HV $T=860000 356000 0 0 $X=858000 $Y=354000
+X612 283 M2_M1_HV $T=860000 660000 0 0 $X=858000 $Y=658000
+X613 257 M2_M1_HV $T=860000 700000 0 0 $X=858000 $Y=698000
+X614 217 M2_M1_HV $T=860000 772000 0 0 $X=858000 $Y=770000
+X615 284 M2_M1_HV $T=860000 804000 0 0 $X=858000 $Y=802000
+X616 223 M2_M1_HV $T=860000 884000 0 0 $X=858000 $Y=882000
+X617 285 M2_M1_HV $T=860000 916000 0 0 $X=858000 $Y=914000
+X618 285 M2_M1_HV $T=860000 996000 0 0 $X=858000 $Y=994000
+X619 245 M2_M1_HV $T=860000 1036000 0 0 $X=858000 $Y=1034000
+X620 278 M2_M1_HV $T=862000 580000 0 0 $X=860000 $Y=578000
+X621 286 M2_M1_HV $T=862400 213200 0 0 $X=860400 $Y=211200
+X622 281 M2_M1_HV $T=868000 100000 0 0 $X=866000 $Y=98000
+X623 266 M2_M1_HV $T=868000 140000 0 0 $X=866000 $Y=138000
+X624 194 M2_M1_HV $T=868000 252000 0 0 $X=866000 $Y=250000
+X625 279 M2_M1_HV $T=868000 364000 0 0 $X=866000 $Y=362000
+X626 287 M2_M1_HV $T=868000 660000 0 0 $X=866000 $Y=658000
+X627 251 M2_M1_HV $T=868000 700000 0 0 $X=866000 $Y=698000
+X628 288 M2_M1_HV $T=868000 772000 0 0 $X=866000 $Y=770000
+X629 280 M2_M1_HV $T=868000 812000 0 0 $X=866000 $Y=810000
+X630 284 M2_M1_HV $T=868000 884000 0 0 $X=866000 $Y=882000
+X631 289 M2_M1_HV $T=868000 924000 0 0 $X=866000 $Y=922000
+X632 290 M2_M1_HV $T=868000 1036000 0 0 $X=866000 $Y=1034000
+X633 256 M2_M1_HV $T=876000 324000 0 0 $X=874000 $Y=322000
+X634 291 M2_M1_HV $T=876000 436000 0 0 $X=874000 $Y=434000
+X635 239 M2_M1_HV $T=876000 548000 0 0 $X=874000 $Y=546000
+X636 289 M2_M1_HV $T=876000 884000 0 0 $X=874000 $Y=882000
+X637 292 M2_M1_HV $T=878000 596000 0 0 $X=876000 $Y=594000
+X638 293 M2_M1_HV $T=880000 220000 0 0 $X=878000 $Y=218000
+X639 294 M2_M1_HV $T=888000 212000 0 0 $X=886000 $Y=210000
+X640 295 M2_M1_HV $T=888000 324000 0 0 $X=886000 $Y=322000
+X641 291 M2_M1_HV $T=888000 436000 0 0 $X=886000 $Y=434000
+X642 216 M2_M1_HV $T=888000 548000 0 0 $X=886000 $Y=546000
+X643 296 M2_M1_HV $T=888000 885200 0 0 $X=886000 $Y=883200
+X644 297 M2_M1_HV $T=888000 996000 0 0 $X=886000 $Y=994000
+X645 298 M2_M1_HV $T=892000 260000 0 0 $X=890000 $Y=258000
+X646 299 M2_M1_HV $T=900000 100000 0 0 $X=898000 $Y=98000
+X647 300 M2_M1_HV $T=900000 132000 0 0 $X=898000 $Y=130000
+X648 301 M2_M1_HV $T=900000 148000 0 0 $X=898000 $Y=146000
+X649 302 M2_M1_HV $T=900000 244000 0 0 $X=898000 $Y=242000
+X650 277 M2_M1_HV $T=900000 364000 0 0 $X=898000 $Y=362000
+X651 292 M2_M1_HV $T=900000 660000 0 0 $X=898000 $Y=658000
+X652 303 M2_M1_HV $T=900000 700000 0 0 $X=898000 $Y=698000
+X653 284 M2_M1_HV $T=900000 772000 0 0 $X=898000 $Y=770000
+X654 258 M2_M1_HV $T=900000 812000 0 0 $X=898000 $Y=810000
+X655 304 M2_M1_HV $T=900000 924000 0 0 $X=898000 $Y=922000
+X656 225 M2_M1_HV $T=900000 1036000 0 0 $X=898000 $Y=1034000
+X657 299 M2_M1_HV $T=908000 100000 0 0 $X=906000 $Y=98000
+X658 300 M2_M1_HV $T=908000 140000 0 0 $X=906000 $Y=138000
+X659 293 M2_M1_HV $T=908000 213200 0 0 $X=906000 $Y=211200
+X660 305 M2_M1_HV $T=908000 252000 0 0 $X=906000 $Y=250000
+X661 306 M2_M1_HV $T=908000 364000 0 0 $X=906000 $Y=362000
+X662 231 M2_M1_HV $T=908000 700000 0 0 $X=906000 $Y=698000
+X663 275 M2_M1_HV $T=908000 772000 0 0 $X=906000 $Y=770000
+X664 307 M2_M1_HV $T=908000 812000 0 0 $X=906000 $Y=810000
+X665 308 M2_M1_HV $T=908000 885200 0 0 $X=906000 $Y=883200
+X666 270 M2_M1_HV $T=908000 924000 0 0 $X=906000 $Y=922000
+X667 309 M2_M1_HV $T=908000 997200 0 0 $X=906000 $Y=995200
+X668 304 M2_M1_HV $T=908000 1036000 0 0 $X=906000 $Y=1034000
+X669 273 M2_M1_HV $T=916000 324000 0 0 $X=914000 $Y=322000
+X670 306 M2_M1_HV $T=916000 436000 0 0 $X=914000 $Y=434000
+X671 310 M2_M1_HV $T=916000 548000 0 0 $X=914000 $Y=546000
+X672 311 M2_M1_HV $T=920000 220000 0 0 $X=918000 $Y=218000
+X673 312 M2_M1_HV $T=920000 892000 0 0 $X=918000 $Y=890000
+X674 304 M2_M1_HV $T=920000 1004000 0 0 $X=918000 $Y=1002000
+X675 267 M2_M1_HV $T=928000 212000 0 0 $X=926000 $Y=210000
+X676 298 M2_M1_HV $T=928000 325200 0 0 $X=926000 $Y=323200
+X677 313 M2_M1_HV $T=928000 436000 0 0 $X=926000 $Y=434000
+X678 314 M2_M1_HV $T=928000 548000 0 0 $X=926000 $Y=546000
+X679 250 M2_M1_HV $T=928000 660000 0 0 $X=926000 $Y=658000
+X680 315 M2_M1_HV $T=928000 885200 0 0 $X=926000 $Y=883200
+X681 316 M2_M1_HV $T=928000 997200 0 0 $X=926000 $Y=995200
+X682 317 M2_M1_HV $T=932000 820000 0 0 $X=930000 $Y=818000
+X683 318 M2_M1_HV $T=934000 500000 0 0 $X=932000 $Y=498000
+X684 301 M2_M1_HV $T=940000 100000 0 0 $X=938000 $Y=98000
+X685 311 M2_M1_HV $T=940000 140000 0 0 $X=938000 $Y=138000
+X686 276 M2_M1_HV $T=940000 252000 0 0 $X=938000 $Y=250000
+X687 318 M2_M1_HV $T=940000 364000 0 0 $X=938000 $Y=362000
+X688 307 M2_M1_HV $T=940000 700000 0 0 $X=938000 $Y=698000
+X689 288 M2_M1_HV $T=940000 772000 0 0 $X=938000 $Y=770000
+X690 319 M2_M1_HV $T=940000 804000 0 0 $X=938000 $Y=802000
+X691 315 M2_M1_HV $T=940000 924000 0 0 $X=938000 $Y=922000
+X692 290 M2_M1_HV $T=940000 1028000 0 0 $X=938000 $Y=1026000
+X693 297 M2_M1_HV $T=940000 1044000 0 0 $X=938000 $Y=1042000
+X694 286 M2_M1_HV $T=948000 252000 0 0 $X=946000 $Y=250000
+X695 320 M2_M1_HV $T=948000 364000 0 0 $X=946000 $Y=362000
+X696 321 M2_M1_HV $T=948000 700000 0 0 $X=946000 $Y=698000
+X697 269 M2_M1_HV $T=948000 772000 0 0 $X=946000 $Y=770000
+X698 322 M2_M1_HV $T=948000 812000 0 0 $X=946000 $Y=810000
+X699 308 M2_M1_HV $T=948000 924000 0 0 $X=946000 $Y=922000
+X700 323 M2_M1_HV $T=948000 1036000 0 0 $X=946000 $Y=1034000
+X701 294 M2_M1_HV $T=956000 212000 0 0 $X=954000 $Y=210000
+X702 324 M2_M1_HV $T=956000 324000 0 0 $X=954000 $Y=322000
+X703 263 M2_M1_HV $T=956000 436000 0 0 $X=954000 $Y=434000
+X704 313 M2_M1_HV $T=956000 548000 0 0 $X=954000 $Y=546000
+X705 314 M2_M1_HV $T=956000 660000 0 0 $X=954000 $Y=658000
+X706 325 M2_M1_HV $T=956000 884000 0 0 $X=954000 $Y=882000
+X707 297 M2_M1_HV $T=956000 996000 0 0 $X=954000 $Y=994000
+X708 268 M2_M1_HV $T=968000 325200 0 0 $X=966000 $Y=323200
+X709 326 M2_M1_HV $T=968000 436000 0 0 $X=966000 $Y=434000
+X710 242 M2_M1_HV $T=968000 476000 0 0 $X=966000 $Y=474000
+X711 327 M2_M1_HV $T=968000 548000 0 0 $X=966000 $Y=546000
+X712 233 M2_M1_HV $T=968000 884000 0 0 $X=966000 $Y=882000
+X713 328 M2_M1_HV $T=968000 996000 0 0 $X=966000 $Y=994000
+X714 282 M2_M1_HV $T=980000 252000 0 0 $X=978000 $Y=250000
+X715 302 M2_M1_HV $T=980000 364000 0 0 $X=978000 $Y=362000
+X716 329 M2_M1_HV $T=980000 700000 0 0 $X=978000 $Y=698000
+X717 322 M2_M1_HV $T=980000 772000 0 0 $X=978000 $Y=770000
+X718 330 M2_M1_HV $T=980000 812000 0 0 $X=978000 $Y=810000
+X719 331 M2_M1_HV $T=980000 924000 0 0 $X=978000 $Y=922000
+X720 332 M2_M1_HV $T=980000 1036000 0 0 $X=978000 $Y=1034000
+X721 265 M2_M1_HV $T=988000 100000 0 0 $X=986000 $Y=98000
+X722 333 M2_M1_HV $T=988000 140000 0 0 $X=986000 $Y=138000
+X723 334 M2_M1_HV $T=988000 212000 0 0 $X=986000 $Y=210000
+X724 294 M2_M1_HV $T=988000 252000 0 0 $X=986000 $Y=250000
+X725 335 M2_M1_HV $T=988000 364000 0 0 $X=986000 $Y=362000
+X726 314 M2_M1_HV $T=988000 660000 0 0 $X=986000 $Y=658000
+X727 336 M2_M1_HV $T=988000 700000 0 0 $X=986000 $Y=698000
+X728 317 M2_M1_HV $T=988000 772000 0 0 $X=986000 $Y=770000
+X729 337 M2_M1_HV $T=988000 812000 0 0 $X=986000 $Y=810000
+X730 325 M2_M1_HV $T=988000 924000 0 0 $X=986000 $Y=922000
+X731 338 M2_M1_HV $T=988000 997200 0 0 $X=986000 $Y=995200
+X732 309 M2_M1_HV $T=988000 1036000 0 0 $X=986000 $Y=1034000
+X733 295 M2_M1_HV $T=996000 324000 0 0 $X=994000 $Y=322000
+X734 305 M2_M1_HV $T=996000 436000 0 0 $X=994000 $Y=434000
+X735 339 M2_M1_HV $T=996000 476000 0 0 $X=994000 $Y=474000
+X736 326 M2_M1_HV $T=996000 548000 0 0 $X=994000 $Y=546000
+X737 329 M2_M1_HV $T=996000 610000 0 0 $X=994000 $Y=608000
+X738 328 M2_M1_HV $T=996000 884000 0 0 $X=994000 $Y=882000
+X739 316 M2_M1_HV $T=1000000 1004000 0 0 $X=998000 $Y=1002000
+X740 324 M2_M1_HV $T=1008000 324000 0 0 $X=1006000 $Y=322000
+X741 340 M2_M1_HV $T=1008000 436000 0 0 $X=1006000 $Y=434000
+X742 335 M2_M1_HV $T=1008000 476000 0 0 $X=1006000 $Y=474000
+X743 283 M2_M1_HV $T=1008000 548000 0 0 $X=1006000 $Y=546000
+X744 341 M2_M1_HV $T=1008000 884000 0 0 $X=1006000 $Y=882000
+X745 338 M2_M1_HV $T=1008000 996000 0 0 $X=1006000 $Y=994000
+X746 342 M2_M1_HV $T=1012000 92000 0 0 $X=1010000 $Y=90000
+X747 343 M2_M1_HV $T=1012000 204000 0 0 $X=1010000 $Y=202000
+X748 344 M2_M1_HV $T=1012000 260000 0 0 $X=1010000 $Y=258000
+X749 301 M2_M1_HV $T=1020000 108000 0 0 $X=1018000 $Y=106000
+X750 345 M2_M1_HV $T=1020000 140000 0 0 $X=1018000 $Y=138000
+X751 346 M2_M1_HV $T=1020000 220000 0 0 $X=1018000 $Y=218000
+X752 345 M2_M1_HV $T=1020000 244000 0 0 $X=1018000 $Y=242000
+X753 287 M2_M1_HV $T=1020000 660000 0 0 $X=1018000 $Y=658000
+X754 341 M2_M1_HV $T=1020000 700000 0 0 $X=1018000 $Y=698000
+X755 321 M2_M1_HV $T=1020000 772000 0 0 $X=1018000 $Y=770000
+X756 347 M2_M1_HV $T=1020000 812000 0 0 $X=1018000 $Y=810000
+X757 348 M2_M1_HV $T=1020000 924000 0 0 $X=1018000 $Y=922000
+X758 323 M2_M1_HV $T=1020000 1036000 0 0 $X=1018000 $Y=1034000
+X759 340 M2_M1_HV $T=1022000 380000 0 0 $X=1020000 $Y=378000
+X760 342 M2_M1_HV $T=1028000 100000 0 0 $X=1026000 $Y=98000
+X761 349 M2_M1_HV $T=1028000 140000 0 0 $X=1026000 $Y=138000
+X762 343 M2_M1_HV $T=1028000 212000 0 0 $X=1026000 $Y=210000
+X763 295 M2_M1_HV $T=1028000 252000 0 0 $X=1026000 $Y=250000
+X764 303 M2_M1_HV $T=1028000 588000 0 0 $X=1026000 $Y=586000
+X765 350 M2_M1_HV $T=1028000 660000 0 0 $X=1026000 $Y=658000
+X766 234 M2_M1_HV $T=1028000 772000 0 0 $X=1026000 $Y=770000
+X767 307 M2_M1_HV $T=1028000 812000 0 0 $X=1026000 $Y=810000
+X768 351 M2_M1_HV $T=1028000 924000 0 0 $X=1026000 $Y=922000
+X769 332 M2_M1_HV $T=1028000 1036000 0 0 $X=1026000 $Y=1034000
+X770 334 M2_M1_HV $T=1036000 324000 0 0 $X=1034000 $Y=322000
+X771 352 M2_M1_HV $T=1036000 436000 0 0 $X=1034000 $Y=434000
+X772 320 M2_M1_HV $T=1036000 476000 0 0 $X=1034000 $Y=474000
+X773 353 M2_M1_HV $T=1036000 548000 0 0 $X=1034000 $Y=546000
+X774 316 M2_M1_HV $T=1036000 884000 0 0 $X=1034000 $Y=882000
+X775 296 M2_M1_HV $T=1036000 996000 0 0 $X=1034000 $Y=994000
+X776 263 M2_M1_HV $T=1038000 372000 0 0 $X=1036000 $Y=370000
+X777 354 M2_M1_HV $T=1048000 324000 0 0 $X=1046000 $Y=322000
+X778 355 M2_M1_HV $T=1048000 436000 0 0 $X=1046000 $Y=434000
+X779 339 M2_M1_HV $T=1048000 476000 0 0 $X=1046000 $Y=474000
+X780 356 M2_M1_HV $T=1048000 548000 0 0 $X=1046000 $Y=546000
+X781 287 M2_M1_HV $T=1048000 700000 0 0 $X=1046000 $Y=698000
+X782 337 M2_M1_HV $T=1048000 884000 0 0 $X=1046000 $Y=882000
+X783 333 M2_M1_HV $T=1052000 148000 0 0 $X=1050000 $Y=146000
+X784 357 M2_M1_HV $T=1052000 820000 0 0 $X=1050000 $Y=818000
+X785 358 M2_M1_HV $T=1060000 100000 0 0 $X=1058000 $Y=98000
+X786 358 M2_M1_HV $T=1060000 132000 0 0 $X=1058000 $Y=130000
+X787 354 M2_M1_HV $T=1060000 212000 0 0 $X=1058000 $Y=210000
+X788 359 M2_M1_HV $T=1060000 252000 0 0 $X=1058000 $Y=250000
+X789 350 M2_M1_HV $T=1060000 588000 0 0 $X=1058000 $Y=586000
+X790 360 M2_M1_HV $T=1060000 660000 0 0 $X=1058000 $Y=658000
+X791 319 M2_M1_HV $T=1060000 772000 0 0 $X=1058000 $Y=770000
+X792 331 M2_M1_HV $T=1060000 804000 0 0 $X=1058000 $Y=802000
+X793 361 M2_M1_HV $T=1060000 924000 0 0 $X=1058000 $Y=922000
+X794 362 M2_M1_HV $T=1060000 1036000 0 0 $X=1058000 $Y=1034000
+X795 299 M2_M1_HV $T=1068000 140000 0 0 $X=1066000 $Y=138000
+X796 344 M2_M1_HV $T=1068000 252000 0 0 $X=1066000 $Y=250000
+X797 353 M2_M1_HV $T=1068000 588000 0 0 $X=1066000 $Y=586000
+X798 363 M2_M1_HV $T=1068000 660000 0 0 $X=1066000 $Y=658000
+X799 364 M2_M1_HV $T=1068000 772000 0 0 $X=1066000 $Y=770000
+X800 357 M2_M1_HV $T=1068000 812000 0 0 $X=1066000 $Y=810000
+X801 365 M2_M1_HV $T=1068000 924000 0 0 $X=1066000 $Y=922000
+X802 362 M2_M1_HV $T=1068000 1036000 0 0 $X=1066000 $Y=1034000
+X803 366 M2_M1_HV $T=1076000 140000 0 0 $X=1074000 $Y=138000
+X804 367 M2_M1_HV $T=1076000 324000 0 0 $X=1074000 $Y=322000
+X805 356 M2_M1_HV $T=1076000 436000 0 0 $X=1074000 $Y=434000
+X806 368 M2_M1_HV $T=1076000 476000 0 0 $X=1074000 $Y=474000
+X807 369 M2_M1_HV $T=1076000 548000 0 0 $X=1074000 $Y=546000
+X808 370 M2_M1_HV $T=1076000 660000 0 0 $X=1074000 $Y=658000
+X809 371 M2_M1_HV $T=1076000 700000 0 0 $X=1074000 $Y=698000
+X810 372 M2_M1_HV $T=1076000 1036000 0 0 $X=1074000 $Y=1034000
+X811 373 M2_M1_HV $T=1084000 868000 0 0 $X=1082000 $Y=866000
+X812 366 M2_M1_HV $T=1088000 140000 0 0 $X=1086000 $Y=138000
+X813 374 M2_M1_HV $T=1088000 213200 0 0 $X=1086000 $Y=211200
+X814 375 M2_M1_HV $T=1088000 324000 0 0 $X=1086000 $Y=322000
+X815 274 M2_M1_HV $T=1088000 436000 0 0 $X=1086000 $Y=434000
+X816 352 M2_M1_HV $T=1088000 476000 0 0 $X=1086000 $Y=474000
+X817 376 M2_M1_HV $T=1088000 548000 0 0 $X=1086000 $Y=546000
+X818 370 M2_M1_HV $T=1088000 660000 0 0 $X=1086000 $Y=658000
+X819 377 M2_M1_HV $T=1088000 700000 0 0 $X=1086000 $Y=698000
+X820 372 M2_M1_HV $T=1088000 1036000 0 0 $X=1086000 $Y=1034000
+X821 371 M2_M1_HV $T=1092000 876000 0 0 $X=1090000 $Y=874000
+X822 378 M2_M1_HV $T=1092000 932000 0 0 $X=1090000 $Y=930000
+X823 346 M2_M1_HV $T=1100000 252000 0 0 $X=1098000 $Y=250000
+X824 379 M2_M1_HV $T=1100000 588000 0 0 $X=1098000 $Y=586000
+X825 336 M2_M1_HV $T=1100000 772000 0 0 $X=1098000 $Y=770000
+X826 380 M2_M1_HV $T=1100000 812000 0 0 $X=1098000 $Y=810000
+X827 381 M2_M1_HV $T=1100000 916000 0 0 $X=1098000 $Y=914000
+X828 382 M2_M1_HV $T=1108000 213200 0 0 $X=1106000 $Y=211200
+X829 359 M2_M1_HV $T=1108000 252000 0 0 $X=1106000 $Y=250000
+X830 369 M2_M1_HV $T=1108000 588000 0 0 $X=1106000 $Y=586000
+X831 330 M2_M1_HV $T=1108000 772000 0 0 $X=1106000 $Y=770000
+X832 348 M2_M1_HV $T=1108000 812000 0 0 $X=1106000 $Y=810000
+X833 378 M2_M1_HV $T=1108000 924000 0 0 $X=1106000 $Y=922000
+X834 383 M2_M1_HV $T=1116000 140000 0 0 $X=1114000 $Y=138000
+X835 355 M2_M1_HV $T=1116000 324000 0 0 $X=1114000 $Y=322000
+X836 384 M2_M1_HV $T=1116000 436000 0 0 $X=1114000 $Y=434000
+X837 327 M2_M1_HV $T=1116000 476000 0 0 $X=1114000 $Y=474000
+X838 385 M2_M1_HV $T=1116000 548000 0 0 $X=1114000 $Y=546000
+X839 376 M2_M1_HV $T=1116000 588000 0 0 $X=1114000 $Y=586000
+X840 386 M2_M1_HV $T=1116000 660000 0 0 $X=1114000 $Y=658000
+X841 363 M2_M1_HV $T=1116000 700000 0 0 $X=1114000 $Y=698000
+X842 255 M2_M1_HV $T=1116000 1036000 0 0 $X=1114000 $Y=1034000
+X843 383 M2_M1_HV $T=1120000 220000 0 0 $X=1118000 $Y=218000
+X844 382 M2_M1_HV $T=1128000 212000 0 0 $X=1126000 $Y=210000
+X845 387 M2_M1_HV $T=1128000 324000 0 0 $X=1126000 $Y=322000
+X846 384 M2_M1_HV $T=1128000 436000 0 0 $X=1126000 $Y=434000
+X847 388 M2_M1_HV $T=1128000 476000 0 0 $X=1126000 $Y=474000
+X848 389 M2_M1_HV $T=1128000 548000 0 0 $X=1126000 $Y=546000
+X849 310 M2_M1_HV $T=1128000 588000 0 0 $X=1126000 $Y=586000
+X850 390 M2_M1_HV $T=1128000 700000 0 0 $X=1126000 $Y=698000
+X851 387 M2_M1_HV $T=1132000 260000 0 0 $X=1130000 $Y=258000
+X852 367 M2_M1_HV $T=1140000 244000 0 0 $X=1138000 $Y=242000
+X853 375 M2_M1_HV $T=1140000 324000 0 0 $X=1138000 $Y=322000
+X854 391 M2_M1_HV $T=1140000 588000 0 0 $X=1138000 $Y=586000
+X855 377 M2_M1_HV $T=1140000 772000 0 0 $X=1138000 $Y=770000
+X856 351 M2_M1_HV $T=1140000 812000 0 0 $X=1138000 $Y=810000
+X857 312 M2_M1_HV $T=1140000 924000 0 0 $X=1138000 $Y=922000
+X858 392 M2_M1_HV $T=1148000 252000 0 0 $X=1146000 $Y=250000
+X859 302 M2_M1_HV $T=1148000 324000 0 0 $X=1146000 $Y=322000
+X860 393 M2_M1_HV $T=1148000 772000 0 0 $X=1146000 $Y=770000
+X861 373 M2_M1_HV $T=1148000 812000 0 0 $X=1146000 $Y=810000
+X862 347 M2_M1_HV $T=1148000 924000 0 0 $X=1146000 $Y=922000
+X863 349 M2_M1_HV $T=1156000 212000 0 0 $X=1154000 $Y=210000
+X864 374 M2_M1_HV $T=1156000 252000 0 0 $X=1154000 $Y=250000
+X865 385 M2_M1_HV $T=1156000 386000 0 0 $X=1154000 $Y=384000
+X866 394 M2_M1_HV $T=1156000 436000 0 0 $X=1154000 $Y=434000
+X867 389 M2_M1_HV $T=1156000 476000 0 0 $X=1154000 $Y=474000
+X868 395 M2_M1_HV $T=1156000 548000 0 0 $X=1154000 $Y=546000
+X869 364 M2_M1_HV $T=1156000 700000 0 0 $X=1154000 $Y=698000
+X870 396 M2_M1_HV $T=1168000 252000 0 0 $X=1166000 $Y=250000
+X871 394 M2_M1_HV $T=1168000 436000 0 0 $X=1166000 $Y=434000
+X872 397 M2_M1_HV $T=1168000 476000 0 0 $X=1166000 $Y=474000
+X873 395 M2_M1_HV $T=1168000 548000 0 0 $X=1166000 $Y=546000
+X874 391 M2_M1_HV $T=1168000 588000 0 0 $X=1166000 $Y=586000
+X875 360 M2_M1_HV $T=1168000 660000 0 0 $X=1166000 $Y=658000
+X876 398 M2_M1_HV $T=1180000 324000 0 0 $X=1178000 $Y=322000
+X877 365 M2_M1_HV $T=1180000 772000 0 0 $X=1178000 $Y=770000
+X878 390 M2_M1_HV $T=1180000 812000 0 0 $X=1178000 $Y=810000
+X879 381 M2_M1_HV $T=1180000 924000 0 0 $X=1178000 $Y=922000
+X880 368 M2_M1_HV $T=1188000 324000 0 0 $X=1186000 $Y=322000
+X881 398 M2_M1_HV $T=1188000 364000 0 0 $X=1186000 $Y=362000
+X882 399 M2_M1_HV $T=1188000 700000 0 0 $X=1186000 $Y=698000
+X883 347 M2_M1_HV $T=1188000 772000 0 0 $X=1186000 $Y=770000
+X884 361 M2_M1_HV $T=1188000 812000 0 0 $X=1186000 $Y=810000
+X885 400 M2_M1_HV $T=1196000 252000 0 0 $X=1194000 $Y=250000
+X886 396 M2_M1_HV $T=1196000 324000 0 0 $X=1194000 $Y=322000
+X887 401 M2_M1_HV $T=1196000 364000 0 0 $X=1194000 $Y=362000
+X888 397 M2_M1_HV $T=1196000 436000 0 0 $X=1194000 $Y=434000
+X889 out<6> M2_M1_HV $T=1196000 476000 0 0 $X=1194000 $Y=474000
+X890 out<5> M2_M1_HV $T=1196000 548000 0 0 $X=1194000 $Y=546000
+X891 404 M2_M1_HV $T=1196000 588000 0 0 $X=1194000 $Y=586000
+X892 out<1> M2_M1_HV $T=1196000 660000 0 0 $X=1194000 $Y=658000
+X893 401 M2_M1_HV $T=1208000 252000 0 0 $X=1206000 $Y=250000
+X894 406 M2_M1_HV $T=1208000 324000 0 0 $X=1206000 $Y=322000
+X895 401 M2_M1_HV $T=1208000 364000 0 0 $X=1206000 $Y=362000
+X896 400 M2_M1_HV $T=1208000 436000 0 0 $X=1206000 $Y=434000
+X897 407 M2_M1_HV $T=1208000 476000 0 0 $X=1206000 $Y=474000
+X898 379 M2_M1_HV $T=1208000 548000 0 0 $X=1206000 $Y=546000
+X899 386 M2_M1_HV $T=1208000 588000 0 0 $X=1206000 $Y=586000
+X900 404 M2_M1_HV $T=1208000 660000 0 0 $X=1206000 $Y=658000
+X901 380 M2_M1_HV $T=1214000 860000 0 0 $X=1212000 $Y=858000
+X902 out<0> M2_M1_HV $T=1220000 700000 0 0 $X=1218000 $Y=698000
+X903 409 M2_M1_HV $T=1220000 772000 0 0 $X=1218000 $Y=770000
+X904 393 M2_M1_HV $T=1220000 812000 0 0 $X=1218000 $Y=810000
+X905 409 M2_M1_HV $T=1228000 772000 0 0 $X=1226000 $Y=770000
+X906 406 M2_M1_HV $T=1236000 252000 0 0 $X=1234000 $Y=250000
+X907 392 M2_M1_HV $T=1236000 324000 0 0 $X=1234000 $Y=322000
+X908 407 M2_M1_HV $T=1236000 364000 0 0 $X=1234000 $Y=362000
+X909 388 M2_M1_HV $T=1236000 436000 0 0 $X=1234000 $Y=434000
+X910 out<7> M2_M1_HV $T=1236000 476000 0 0 $X=1234000 $Y=474000
+X911 out<4> M2_M1_HV $T=1236000 548000 0 0 $X=1234000 $Y=546000
+X912 out<3> M2_M1_HV $T=1236000 588000 0 0 $X=1234000 $Y=586000
+X913 out<2> M2_M1_HV $T=1236000 660000 0 0 $X=1234000 $Y=658000
+X914 399 M2_M1_HV $T=1236000 772000 0 0 $X=1234000 $Y=770000
+X915 3 M3_M2_VH $T=68000 356000 0 0 $X=66000 $Y=354000
+X916 4 M3_M2_VH $T=68000 836000 0 0 $X=66000 $Y=834000
+X917 enable M3_M2_VH $T=76000 548000 0 0 $X=74000 $Y=546000
+X918 6 M3_M2_VH $T=88000 548000 0 0 $X=86000 $Y=546000
+X919 7 M3_M2_VH $T=92000 332000 0 0 $X=90000 $Y=330000
+X920 8 M3_M2_VH $T=92000 604000 0 0 $X=90000 $Y=602000
+X921 11 M3_M2_VH $T=100000 284000 0 0 $X=98000 $Y=282000
+X922 12 M3_M2_VH $T=100000 796000 0 0 $X=98000 $Y=794000
+X923 13 M3_M2_VH $T=108000 676000 0 0 $X=106000 $Y=674000
+X924 14 M3_M2_VH $T=108000 892000 0 0 $X=106000 $Y=890000
+X925 15 M3_M2_VH $T=116000 412000 0 0 $X=114000 $Y=410000
+X926 8 M3_M2_VH $T=116000 604000 0 0 $X=114000 $Y=602000
+X927 13 M3_M2_VH $T=124000 652000 0 0 $X=122000 $Y=650000
+X928 18 M3_M2_VH $T=132000 324000 0 0 $X=130000 $Y=322000
+X929 7 M3_M2_VH $T=140000 332000 0 0 $X=138000 $Y=330000
+X930 20 M3_M2_VH $T=140000 572000 0 0 $X=138000 $Y=570000
+X931 22 M3_M2_VH $T=140000 828000 0 0 $X=138000 $Y=826000
+X932 23 M3_M2_VH $T=148000 396000 0 0 $X=146000 $Y=394000
+X933 24 M3_M2_VH $T=148000 844000 0 0 $X=146000 $Y=842000
+X934 25 M3_M2_VH $T=148000 884000 0 0 $X=146000 $Y=882000
+X935 26 M3_M2_VH $T=156000 316000 0 0 $X=154000 $Y=314000
+X936 27 M3_M2_VH $T=156000 420000 0 0 $X=154000 $Y=418000
+X937 29 M3_M2_VH $T=156000 628000 0 0 $X=154000 $Y=626000
+X938 31 M3_M2_VH $T=164000 756000 0 0 $X=162000 $Y=754000
+X939 32 M3_M2_VH $T=172000 380000 0 0 $X=170000 $Y=378000
+X940 33 M3_M2_VH $T=172000 436000 0 0 $X=170000 $Y=434000
+X941 34 M3_M2_VH $T=172000 484000 0 0 $X=170000 $Y=482000
+X942 35 M3_M2_VH $T=172000 612000 0 0 $X=170000 $Y=610000
+X943 18 M3_M2_VH $T=180000 324000 0 0 $X=178000 $Y=322000
+X944 36 M3_M2_VH $T=180000 348000 0 0 $X=178000 $Y=346000
+X945 40 M3_M2_VH $T=180000 436000 0 0 $X=178000 $Y=434000
+X946 30 M3_M2_VH $T=180000 548000 0 0 $X=178000 $Y=546000
+X947 37 M3_M2_VH $T=180000 732000 0 0 $X=178000 $Y=730000
+X948 24 M3_M2_VH $T=180000 844000 0 0 $X=178000 $Y=842000
+X949 39 M3_M2_VH $T=188000 340000 0 0 $X=186000 $Y=338000
+X950 33 M3_M2_VH $T=188000 492000 0 0 $X=186000 $Y=490000
+X951 reset M3_M2_VH $T=188000 604000 0 0 $X=186000 $Y=602000
+X952 43 M3_M2_VH $T=188000 668000 0 0 $X=186000 $Y=666000
+X953 44 M3_M2_VH $T=188000 812000 0 0 $X=186000 $Y=810000
+X954 45 M3_M2_VH $T=188000 924000 0 0 $X=186000 $Y=922000
+X955 46 M3_M2_VH $T=196000 292000 0 0 $X=194000 $Y=290000
+X956 15 M3_M2_VH $T=196000 412000 0 0 $X=194000 $Y=410000
+X957 49 M3_M2_VH $T=196000 676000 0 0 $X=194000 $Y=674000
+X958 40 M3_M2_VH $T=204000 428000 0 0 $X=202000 $Y=426000
+X959 48 M3_M2_VH $T=204000 564000 0 0 $X=202000 $Y=562000
+X960 26 M3_M2_VH $T=212000 316000 0 0 $X=210000 $Y=314000
+X961 43 M3_M2_VH $T=212000 668000 0 0 $X=210000 $Y=666000
+X962 51 M3_M2_VH $T=212000 852000 0 0 $X=210000 $Y=850000
+X963 11 M3_M2_VH $T=220000 284000 0 0 $X=218000 $Y=282000
+X964 52 M3_M2_VH $T=220000 324000 0 0 $X=218000 $Y=322000
+X965 47 M3_M2_VH $T=220000 500000 0 0 $X=218000 $Y=498000
+X966 6 M3_M2_VH $T=220000 556000 0 0 $X=218000 $Y=554000
+X967 53 M3_M2_VH $T=220000 876000 0 0 $X=218000 $Y=874000
+X968 54 M3_M2_VH $T=220000 916000 0 0 $X=218000 $Y=914000
+X969 55 M3_M2_VH $T=228000 252000 0 0 $X=226000 $Y=250000
+X970 56 M3_M2_VH $T=228000 364000 0 0 $X=226000 $Y=362000
+X971 clk M3_M2_VH $T=228000 588000 0 0 $X=226000 $Y=586000
+X972 4 M3_M2_VH $T=228000 836000 0 0 $X=226000 $Y=834000
+X973 14 M3_M2_VH $T=228000 892000 0 0 $X=226000 $Y=890000
+X974 14 M3_M2_VH $T=228000 932000 0 0 $X=226000 $Y=930000
+X975 58 M3_M2_VH $T=236000 420000 0 0 $X=234000 $Y=418000
+X976 49 M3_M2_VH $T=236000 468000 0 0 $X=234000 $Y=466000
+X977 59 M3_M2_VH $T=236000 476000 0 0 $X=234000 $Y=474000
+X978 35 M3_M2_VH $T=236000 612000 0 0 $X=234000 $Y=610000
+X979 27 M3_M2_VH $T=244000 428000 0 0 $X=242000 $Y=426000
+X980 30 M3_M2_VH $T=244000 548000 0 0 $X=242000 $Y=546000
+X981 61 M3_M2_VH $T=252000 308000 0 0 $X=250000 $Y=306000
+X982 62 M3_M2_VH $T=252000 516000 0 0 $X=250000 $Y=514000
+X983 39 M3_M2_VH $T=260000 340000 0 0 $X=258000 $Y=338000
+X984 63 M3_M2_VH $T=260000 372000 0 0 $X=258000 $Y=370000
+X985 64 M3_M2_VH $T=260000 588000 0 0 $X=258000 $Y=586000
+X986 65 M3_M2_VH $T=260000 740000 0 0 $X=258000 $Y=738000
+X987 25 M3_M2_VH $T=260000 884000 0 0 $X=258000 $Y=882000
+X988 36 M3_M2_VH $T=268000 348000 0 0 $X=266000 $Y=346000
+X989 67 M3_M2_VH $T=268000 492000 0 0 $X=266000 $Y=490000
+X990 68 M3_M2_VH $T=268000 772000 0 0 $X=266000 $Y=770000
+X991 69 M3_M2_VH $T=268000 892000 0 0 $X=266000 $Y=890000
+X992 70 M3_M2_VH $T=276000 332000 0 0 $X=274000 $Y=330000
+X993 66 M3_M2_VH $T=276000 404000 0 0 $X=274000 $Y=402000
+X994 67 M3_M2_VH $T=276000 468000 0 0 $X=274000 $Y=466000
+X995 34 M3_M2_VH $T=276000 484000 0 0 $X=274000 $Y=482000
+X996 48 M3_M2_VH $T=276000 540000 0 0 $X=274000 $Y=538000
+X997 48 M3_M2_VH $T=276000 564000 0 0 $X=274000 $Y=562000
+X998 20 M3_M2_VH $T=276000 572000 0 0 $X=274000 $Y=570000
+X999 52 M3_M2_VH $T=284000 324000 0 0 $X=282000 $Y=322000
+X1000 59 M3_M2_VH $T=284000 476000 0 0 $X=282000 $Y=474000
+X1001 73 M3_M2_VH $T=288000 548000 0 0 $X=286000 $Y=546000
+X1002 74 M3_M2_VH $T=288000 660000 0 0 $X=286000 $Y=658000
+X1003 72 M3_M2_VH $T=292000 444000 0 0 $X=290000 $Y=442000
+X1004 75 M3_M2_VH $T=300000 204000 0 0 $X=298000 $Y=202000
+X1005 56 M3_M2_VH $T=300000 364000 0 0 $X=298000 $Y=362000
+X1006 31 M3_M2_VH $T=300000 756000 0 0 $X=298000 $Y=754000
+X1007 77 M3_M2_VH $T=308000 236000 0 0 $X=306000 $Y=234000
+X1008 78 M3_M2_VH $T=308000 268000 0 0 $X=306000 $Y=266000
+X1009 23 M3_M2_VH $T=308000 396000 0 0 $X=306000 $Y=394000
+X1010 35 M3_M2_VH $T=308000 612000 0 0 $X=306000 $Y=610000
+X1011 65 M3_M2_VH $T=308000 740000 0 0 $X=306000 $Y=738000
+X1012 79 M3_M2_VH $T=308000 860000 0 0 $X=306000 $Y=858000
+X1013 3 M3_M2_VH $T=316000 356000 0 0 $X=314000 $Y=354000
+X1014 32 M3_M2_VH $T=316000 380000 0 0 $X=314000 $Y=378000
+X1015 74 M3_M2_VH $T=316000 548000 0 0 $X=314000 $Y=546000
+X1016 80 M3_M2_VH $T=316000 660000 0 0 $X=314000 $Y=658000
+X1017 48 M3_M2_VH $T=324000 540000 0 0 $X=322000 $Y=538000
+X1018 37 M3_M2_VH $T=324000 732000 0 0 $X=322000 $Y=730000
+X1019 81 M3_M2_VH $T=332000 324000 0 0 $X=330000 $Y=322000
+X1020 82 M3_M2_VH $T=332000 436000 0 0 $X=330000 $Y=434000
+X1021 83 M3_M2_VH $T=332000 476000 0 0 $X=330000 $Y=474000
+X1022 84 M3_M2_VH $T=332000 756000 0 0 $X=330000 $Y=754000
+X1023 55 M3_M2_VH $T=340000 252000 0 0 $X=338000 $Y=250000
+X1024 85 M3_M2_VH $T=340000 356000 0 0 $X=338000 $Y=354000
+X1025 66 M3_M2_VH $T=340000 404000 0 0 $X=338000 $Y=402000
+X1026 86 M3_M2_VH $T=340000 548000 0 0 $X=338000 $Y=546000
+X1027 87 M3_M2_VH $T=340000 660000 0 0 $X=338000 $Y=658000
+X1028 22 M3_M2_VH $T=340000 764000 0 0 $X=338000 $Y=762000
+X1029 88 M3_M2_VH $T=340000 780000 0 0 $X=338000 $Y=778000
+X1030 46 M3_M2_VH $T=348000 212000 0 0 $X=346000 $Y=210000
+X1031 46 M3_M2_VH $T=348000 292000 0 0 $X=346000 $Y=290000
+X1032 70 M3_M2_VH $T=348000 332000 0 0 $X=346000 $Y=330000
+X1033 70 M3_M2_VH $T=348000 348000 0 0 $X=346000 $Y=346000
+X1034 58 M3_M2_VH $T=348000 420000 0 0 $X=346000 $Y=418000
+X1035 80 M3_M2_VH $T=348000 700000 0 0 $X=346000 $Y=698000
+X1036 91 M3_M2_VH $T=348000 804000 0 0 $X=346000 $Y=802000
+X1037 92 M3_M2_VH $T=356000 292000 0 0 $X=354000 $Y=290000
+X1038 72 M3_M2_VH $T=356000 444000 0 0 $X=354000 $Y=442000
+X1039 62 M3_M2_VH $T=356000 516000 0 0 $X=354000 $Y=514000
+X1040 90 M3_M2_VH $T=356000 748000 0 0 $X=354000 $Y=746000
+X1041 75 M3_M2_VH $T=364000 204000 0 0 $X=362000 $Y=202000
+X1042 85 M3_M2_VH $T=364000 276000 0 0 $X=362000 $Y=274000
+X1043 85 M3_M2_VH $T=364000 356000 0 0 $X=362000 $Y=354000
+X1044 52 M3_M2_VH $T=364000 468000 0 0 $X=362000 $Y=466000
+X1045 34 M3_M2_VH $T=364000 484000 0 0 $X=362000 $Y=482000
+X1046 87 M3_M2_VH $T=364000 660000 0 0 $X=362000 $Y=658000
+X1047 93 M3_M2_VH $T=372000 908000 0 0 $X=370000 $Y=906000
+X1048 96 M3_M2_VH $T=380000 260000 0 0 $X=378000 $Y=258000
+X1049 85 M3_M2_VH $T=380000 356000 0 0 $X=378000 $Y=354000
+X1050 82 M3_M2_VH $T=380000 436000 0 0 $X=378000 $Y=434000
+X1051 47 M3_M2_VH $T=380000 500000 0 0 $X=378000 $Y=498000
+X1052 68 M3_M2_VH $T=380000 708000 0 0 $X=378000 $Y=706000
+X1053 97 M3_M2_VH $T=380000 740000 0 0 $X=378000 $Y=738000
+X1054 98 M3_M2_VH $T=380000 820000 0 0 $X=378000 $Y=818000
+X1055 99 M3_M2_VH $T=388000 228000 0 0 $X=386000 $Y=226000
+X1056 100 M3_M2_VH $T=388000 332000 0 0 $X=386000 $Y=330000
+X1057 101 M3_M2_VH $T=388000 428000 0 0 $X=386000 $Y=426000
+X1058 83 M3_M2_VH $T=388000 476000 0 0 $X=386000 $Y=474000
+X1059 102 M3_M2_VH $T=388000 556000 0 0 $X=386000 $Y=554000
+X1060 103 M3_M2_VH $T=388000 644000 0 0 $X=386000 $Y=642000
+X1061 12 M3_M2_VH $T=388000 796000 0 0 $X=386000 $Y=794000
+X1062 104 M3_M2_VH $T=388000 940000 0 0 $X=386000 $Y=938000
+X1063 105 M3_M2_VH $T=396000 476000 0 0 $X=394000 $Y=474000
+X1064 47 M3_M2_VH $T=396000 500000 0 0 $X=394000 $Y=498000
+X1065 106 M3_M2_VH $T=396000 604000 0 0 $X=394000 $Y=602000
+X1066 107 M3_M2_VH $T=396000 668000 0 0 $X=394000 $Y=666000
+X1067 53 M3_M2_VH $T=396000 876000 0 0 $X=394000 $Y=874000
+X1068 54 M3_M2_VH $T=396000 916000 0 0 $X=394000 $Y=914000
+X1069 108 M3_M2_VH $T=404000 196000 0 0 $X=402000 $Y=194000
+X1070 29 M3_M2_VH $T=404000 628000 0 0 $X=402000 $Y=626000
+X1071 84 M3_M2_VH $T=404000 756000 0 0 $X=402000 $Y=754000
+X1072 109 M3_M2_VH $T=412000 284000 0 0 $X=410000 $Y=282000
+X1073 110 M3_M2_VH $T=412000 476000 0 0 $X=410000 $Y=474000
+X1074 111 M3_M2_VH $T=412000 724000 0 0 $X=410000 $Y=722000
+X1075 46 M3_M2_VH $T=420000 212000 0 0 $X=418000 $Y=210000
+X1076 112 M3_M2_VH $T=420000 252000 0 0 $X=418000 $Y=250000
+X1077 81 M3_M2_VH $T=420000 324000 0 0 $X=418000 $Y=322000
+X1078 113 M3_M2_VH $T=420000 532000 0 0 $X=418000 $Y=530000
+X1079 103 M3_M2_VH $T=420000 644000 0 0 $X=418000 $Y=642000
+X1080 79 M3_M2_VH $T=420000 860000 0 0 $X=418000 $Y=858000
+X1081 115 M3_M2_VH $T=420000 964000 0 0 $X=418000 $Y=962000
+X1082 63 M3_M2_VH $T=428000 324000 0 0 $X=426000 $Y=322000
+X1083 100 M3_M2_VH $T=428000 332000 0 0 $X=426000 $Y=330000
+X1084 116 M3_M2_VH $T=428000 420000 0 0 $X=426000 $Y=418000
+X1085 82 M3_M2_VH $T=428000 436000 0 0 $X=426000 $Y=434000
+X1086 64 M3_M2_VH $T=428000 588000 0 0 $X=426000 $Y=586000
+X1087 117 M3_M2_VH $T=428000 716000 0 0 $X=426000 $Y=714000
+X1088 51 M3_M2_VH $T=428000 852000 0 0 $X=426000 $Y=850000
+X1089 45 M3_M2_VH $T=428000 860000 0 0 $X=426000 $Y=858000
+X1090 45 M3_M2_VH $T=428000 924000 0 0 $X=426000 $Y=922000
+X1091 61 M3_M2_VH $T=436000 308000 0 0 $X=434000 $Y=306000
+X1092 118 M3_M2_VH $T=436000 500000 0 0 $X=434000 $Y=498000
+X1093 102 M3_M2_VH $T=436000 556000 0 0 $X=434000 $Y=554000
+X1094 93 M3_M2_VH $T=436000 908000 0 0 $X=434000 $Y=906000
+X1095 14 M3_M2_VH $T=436000 932000 0 0 $X=434000 $Y=930000
+X1096 86 M3_M2_VH $T=444000 540000 0 0 $X=442000 $Y=538000
+X1097 120 M3_M2_VH $T=444000 708000 0 0 $X=442000 $Y=706000
+X1098 85 M3_M2_VH $T=452000 276000 0 0 $X=450000 $Y=274000
+X1099 119 M3_M2_VH $T=452000 540000 0 0 $X=450000 $Y=538000
+X1100 121 M3_M2_VH $T=452000 924000 0 0 $X=450000 $Y=922000
+X1101 122 M3_M2_VH $T=460000 204000 0 0 $X=458000 $Y=202000
+X1102 123 M3_M2_VH $T=460000 412000 0 0 $X=458000 $Y=410000
+X1103 124 M3_M2_VH $T=460000 436000 0 0 $X=458000 $Y=434000
+X1104 73 M3_M2_VH $T=460000 572000 0 0 $X=458000 $Y=570000
+X1105 90 M3_M2_VH $T=460000 748000 0 0 $X=458000 $Y=746000
+X1106 125 M3_M2_VH $T=460000 764000 0 0 $X=458000 $Y=762000
+X1107 126 M3_M2_VH $T=460000 780000 0 0 $X=458000 $Y=778000
+X1108 127 M3_M2_VH $T=460000 916000 0 0 $X=458000 $Y=914000
+X1109 129 M3_M2_VH $T=468000 340000 0 0 $X=466000 $Y=338000
+X1110 130 M3_M2_VH $T=468000 356000 0 0 $X=466000 $Y=354000
+X1111 131 M3_M2_VH $T=468000 380000 0 0 $X=466000 $Y=378000
+X1112 107 M3_M2_VH $T=468000 668000 0 0 $X=466000 $Y=666000
+X1113 132 M3_M2_VH $T=468000 716000 0 0 $X=466000 $Y=714000
+X1114 88 M3_M2_VH $T=468000 772000 0 0 $X=466000 $Y=770000
+X1115 134 M3_M2_VH $T=468000 828000 0 0 $X=466000 $Y=826000
+X1116 135 M3_M2_VH $T=468000 988000 0 0 $X=466000 $Y=986000
+X1117 99 M3_M2_VH $T=476000 228000 0 0 $X=474000 $Y=226000
+X1118 136 M3_M2_VH $T=476000 324000 0 0 $X=474000 $Y=322000
+X1119 101 M3_M2_VH $T=476000 428000 0 0 $X=474000 $Y=426000
+X1120 110 M3_M2_VH $T=476000 476000 0 0 $X=474000 $Y=474000
+X1121 137 M3_M2_VH $T=476000 660000 0 0 $X=474000 $Y=658000
+X1122 124 M3_M2_VH $T=484000 436000 0 0 $X=482000 $Y=434000
+X1123 86 M3_M2_VH $T=484000 548000 0 0 $X=482000 $Y=546000
+X1124 64 M3_M2_VH $T=488000 588000 0 0 $X=486000 $Y=586000
+X1125 112 M3_M2_VH $T=492000 244000 0 0 $X=490000 $Y=242000
+X1126 92 M3_M2_VH $T=492000 292000 0 0 $X=490000 $Y=290000
+X1127 138 M3_M2_VH $T=492000 524000 0 0 $X=490000 $Y=522000
+X1128 105 M3_M2_VH $T=492000 636000 0 0 $X=490000 $Y=634000
+X1129 120 M3_M2_VH $T=492000 708000 0 0 $X=490000 $Y=706000
+X1130 126 M3_M2_VH $T=492000 780000 0 0 $X=490000 $Y=778000
+X1131 44 M3_M2_VH $T=492000 812000 0 0 $X=490000 $Y=810000
+X1132 78 M3_M2_VH $T=500000 268000 0 0 $X=498000 $Y=266000
+X1133 140 M3_M2_VH $T=500000 404000 0 0 $X=498000 $Y=402000
+X1134 91 M3_M2_VH $T=500000 804000 0 0 $X=498000 $Y=802000
+X1135 45 M3_M2_VH $T=500000 820000 0 0 $X=498000 $Y=818000
+X1136 142 M3_M2_VH $T=508000 324000 0 0 $X=506000 $Y=322000
+X1137 129 M3_M2_VH $T=508000 340000 0 0 $X=506000 $Y=338000
+X1138 116 M3_M2_VH $T=508000 420000 0 0 $X=506000 $Y=418000
+X1139 119 M3_M2_VH $T=508000 540000 0 0 $X=506000 $Y=538000
+X1140 80 M3_M2_VH $T=508000 700000 0 0 $X=506000 $Y=698000
+X1141 98 M3_M2_VH $T=508000 788000 0 0 $X=506000 $Y=786000
+X1142 143 M3_M2_VH $T=508000 868000 0 0 $X=506000 $Y=866000
+X1143 121 M3_M2_VH $T=508000 924000 0 0 $X=506000 $Y=922000
+X1144 144 M3_M2_VH $T=516000 212000 0 0 $X=514000 $Y=210000
+X1145 145 M3_M2_VH $T=516000 428000 0 0 $X=514000 $Y=426000
+X1146 146 M3_M2_VH $T=516000 588000 0 0 $X=514000 $Y=586000
+X1147 135 M3_M2_VH $T=516000 1012000 0 0 $X=514000 $Y=1010000
+X1148 122 M3_M2_VH $T=524000 204000 0 0 $X=522000 $Y=202000
+X1149 122 M3_M2_VH $T=524000 244000 0 0 $X=522000 $Y=242000
+X1150 142 M3_M2_VH $T=524000 316000 0 0 $X=522000 $Y=314000
+X1151 147 M3_M2_VH $T=524000 332000 0 0 $X=522000 $Y=330000
+X1152 148 M3_M2_VH $T=524000 556000 0 0 $X=522000 $Y=554000
+X1153 137 M3_M2_VH $T=524000 612000 0 0 $X=522000 $Y=610000
+X1154 149 M3_M2_VH $T=524000 1012000 0 0 $X=522000 $Y=1010000
+X1155 131 M3_M2_VH $T=532000 380000 0 0 $X=530000 $Y=378000
+X1156 150 M3_M2_VH $T=532000 428000 0 0 $X=530000 $Y=426000
+X1157 151 M3_M2_VH $T=532000 444000 0 0 $X=530000 $Y=442000
+X1158 152 M3_M2_VH $T=532000 644000 0 0 $X=530000 $Y=642000
+X1159 154 M3_M2_VH $T=532000 876000 0 0 $X=530000 $Y=874000
+X1160 153 M3_M2_VH $T=532000 1028000 0 0 $X=530000 $Y=1026000
+X1161 109 M3_M2_VH $T=540000 284000 0 0 $X=538000 $Y=282000
+X1162 123 M3_M2_VH $T=540000 412000 0 0 $X=538000 $Y=410000
+X1163 155 M3_M2_VH $T=540000 692000 0 0 $X=538000 $Y=690000
+X1164 156 M3_M2_VH $T=540000 812000 0 0 $X=538000 $Y=810000
+X1165 157 M3_M2_VH $T=540000 900000 0 0 $X=538000 $Y=898000
+X1166 153 M3_M2_VH $T=540000 1044000 0 0 $X=538000 $Y=1042000
+X1167 122 M3_M2_VH $T=548000 244000 0 0 $X=546000 $Y=242000
+X1168 151 M3_M2_VH $T=548000 444000 0 0 $X=546000 $Y=442000
+X1169 97 M3_M2_VH $T=548000 740000 0 0 $X=546000 $Y=738000
+X1170 125 M3_M2_VH $T=548000 764000 0 0 $X=546000 $Y=762000
+X1171 160 M3_M2_VH $T=548000 780000 0 0 $X=546000 $Y=778000
+X1172 161 M3_M2_VH $T=548000 852000 0 0 $X=546000 $Y=850000
+X1173 162 M3_M2_VH $T=548000 1020000 0 0 $X=546000 $Y=1018000
+X1174 163 M3_M2_VH $T=556000 212000 0 0 $X=554000 $Y=210000
+X1175 164 M3_M2_VH $T=556000 300000 0 0 $X=554000 $Y=298000
+X1176 165 M3_M2_VH $T=556000 516000 0 0 $X=554000 $Y=514000
+X1177 166 M3_M2_VH $T=556000 548000 0 0 $X=554000 $Y=546000
+X1178 117 M3_M2_VH $T=556000 652000 0 0 $X=554000 $Y=650000
+X1179 159 M3_M2_VH $T=556000 988000 0 0 $X=554000 $Y=986000
+X1180 70 M3_M2_VH $T=564000 348000 0 0 $X=562000 $Y=346000
+X1181 168 M3_M2_VH $T=564000 364000 0 0 $X=562000 $Y=362000
+X1182 110 M3_M2_VH $T=564000 556000 0 0 $X=562000 $Y=554000
+X1183 106 M3_M2_VH $T=564000 604000 0 0 $X=562000 $Y=602000
+X1184 170 M3_M2_VH $T=572000 460000 0 0 $X=570000 $Y=458000
+X1185 170 M3_M2_VH $T=572000 476000 0 0 $X=570000 $Y=474000
+X1186 69 M3_M2_VH $T=572000 892000 0 0 $X=570000 $Y=890000
+X1187 169 M3_M2_VH $T=580000 220000 0 0 $X=578000 $Y=218000
+X1188 77 M3_M2_VH $T=580000 228000 0 0 $X=578000 $Y=226000
+X1189 152 M3_M2_VH $T=580000 644000 0 0 $X=578000 $Y=642000
+X1190 148 M3_M2_VH $T=580000 708000 0 0 $X=578000 $Y=706000
+X1191 98 M3_M2_VH $T=580000 804000 0 0 $X=578000 $Y=802000
+X1192 149 M3_M2_VH $T=580000 1012000 0 0 $X=578000 $Y=1010000
+X1193 136 M3_M2_VH $T=588000 236000 0 0 $X=586000 $Y=234000
+X1194 96 M3_M2_VH $T=588000 260000 0 0 $X=586000 $Y=258000
+X1195 118 M3_M2_VH $T=588000 500000 0 0 $X=586000 $Y=498000
+X1196 175 M3_M2_VH $T=588000 812000 0 0 $X=586000 $Y=810000
+X1197 174 M3_M2_VH $T=588000 892000 0 0 $X=586000 $Y=890000
+X1198 176 M3_M2_VH $T=588000 1036000 0 0 $X=586000 $Y=1034000
+X1199 108 M3_M2_VH $T=596000 196000 0 0 $X=594000 $Y=194000
+X1200 178 M3_M2_VH $T=596000 500000 0 0 $X=594000 $Y=498000
+X1201 179 M3_M2_VH $T=596000 508000 0 0 $X=594000 $Y=506000
+X1202 180 M3_M2_VH $T=596000 748000 0 0 $X=594000 $Y=746000
+X1203 144 M3_M2_VH $T=604000 204000 0 0 $X=602000 $Y=202000
+X1204 113 M3_M2_VH $T=604000 532000 0 0 $X=602000 $Y=530000
+X1205 166 M3_M2_VH $T=604000 604000 0 0 $X=602000 $Y=602000
+X1206 168 M3_M2_VH $T=612000 428000 0 0 $X=610000 $Y=426000
+X1207 186 M3_M2_VH $T=612000 740000 0 0 $X=610000 $Y=738000
+X1208 183 M3_M2_VH $T=620000 140000 0 0 $X=618000 $Y=138000
+X1209 169 M3_M2_VH $T=620000 220000 0 0 $X=618000 $Y=218000
+X1210 184 M3_M2_VH $T=620000 636000 0 0 $X=618000 $Y=634000
+X1211 185 M3_M2_VH $T=620000 668000 0 0 $X=618000 $Y=666000
+X1212 132 M3_M2_VH $T=620000 716000 0 0 $X=618000 $Y=714000
+X1213 187 M3_M2_VH $T=620000 836000 0 0 $X=618000 $Y=834000
+X1214 189 M3_M2_VH $T=628000 244000 0 0 $X=626000 $Y=242000
+X1215 150 M3_M2_VH $T=628000 436000 0 0 $X=626000 $Y=434000
+X1216 145 M3_M2_VH $T=628000 492000 0 0 $X=626000 $Y=490000
+X1217 196 M3_M2_VH $T=628000 684000 0 0 $X=626000 $Y=682000
+X1218 111 M3_M2_VH $T=628000 724000 0 0 $X=626000 $Y=722000
+X1219 160 M3_M2_VH $T=628000 772000 0 0 $X=626000 $Y=770000
+X1220 190 M3_M2_VH $T=628000 780000 0 0 $X=626000 $Y=778000
+X1221 127 M3_M2_VH $T=628000 916000 0 0 $X=626000 $Y=914000
+X1222 193 M3_M2_VH $T=628000 1004000 0 0 $X=626000 $Y=1002000
+X1223 169 M3_M2_VH $T=636000 220000 0 0 $X=634000 $Y=218000
+X1224 194 M3_M2_VH $T=636000 308000 0 0 $X=634000 $Y=306000
+X1225 195 M3_M2_VH $T=636000 492000 0 0 $X=634000 $Y=490000
+X1226 191 M3_M2_VH $T=636000 788000 0 0 $X=634000 $Y=786000
+X1227 159 M3_M2_VH $T=636000 988000 0 0 $X=634000 $Y=986000
+X1228 185 M3_M2_VH $T=644000 668000 0 0 $X=642000 $Y=666000
+X1229 175 M3_M2_VH $T=644000 756000 0 0 $X=642000 $Y=754000
+X1230 175 M3_M2_VH $T=644000 812000 0 0 $X=642000 $Y=810000
+X1231 155 M3_M2_VH $T=648000 548000 0 0 $X=646000 $Y=546000
+X1232 197 M3_M2_VH $T=652000 292000 0 0 $X=650000 $Y=290000
+X1233 198 M3_M2_VH $T=652000 476000 0 0 $X=650000 $Y=474000
+X1234 143 M3_M2_VH $T=652000 868000 0 0 $X=650000 $Y=866000
+X1235 199 M3_M2_VH $T=660000 252000 0 0 $X=658000 $Y=250000
+X1236 200 M3_M2_VH $T=660000 644000 0 0 $X=658000 $Y=642000
+X1237 174 M3_M2_VH $T=660000 764000 0 0 $X=658000 $Y=762000
+X1238 134 M3_M2_VH $T=660000 812000 0 0 $X=658000 $Y=810000
+X1239 157 M3_M2_VH $T=660000 884000 0 0 $X=658000 $Y=882000
+X1240 104 M3_M2_VH $T=660000 932000 0 0 $X=658000 $Y=930000
+X1241 202 M3_M2_VH $T=660000 1044000 0 0 $X=658000 $Y=1042000
+X1242 203 M3_M2_VH $T=668000 100000 0 0 $X=666000 $Y=98000
+X1243 183 M3_M2_VH $T=668000 140000 0 0 $X=666000 $Y=138000
+X1244 194 M3_M2_VH $T=668000 276000 0 0 $X=666000 $Y=274000
+X1245 194 M3_M2_VH $T=668000 308000 0 0 $X=666000 $Y=306000
+X1246 204 M3_M2_VH $T=668000 316000 0 0 $X=666000 $Y=314000
+X1247 205 M3_M2_VH $T=668000 620000 0 0 $X=666000 $Y=618000
+X1248 184 M3_M2_VH $T=668000 636000 0 0 $X=666000 $Y=634000
+X1249 184 M3_M2_VH $T=668000 652000 0 0 $X=666000 $Y=650000
+X1250 200 M3_M2_VH $T=668000 716000 0 0 $X=666000 $Y=714000
+X1251 154 M3_M2_VH $T=668000 876000 0 0 $X=666000 $Y=874000
+X1252 206 M3_M2_VH $T=668000 900000 0 0 $X=666000 $Y=898000
+X1253 140 M3_M2_VH $T=676000 404000 0 0 $X=674000 $Y=402000
+X1254 168 M3_M2_VH $T=676000 548000 0 0 $X=674000 $Y=546000
+X1255 209 M3_M2_VH $T=676000 636000 0 0 $X=674000 $Y=634000
+X1256 156 M3_M2_VH $T=676000 820000 0 0 $X=674000 $Y=818000
+X1257 115 M3_M2_VH $T=676000 964000 0 0 $X=674000 $Y=962000
+X1258 163 M3_M2_VH $T=684000 212000 0 0 $X=682000 $Y=210000
+X1259 163 M3_M2_VH $T=684000 228000 0 0 $X=682000 $Y=226000
+X1260 204 M3_M2_VH $T=684000 316000 0 0 $X=682000 $Y=314000
+X1261 211 M3_M2_VH $T=684000 348000 0 0 $X=682000 $Y=346000
+X1262 178 M3_M2_VH $T=684000 500000 0 0 $X=682000 $Y=498000
+X1263 160 M3_M2_VH $T=684000 772000 0 0 $X=682000 $Y=770000
+X1264 104 M3_M2_VH $T=684000 932000 0 0 $X=682000 $Y=930000
+X1265 193 M3_M2_VH $T=684000 988000 0 0 $X=682000 $Y=986000
+X1266 193 M3_M2_VH $T=684000 1004000 0 0 $X=682000 $Y=1002000
+X1267 212 M3_M2_VH $T=692000 260000 0 0 $X=690000 $Y=258000
+X1268 179 M3_M2_VH $T=692000 508000 0 0 $X=690000 $Y=506000
+X1269 213 M3_M2_VH $T=692000 700000 0 0 $X=690000 $Y=698000
+X1270 189 M3_M2_VH $T=700000 244000 0 0 $X=698000 $Y=242000
+X1271 216 M3_M2_VH $T=700000 564000 0 0 $X=698000 $Y=562000
+X1272 205 M3_M2_VH $T=700000 620000 0 0 $X=698000 $Y=618000
+X1273 217 M3_M2_VH $T=700000 764000 0 0 $X=698000 $Y=762000
+X1274 161 M3_M2_VH $T=700000 852000 0 0 $X=698000 $Y=850000
+X1275 176 M3_M2_VH $T=700000 1036000 0 0 $X=698000 $Y=1034000
+X1276 220 M3_M2_VH $T=708000 500000 0 0 $X=706000 $Y=498000
+X1277 213 M3_M2_VH $T=708000 644000 0 0 $X=706000 $Y=642000
+X1278 184 M3_M2_VH $T=708000 652000 0 0 $X=706000 $Y=650000
+X1279 222 M3_M2_VH $T=708000 772000 0 0 $X=706000 $Y=770000
+X1280 223 M3_M2_VH $T=708000 884000 0 0 $X=706000 $Y=882000
+X1281 225 M3_M2_VH $T=708000 1052000 0 0 $X=706000 $Y=1050000
+X1282 215 M3_M2_VH $T=716000 148000 0 0 $X=714000 $Y=146000
+X1283 226 M3_M2_VH $T=716000 324000 0 0 $X=714000 $Y=322000
+X1284 138 M3_M2_VH $T=716000 524000 0 0 $X=714000 $Y=522000
+X1285 221 M3_M2_VH $T=716000 652000 0 0 $X=714000 $Y=650000
+X1286 206 M3_M2_VH $T=716000 900000 0 0 $X=714000 $Y=898000
+X1287 164 M3_M2_VH $T=724000 300000 0 0 $X=722000 $Y=298000
+X1288 195 M3_M2_VH $T=724000 492000 0 0 $X=722000 $Y=490000
+X1289 202 M3_M2_VH $T=724000 1044000 0 0 $X=722000 $Y=1042000
+X1290 147 M3_M2_VH $T=740000 332000 0 0 $X=738000 $Y=330000
+X1291 230 M3_M2_VH $T=740000 364000 0 0 $X=738000 $Y=362000
+X1292 229 M3_M2_VH $T=740000 412000 0 0 $X=738000 $Y=410000
+X1293 221 M3_M2_VH $T=740000 652000 0 0 $X=738000 $Y=650000
+X1294 231 M3_M2_VH $T=740000 692000 0 0 $X=738000 $Y=690000
+X1295 190 M3_M2_VH $T=740000 780000 0 0 $X=738000 $Y=778000
+X1296 233 M3_M2_VH $T=740000 820000 0 0 $X=738000 $Y=818000
+X1297 234 M3_M2_VH $T=740000 828000 0 0 $X=738000 $Y=826000
+X1298 235 M3_M2_VH $T=740000 1028000 0 0 $X=738000 $Y=1026000
+X1299 203 M3_M2_VH $T=748000 100000 0 0 $X=746000 $Y=98000
+X1300 236 M3_M2_VH $T=748000 204000 0 0 $X=746000 $Y=202000
+X1301 212 M3_M2_VH $T=748000 260000 0 0 $X=746000 $Y=258000
+X1302 238 M3_M2_VH $T=748000 452000 0 0 $X=746000 $Y=450000
+X1303 146 M3_M2_VH $T=748000 588000 0 0 $X=746000 $Y=586000
+X1304 239 M3_M2_VH $T=748000 636000 0 0 $X=746000 $Y=634000
+X1305 143 M3_M2_VH $T=748000 868000 0 0 $X=746000 $Y=866000
+X1306 241 M3_M2_VH $T=748000 900000 0 0 $X=746000 $Y=898000
+X1307 202 M3_M2_VH $T=748000 1044000 0 0 $X=746000 $Y=1042000
+X1308 211 M3_M2_VH $T=756000 348000 0 0 $X=754000 $Y=346000
+X1309 220 M3_M2_VH $T=756000 500000 0 0 $X=754000 $Y=498000
+X1310 240 M3_M2_VH $T=756000 692000 0 0 $X=754000 $Y=690000
+X1311 222 M3_M2_VH $T=756000 772000 0 0 $X=754000 $Y=770000
+X1312 193 M3_M2_VH $T=756000 988000 0 0 $X=754000 $Y=986000
+X1313 162 M3_M2_VH $T=756000 1020000 0 0 $X=754000 $Y=1018000
+X1314 237 M3_M2_VH $T=764000 220000 0 0 $X=762000 $Y=218000
+X1315 226 M3_M2_VH $T=764000 324000 0 0 $X=762000 $Y=322000
+X1316 242 M3_M2_VH $T=764000 460000 0 0 $X=762000 $Y=458000
+X1317 165 M3_M2_VH $T=764000 516000 0 0 $X=762000 $Y=514000
+X1318 190 M3_M2_VH $T=764000 780000 0 0 $X=762000 $Y=778000
+X1319 249 M3_M2_VH $T=772000 212000 0 0 $X=770000 $Y=210000
+X1320 189 M3_M2_VH $T=772000 244000 0 0 $X=770000 $Y=242000
+X1321 243 M3_M2_VH $T=772000 444000 0 0 $X=770000 $Y=442000
+X1322 245 M3_M2_VH $T=772000 996000 0 0 $X=770000 $Y=994000
+X1323 246 M3_M2_VH $T=780000 100000 0 0 $X=778000 $Y=98000
+X1324 215 M3_M2_VH $T=780000 148000 0 0 $X=778000 $Y=146000
+X1325 250 M3_M2_VH $T=780000 596000 0 0 $X=778000 $Y=594000
+X1326 251 M3_M2_VH $T=780000 660000 0 0 $X=778000 $Y=658000
+X1327 175 M3_M2_VH $T=780000 756000 0 0 $X=778000 $Y=754000
+X1328 191 M3_M2_VH $T=780000 788000 0 0 $X=778000 $Y=786000
+X1329 252 M3_M2_VH $T=780000 804000 0 0 $X=778000 $Y=802000
+X1330 253 M3_M2_VH $T=780000 868000 0 0 $X=778000 $Y=866000
+X1331 255 M3_M2_VH $T=780000 1036000 0 0 $X=778000 $Y=1034000
+X1332 256 M3_M2_VH $T=788000 124000 0 0 $X=786000 $Y=122000
+X1333 237 M3_M2_VH $T=788000 220000 0 0 $X=786000 $Y=218000
+X1334 230 M3_M2_VH $T=788000 364000 0 0 $X=786000 $Y=362000
+X1335 257 M3_M2_VH $T=788000 684000 0 0 $X=786000 $Y=682000
+X1336 196 M3_M2_VH $T=788000 708000 0 0 $X=786000 $Y=706000
+X1337 180 M3_M2_VH $T=788000 748000 0 0 $X=786000 $Y=746000
+X1338 258 M3_M2_VH $T=788000 812000 0 0 $X=786000 $Y=810000
+X1339 163 M3_M2_VH $T=796000 228000 0 0 $X=794000 $Y=226000
+X1340 130 M3_M2_VH $T=796000 340000 0 0 $X=794000 $Y=338000
+X1341 198 M3_M2_VH $T=796000 476000 0 0 $X=794000 $Y=474000
+X1342 252 M3_M2_VH $T=796000 804000 0 0 $X=794000 $Y=802000
+X1343 261 M3_M2_VH $T=796000 924000 0 0 $X=794000 $Y=922000
+X1344 202 M3_M2_VH $T=796000 1044000 0 0 $X=794000 $Y=1042000
+X1345 230 M3_M2_VH $T=804000 364000 0 0 $X=802000 $Y=362000
+X1346 243 M3_M2_VH $T=804000 444000 0 0 $X=802000 $Y=442000
+X1347 253 M3_M2_VH $T=804000 868000 0 0 $X=802000 $Y=866000
+X1348 263 M3_M2_VH $T=812000 484000 0 0 $X=810000 $Y=482000
+X1349 262 M3_M2_VH $T=812000 548000 0 0 $X=810000 $Y=546000
+X1350 265 M3_M2_VH $T=820000 108000 0 0 $X=818000 $Y=106000
+X1351 266 M3_M2_VH $T=820000 140000 0 0 $X=818000 $Y=138000
+X1352 267 M3_M2_VH $T=820000 228000 0 0 $X=818000 $Y=226000
+X1353 268 M3_M2_VH $T=820000 356000 0 0 $X=818000 $Y=354000
+X1354 238 M3_M2_VH $T=820000 452000 0 0 $X=818000 $Y=450000
+X1355 229 M3_M2_VH $T=820000 612000 0 0 $X=818000 $Y=610000
+X1356 240 M3_M2_VH $T=820000 692000 0 0 $X=818000 $Y=690000
+X1357 269 M3_M2_VH $T=820000 772000 0 0 $X=818000 $Y=770000
+X1358 270 M3_M2_VH $T=820000 932000 0 0 $X=818000 $Y=930000
+X1359 199 M3_M2_VH $T=828000 252000 0 0 $X=826000 $Y=250000
+X1360 273 M3_M2_VH $T=828000 332000 0 0 $X=826000 $Y=330000
+X1361 262 M3_M2_VH $T=828000 548000 0 0 $X=826000 $Y=546000
+X1362 209 M3_M2_VH $T=828000 644000 0 0 $X=826000 $Y=642000
+X1363 186 M3_M2_VH $T=828000 740000 0 0 $X=826000 $Y=738000
+X1364 252 M3_M2_VH $T=828000 804000 0 0 $X=826000 $Y=802000
+X1365 261 M3_M2_VH $T=828000 924000 0 0 $X=826000 $Y=922000
+X1366 235 M3_M2_VH $T=828000 1028000 0 0 $X=826000 $Y=1026000
+X1367 236 M3_M2_VH $T=836000 204000 0 0 $X=834000 $Y=202000
+X1368 197 M3_M2_VH $T=836000 292000 0 0 $X=834000 $Y=290000
+X1369 274 M3_M2_VH $T=836000 428000 0 0 $X=834000 $Y=426000
+X1370 275 M3_M2_VH $T=836000 708000 0 0 $X=834000 $Y=706000
+X1371 187 M3_M2_VH $T=836000 836000 0 0 $X=834000 $Y=834000
+X1372 249 M3_M2_VH $T=852000 212000 0 0 $X=850000 $Y=210000
+X1373 237 M3_M2_VH $T=852000 220000 0 0 $X=850000 $Y=218000
+X1374 276 M3_M2_VH $T=852000 268000 0 0 $X=850000 $Y=266000
+X1375 277 M3_M2_VH $T=852000 436000 0 0 $X=850000 $Y=434000
+X1376 241 M3_M2_VH $T=852000 900000 0 0 $X=850000 $Y=898000
+X1377 246 M3_M2_VH $T=860000 100000 0 0 $X=858000 $Y=98000
+X1378 282 M3_M2_VH $T=860000 292000 0 0 $X=858000 $Y=290000
+X1379 283 M3_M2_VH $T=860000 612000 0 0 $X=858000 $Y=610000
+X1380 257 M3_M2_VH $T=860000 684000 0 0 $X=858000 $Y=682000
+X1381 217 M3_M2_VH $T=860000 764000 0 0 $X=858000 $Y=762000
+X1382 223 M3_M2_VH $T=860000 884000 0 0 $X=858000 $Y=882000
+X1383 245 M3_M2_VH $T=860000 1004000 0 0 $X=858000 $Y=1002000
+X1384 266 M3_M2_VH $T=868000 140000 0 0 $X=866000 $Y=138000
+X1385 194 M3_M2_VH $T=868000 276000 0 0 $X=866000 $Y=274000
+X1386 239 M3_M2_VH $T=868000 636000 0 0 $X=866000 $Y=634000
+X1387 287 M3_M2_VH $T=868000 676000 0 0 $X=866000 $Y=674000
+X1388 251 M3_M2_VH $T=868000 692000 0 0 $X=866000 $Y=690000
+X1389 290 M3_M2_VH $T=868000 1028000 0 0 $X=866000 $Y=1026000
+X1390 256 M3_M2_VH $T=876000 260000 0 0 $X=874000 $Y=258000
+X1391 288 M3_M2_VH $T=876000 748000 0 0 $X=874000 $Y=746000
+X1392 284 M3_M2_VH $T=876000 804000 0 0 $X=874000 $Y=802000
+X1393 292 M3_M2_VH $T=878000 596000 0 0 $X=876000 $Y=594000
+X1394 293 M3_M2_VH $T=884000 220000 0 0 $X=882000 $Y=218000
+X1395 295 M3_M2_VH $T=884000 308000 0 0 $X=882000 $Y=306000
+X1396 216 M3_M2_VH $T=884000 564000 0 0 $X=882000 $Y=562000
+X1397 294 M3_M2_VH $T=892000 212000 0 0 $X=890000 $Y=210000
+X1398 298 M3_M2_VH $T=892000 316000 0 0 $X=890000 $Y=314000
+X1399 296 M3_M2_VH $T=892000 940000 0 0 $X=890000 $Y=938000
+X1400 297 M3_M2_VH $T=892000 996000 0 0 $X=890000 $Y=994000
+X1401 301 M3_M2_VH $T=900000 140000 0 0 $X=898000 $Y=138000
+X1402 302 M3_M2_VH $T=900000 260000 0 0 $X=898000 $Y=258000
+X1403 277 M3_M2_VH $T=900000 436000 0 0 $X=898000 $Y=434000
+X1404 292 M3_M2_VH $T=900000 660000 0 0 $X=898000 $Y=658000
+X1405 284 M3_M2_VH $T=900000 804000 0 0 $X=898000 $Y=802000
+X1406 258 M3_M2_VH $T=900000 812000 0 0 $X=898000 $Y=810000
+X1407 225 M3_M2_VH $T=900000 1052000 0 0 $X=898000 $Y=1050000
+X1408 299 M3_M2_VH $T=908000 124000 0 0 $X=906000 $Y=122000
+X1409 293 M3_M2_VH $T=908000 220000 0 0 $X=906000 $Y=218000
+X1410 305 M3_M2_VH $T=908000 300000 0 0 $X=906000 $Y=298000
+X1411 298 M3_M2_VH $T=908000 316000 0 0 $X=906000 $Y=314000
+X1412 303 M3_M2_VH $T=908000 596000 0 0 $X=906000 $Y=594000
+X1413 231 M3_M2_VH $T=908000 700000 0 0 $X=906000 $Y=698000
+X1414 275 M3_M2_VH $T=908000 708000 0 0 $X=906000 $Y=706000
+X1415 307 M3_M2_VH $T=908000 812000 0 0 $X=906000 $Y=810000
+X1416 308 M3_M2_VH $T=908000 916000 0 0 $X=906000 $Y=914000
+X1417 270 M3_M2_VH $T=908000 932000 0 0 $X=906000 $Y=930000
+X1418 309 M3_M2_VH $T=908000 1012000 0 0 $X=906000 $Y=1010000
+X1419 273 M3_M2_VH $T=916000 324000 0 0 $X=914000 $Y=322000
+X1420 310 M3_M2_VH $T=916000 580000 0 0 $X=914000 $Y=578000
+X1421 312 M3_M2_VH $T=916000 908000 0 0 $X=914000 $Y=906000
+X1422 267 M3_M2_VH $T=924000 204000 0 0 $X=922000 $Y=202000
+X1423 313 M3_M2_VH $T=928000 436000 0 0 $X=926000 $Y=434000
+X1424 314 M3_M2_VH $T=928000 548000 0 0 $X=926000 $Y=546000
+X1425 250 M3_M2_VH $T=928000 652000 0 0 $X=926000 $Y=650000
+X1426 318 M3_M2_VH $T=932000 500000 0 0 $X=930000 $Y=498000
+X1427 317 M3_M2_VH $T=932000 788000 0 0 $X=930000 $Y=786000
+X1428 316 M3_M2_VH $T=932000 1004000 0 0 $X=930000 $Y=1002000
+X1429 301 M3_M2_VH $T=940000 132000 0 0 $X=938000 $Y=130000
+X1430 276 M3_M2_VH $T=940000 268000 0 0 $X=938000 $Y=266000
+X1431 318 M3_M2_VH $T=940000 404000 0 0 $X=938000 $Y=402000
+X1432 307 M3_M2_VH $T=940000 740000 0 0 $X=938000 $Y=738000
+X1433 288 M3_M2_VH $T=940000 748000 0 0 $X=938000 $Y=746000
+X1434 290 M3_M2_VH $T=940000 1028000 0 0 $X=938000 $Y=1026000
+X1435 320 M3_M2_VH $T=948000 452000 0 0 $X=946000 $Y=450000
+X1436 321 M3_M2_VH $T=948000 748000 0 0 $X=946000 $Y=746000
+X1437 269 M3_M2_VH $T=948000 772000 0 0 $X=946000 $Y=770000
+X1438 322 M3_M2_VH $T=948000 804000 0 0 $X=946000 $Y=802000
+X1439 308 M3_M2_VH $T=948000 924000 0 0 $X=946000 $Y=922000
+X1440 323 M3_M2_VH $T=948000 1044000 0 0 $X=946000 $Y=1042000
+X1441 294 M3_M2_VH $T=956000 212000 0 0 $X=954000 $Y=210000
+X1442 294 M3_M2_VH $T=956000 252000 0 0 $X=954000 $Y=250000
+X1443 324 M3_M2_VH $T=956000 316000 0 0 $X=954000 $Y=314000
+X1444 263 M3_M2_VH $T=956000 436000 0 0 $X=954000 $Y=434000
+X1445 313 M3_M2_VH $T=956000 548000 0 0 $X=954000 $Y=546000
+X1446 314 M3_M2_VH $T=956000 660000 0 0 $X=954000 $Y=658000
+X1447 319 M3_M2_VH $T=956000 780000 0 0 $X=954000 $Y=778000
+X1448 325 M3_M2_VH $T=956000 924000 0 0 $X=954000 $Y=922000
+X1449 297 M3_M2_VH $T=956000 996000 0 0 $X=954000 $Y=994000
+X1450 268 M3_M2_VH $T=964000 356000 0 0 $X=962000 $Y=354000
+X1451 242 M3_M2_VH $T=964000 460000 0 0 $X=962000 $Y=458000
+X1452 233 M3_M2_VH $T=964000 820000 0 0 $X=962000 $Y=818000
+X1453 302 M3_M2_VH $T=972000 260000 0 0 $X=970000 $Y=258000
+X1454 327 M3_M2_VH $T=972000 516000 0 0 $X=970000 $Y=514000
+X1455 330 M3_M2_VH $T=972000 772000 0 0 $X=970000 $Y=770000
+X1456 328 M3_M2_VH $T=972000 988000 0 0 $X=970000 $Y=986000
+X1457 282 M3_M2_VH $T=980000 292000 0 0 $X=978000 $Y=290000
+X1458 326 M3_M2_VH $T=980000 484000 0 0 $X=978000 $Y=482000
+X1459 322 M3_M2_VH $T=980000 804000 0 0 $X=978000 $Y=802000
+X1460 331 M3_M2_VH $T=980000 820000 0 0 $X=978000 $Y=818000
+X1461 332 M3_M2_VH $T=980000 1028000 0 0 $X=978000 $Y=1026000
+X1462 265 M3_M2_VH $T=988000 108000 0 0 $X=986000 $Y=106000
+X1463 333 M3_M2_VH $T=988000 140000 0 0 $X=986000 $Y=138000
+X1464 334 M3_M2_VH $T=988000 228000 0 0 $X=986000 $Y=226000
+X1465 294 M3_M2_VH $T=988000 252000 0 0 $X=986000 $Y=250000
+X1466 305 M3_M2_VH $T=988000 300000 0 0 $X=986000 $Y=298000
+X1467 314 M3_M2_VH $T=988000 660000 0 0 $X=986000 $Y=658000
+X1468 336 M3_M2_VH $T=988000 732000 0 0 $X=986000 $Y=730000
+X1469 317 M3_M2_VH $T=988000 788000 0 0 $X=986000 $Y=786000
+X1470 337 M3_M2_VH $T=988000 884000 0 0 $X=986000 $Y=882000
+X1471 325 M3_M2_VH $T=988000 924000 0 0 $X=986000 $Y=922000
+X1472 309 M3_M2_VH $T=988000 1012000 0 0 $X=986000 $Y=1010000
+X1473 295 M3_M2_VH $T=996000 308000 0 0 $X=994000 $Y=306000
+X1474 339 M3_M2_VH $T=996000 476000 0 0 $X=994000 $Y=474000
+X1475 326 M3_M2_VH $T=996000 484000 0 0 $X=994000 $Y=482000
+X1476 328 M3_M2_VH $T=996000 988000 0 0 $X=994000 $Y=986000
+X1477 316 M3_M2_VH $T=996000 1004000 0 0 $X=994000 $Y=1002000
+X1478 324 M3_M2_VH $T=1004000 316000 0 0 $X=1002000 $Y=314000
+X1479 283 M3_M2_VH $T=1004000 612000 0 0 $X=1002000 $Y=610000
+X1480 344 M3_M2_VH $T=1012000 252000 0 0 $X=1010000 $Y=250000
+X1481 301 M3_M2_VH $T=1020000 132000 0 0 $X=1018000 $Y=130000
+X1482 345 M3_M2_VH $T=1020000 204000 0 0 $X=1018000 $Y=202000
+X1483 346 M3_M2_VH $T=1020000 236000 0 0 $X=1018000 $Y=234000
+X1484 345 M3_M2_VH $T=1020000 244000 0 0 $X=1018000 $Y=242000
+X1485 287 M3_M2_VH $T=1020000 660000 0 0 $X=1018000 $Y=658000
+X1486 321 M3_M2_VH $T=1020000 764000 0 0 $X=1018000 $Y=762000
+X1487 347 M3_M2_VH $T=1020000 796000 0 0 $X=1018000 $Y=794000
+X1488 348 M3_M2_VH $T=1020000 892000 0 0 $X=1018000 $Y=890000
+X1489 323 M3_M2_VH $T=1020000 1044000 0 0 $X=1018000 $Y=1042000
+X1490 349 M3_M2_VH $T=1028000 164000 0 0 $X=1026000 $Y=162000
+X1491 295 M3_M2_VH $T=1028000 308000 0 0 $X=1026000 $Y=306000
+X1492 303 M3_M2_VH $T=1028000 596000 0 0 $X=1026000 $Y=594000
+X1493 350 M3_M2_VH $T=1028000 628000 0 0 $X=1026000 $Y=626000
+X1494 307 M3_M2_VH $T=1028000 804000 0 0 $X=1026000 $Y=802000
+X1495 351 M3_M2_VH $T=1028000 900000 0 0 $X=1026000 $Y=898000
+X1496 316 M3_M2_VH $T=1028000 1004000 0 0 $X=1026000 $Y=1002000
+X1497 332 M3_M2_VH $T=1028000 1028000 0 0 $X=1026000 $Y=1026000
+X1498 334 M3_M2_VH $T=1036000 228000 0 0 $X=1034000 $Y=226000
+X1499 263 M3_M2_VH $T=1036000 372000 0 0 $X=1034000 $Y=370000
+X1500 352 M3_M2_VH $T=1036000 436000 0 0 $X=1034000 $Y=434000
+X1501 320 M3_M2_VH $T=1036000 452000 0 0 $X=1034000 $Y=450000
+X1502 353 M3_M2_VH $T=1036000 588000 0 0 $X=1034000 $Y=586000
+X1503 234 M3_M2_VH $T=1036000 828000 0 0 $X=1034000 $Y=826000
+X1504 296 M3_M2_VH $T=1036000 940000 0 0 $X=1034000 $Y=938000
+X1505 339 M3_M2_VH $T=1044000 476000 0 0 $X=1042000 $Y=474000
+X1506 331 M3_M2_VH $T=1044000 820000 0 0 $X=1042000 $Y=818000
+X1507 337 M3_M2_VH $T=1044000 884000 0 0 $X=1042000 $Y=882000
+X1508 287 M3_M2_VH $T=1048000 700000 0 0 $X=1046000 $Y=698000
+X1509 333 M3_M2_VH $T=1052000 140000 0 0 $X=1050000 $Y=138000
+X1510 359 M3_M2_VH $T=1052000 244000 0 0 $X=1050000 $Y=242000
+X1511 355 M3_M2_VH $T=1052000 420000 0 0 $X=1050000 $Y=418000
+X1512 350 M3_M2_VH $T=1060000 628000 0 0 $X=1058000 $Y=626000
+X1513 360 M3_M2_VH $T=1060000 660000 0 0 $X=1058000 $Y=658000
+X1514 319 M3_M2_VH $T=1060000 780000 0 0 $X=1058000 $Y=778000
+X1515 361 M3_M2_VH $T=1060000 924000 0 0 $X=1058000 $Y=922000
+X1516 299 M3_M2_VH $T=1068000 124000 0 0 $X=1066000 $Y=122000
+X1517 344 M3_M2_VH $T=1068000 252000 0 0 $X=1066000 $Y=250000
+X1518 353 M3_M2_VH $T=1068000 588000 0 0 $X=1066000 $Y=586000
+X1519 363 M3_M2_VH $T=1068000 676000 0 0 $X=1066000 $Y=674000
+X1520 364 M3_M2_VH $T=1068000 748000 0 0 $X=1066000 $Y=746000
+X1521 365 M3_M2_VH $T=1068000 828000 0 0 $X=1066000 $Y=826000
+X1522 367 M3_M2_VH $T=1076000 316000 0 0 $X=1074000 $Y=314000
+X1523 368 M3_M2_VH $T=1076000 476000 0 0 $X=1074000 $Y=474000
+X1524 369 M3_M2_VH $T=1076000 588000 0 0 $X=1074000 $Y=586000
+X1525 371 M3_M2_VH $T=1076000 700000 0 0 $X=1074000 $Y=698000
+X1526 274 M3_M2_VH $T=1084000 428000 0 0 $X=1082000 $Y=426000
+X1527 352 M3_M2_VH $T=1084000 444000 0 0 $X=1082000 $Y=442000
+X1528 373 M3_M2_VH $T=1084000 852000 0 0 $X=1082000 $Y=850000
+X1529 374 M3_M2_VH $T=1092000 220000 0 0 $X=1090000 $Y=218000
+X1530 375 M3_M2_VH $T=1092000 324000 0 0 $X=1090000 $Y=322000
+X1531 376 M3_M2_VH $T=1092000 564000 0 0 $X=1090000 $Y=562000
+X1532 377 M3_M2_VH $T=1092000 740000 0 0 $X=1090000 $Y=738000
+X1533 380 M3_M2_VH $T=1092000 820000 0 0 $X=1090000 $Y=818000
+X1534 371 M3_M2_VH $T=1092000 876000 0 0 $X=1090000 $Y=874000
+X1535 346 M3_M2_VH $T=1100000 236000 0 0 $X=1098000 $Y=234000
+X1536 379 M3_M2_VH $T=1100000 572000 0 0 $X=1098000 $Y=570000
+X1537 336 M3_M2_VH $T=1100000 732000 0 0 $X=1098000 $Y=730000
+X1538 381 M3_M2_VH $T=1100000 916000 0 0 $X=1098000 $Y=914000
+X1539 359 M3_M2_VH $T=1108000 244000 0 0 $X=1106000 $Y=242000
+X1540 369 M3_M2_VH $T=1108000 588000 0 0 $X=1106000 $Y=586000
+X1541 330 M3_M2_VH $T=1108000 772000 0 0 $X=1106000 $Y=770000
+X1542 355 M3_M2_VH $T=1116000 420000 0 0 $X=1114000 $Y=418000
+X1543 327 M3_M2_VH $T=1116000 516000 0 0 $X=1114000 $Y=514000
+X1544 385 M3_M2_VH $T=1116000 524000 0 0 $X=1114000 $Y=522000
+X1545 376 M3_M2_VH $T=1116000 564000 0 0 $X=1114000 $Y=562000
+X1546 386 M3_M2_VH $T=1116000 604000 0 0 $X=1114000 $Y=602000
+X1547 363 M3_M2_VH $T=1116000 676000 0 0 $X=1114000 $Y=674000
+X1548 348 M3_M2_VH $T=1116000 892000 0 0 $X=1114000 $Y=890000
+X1549 255 M3_M2_VH $T=1116000 1036000 0 0 $X=1114000 $Y=1034000
+X1550 310 M3_M2_VH $T=1124000 580000 0 0 $X=1122000 $Y=578000
+X1551 388 M3_M2_VH $T=1132000 460000 0 0 $X=1130000 $Y=458000
+X1552 389 M3_M2_VH $T=1132000 540000 0 0 $X=1130000 $Y=538000
+X1553 390 M3_M2_VH $T=1132000 780000 0 0 $X=1130000 $Y=778000
+X1554 367 M3_M2_VH $T=1140000 316000 0 0 $X=1138000 $Y=314000
+X1555 375 M3_M2_VH $T=1140000 324000 0 0 $X=1138000 $Y=322000
+X1556 377 M3_M2_VH $T=1140000 740000 0 0 $X=1138000 $Y=738000
+X1557 351 M3_M2_VH $T=1140000 900000 0 0 $X=1138000 $Y=898000
+X1558 312 M3_M2_VH $T=1140000 908000 0 0 $X=1138000 $Y=906000
+X1559 392 M3_M2_VH $T=1148000 252000 0 0 $X=1146000 $Y=250000
+X1560 302 M3_M2_VH $T=1148000 260000 0 0 $X=1146000 $Y=258000
+X1561 385 M3_M2_VH $T=1148000 524000 0 0 $X=1146000 $Y=522000
+X1562 393 M3_M2_VH $T=1148000 772000 0 0 $X=1146000 $Y=770000
+X1563 373 M3_M2_VH $T=1148000 852000 0 0 $X=1146000 $Y=850000
+X1564 349 M3_M2_VH $T=1156000 164000 0 0 $X=1154000 $Y=162000
+X1565 374 M3_M2_VH $T=1156000 220000 0 0 $X=1154000 $Y=218000
+X1566 389 M3_M2_VH $T=1156000 540000 0 0 $X=1154000 $Y=538000
+X1567 364 M3_M2_VH $T=1156000 748000 0 0 $X=1154000 $Y=746000
+X1568 347 M3_M2_VH $T=1156000 796000 0 0 $X=1154000 $Y=794000
+X1569 360 M3_M2_VH $T=1164000 660000 0 0 $X=1162000 $Y=658000
+X1570 396 M3_M2_VH $T=1172000 260000 0 0 $X=1170000 $Y=258000
+X1571 365 M3_M2_VH $T=1172000 828000 0 0 $X=1170000 $Y=826000
+X1572 390 M3_M2_VH $T=1180000 780000 0 0 $X=1178000 $Y=778000
+X1573 381 M3_M2_VH $T=1180000 916000 0 0 $X=1178000 $Y=914000
+X1574 368 M3_M2_VH $T=1188000 332000 0 0 $X=1186000 $Y=330000
+X1575 347 M3_M2_VH $T=1188000 796000 0 0 $X=1186000 $Y=794000
+X1576 361 M3_M2_VH $T=1188000 924000 0 0 $X=1186000 $Y=922000
+X1577 400 M3_M2_VH $T=1196000 244000 0 0 $X=1194000 $Y=242000
+X1578 396 M3_M2_VH $T=1196000 260000 0 0 $X=1194000 $Y=258000
+X1579 401 M3_M2_VH $T=1196000 332000 0 0 $X=1194000 $Y=330000
+X1580 out<1> M3_M2_VH $T=1196000 644000 0 0 $X=1194000 $Y=642000
+X1581 401 M3_M2_VH $T=1204000 308000 0 0 $X=1202000 $Y=306000
+X1582 400 M3_M2_VH $T=1204000 372000 0 0 $X=1202000 $Y=370000
+X1583 out<6> M3_M2_VH $T=1204000 516000 0 0 $X=1202000 $Y=514000
+X1584 out<5> M3_M2_VH $T=1204000 540000 0 0 $X=1202000 $Y=538000
+X1585 379 M3_M2_VH $T=1204000 572000 0 0 $X=1202000 $Y=570000
+X1586 386 M3_M2_VH $T=1204000 604000 0 0 $X=1202000 $Y=602000
+X1587 406 M3_M2_VH $T=1212000 316000 0 0 $X=1210000 $Y=314000
+X1588 380 M3_M2_VH $T=1212000 820000 0 0 $X=1210000 $Y=818000
+X1589 393 M3_M2_VH $T=1220000 780000 0 0 $X=1218000 $Y=778000
+X1590 392 M3_M2_VH $T=1228000 252000 0 0 $X=1226000 $Y=250000
+X1591 out<0> M3_M2_VH $T=1228000 660000 0 0 $X=1226000 $Y=658000
+X1592 406 M3_M2_VH $T=1236000 316000 0 0 $X=1234000 $Y=314000
+X1593 388 M3_M2_VH $T=1236000 460000 0 0 $X=1234000 $Y=458000
+X1594 out<4> M3_M2_VH $T=1236000 564000 0 0 $X=1234000 $Y=562000
+X1595 out<2> M3_M2_VH $T=1236000 612000 0 0 $X=1234000 $Y=610000
+X1596 out<7> M3_M2_VH $T=1244000 492000 0 0 $X=1242000 $Y=490000
+X1597 out<3> M3_M2_VH $T=1244000 588000 0 0 $X=1242000 $Y=586000
+X1598 clk M4_M3_HV $T=12000 540000 0 0 $X=10000 $Y=538000
+X1599 clk M4_M3_HV $T=12000 588000 0 0 $X=10000 $Y=586000
+X1600 33 M4_M3_HV $T=172000 436000 0 0 $X=170000 $Y=434000
+X1601 33 M4_M3_HV $T=172000 492000 0 0 $X=170000 $Y=490000
+X1602 49 M4_M3_HV $T=236000 468000 0 0 $X=234000 $Y=466000
+X1603 49 M4_M3_HV $T=236000 676000 0 0 $X=234000 $Y=674000
+X1604 67 M4_M3_HV $T=268000 468000 0 0 $X=266000 $Y=466000
+X1605 67 M4_M3_HV $T=268000 492000 0 0 $X=266000 $Y=490000
+X1606 73 M4_M3_HV $T=292000 548000 0 0 $X=290000 $Y=546000
+X1607 73 M4_M3_HV $T=292000 572000 0 0 $X=290000 $Y=570000
+X1608 74 M4_M3_HV $T=308000 548000 0 0 $X=306000 $Y=546000
+X1609 74 M4_M3_HV $T=308000 660000 0 0 $X=306000 $Y=658000
+X1610 80 M4_M3_HV $T=316000 660000 0 0 $X=314000 $Y=658000
+X1611 80 M4_M3_HV $T=316000 700000 0 0 $X=314000 $Y=698000
+X1612 52 M4_M3_HV $T=324000 324000 0 0 $X=322000 $Y=322000
+X1613 52 M4_M3_HV $T=324000 468000 0 0 $X=322000 $Y=466000
+X1614 22 M4_M3_HV $T=340000 764000 0 0 $X=338000 $Y=762000
+X1615 22 M4_M3_HV $T=340000 828000 0 0 $X=338000 $Y=826000
+X1616 68 M4_M3_HV $T=380000 708000 0 0 $X=378000 $Y=706000
+X1617 68 M4_M3_HV $T=380000 772000 0 0 $X=378000 $Y=770000
+X1618 105 M4_M3_HV $T=404000 476000 0 0 $X=402000 $Y=474000
+X1619 105 M4_M3_HV $T=404000 636000 0 0 $X=402000 $Y=634000
+X1620 98 M4_M3_HV $T=412000 788000 0 0 $X=410000 $Y=786000
+X1621 98 M4_M3_HV $T=412000 820000 0 0 $X=410000 $Y=818000
+X1622 63 M4_M3_HV $T=428000 324000 0 0 $X=426000 $Y=322000
+X1623 63 M4_M3_HV $T=428000 372000 0 0 $X=426000 $Y=370000
+X1624 45 M4_M3_HV $T=428000 820000 0 0 $X=426000 $Y=818000
+X1625 45 M4_M3_HV $T=428000 860000 0 0 $X=426000 $Y=858000
+X1626 117 M4_M3_HV $T=444000 652000 0 0 $X=442000 $Y=650000
+X1627 117 M4_M3_HV $T=444000 716000 0 0 $X=442000 $Y=714000
+X1628 135 M4_M3_HV $T=468000 988000 0 0 $X=466000 $Y=986000
+X1629 135 M4_M3_HV $T=468000 1012000 0 0 $X=466000 $Y=1010000
+X1630 137 M4_M3_HV $T=476000 612000 0 0 $X=474000 $Y=610000
+X1631 137 M4_M3_HV $T=476000 660000 0 0 $X=474000 $Y=658000
+X1632 136 M4_M3_HV $T=500000 236000 0 0 $X=498000 $Y=234000
+X1633 136 M4_M3_HV $T=500000 324000 0 0 $X=498000 $Y=322000
+X1634 145 M4_M3_HV $T=524000 428000 0 0 $X=522000 $Y=426000
+X1635 145 M4_M3_HV $T=524000 492000 0 0 $X=522000 $Y=490000
+X1636 148 M4_M3_HV $T=548000 556000 0 0 $X=546000 $Y=554000
+X1637 148 M4_M3_HV $T=548000 708000 0 0 $X=546000 $Y=706000
+X1638 110 M4_M3_HV $T=556000 476000 0 0 $X=554000 $Y=474000
+X1639 110 M4_M3_HV $T=556000 556000 0 0 $X=554000 $Y=554000
+X1640 166 M4_M3_HV $T=604000 548000 0 0 $X=602000 $Y=546000
+X1641 166 M4_M3_HV $T=604000 604000 0 0 $X=602000 $Y=602000
+X1642 168 M4_M3_HV $T=612000 364000 0 0 $X=610000 $Y=362000
+X1643 168 M4_M3_HV $T=612000 428000 0 0 $X=610000 $Y=426000
+X1644 196 M4_M3_HV $T=628000 684000 0 0 $X=626000 $Y=682000
+X1645 196 M4_M3_HV $T=628000 708000 0 0 $X=626000 $Y=706000
+X1646 155 M4_M3_HV $T=644000 548000 0 0 $X=642000 $Y=546000
+X1647 155 M4_M3_HV $T=644000 692000 0 0 $X=642000 $Y=690000
+X1648 134 M4_M3_HV $T=652000 812000 0 0 $X=650000 $Y=810000
+X1649 134 M4_M3_HV $T=652000 828000 0 0 $X=650000 $Y=826000
+X1650 174 M4_M3_HV $T=660000 764000 0 0 $X=658000 $Y=762000
+X1651 174 M4_M3_HV $T=660000 892000 0 0 $X=658000 $Y=890000
+X1652 200 M4_M3_HV $T=668000 644000 0 0 $X=666000 $Y=642000
+X1653 200 M4_M3_HV $T=668000 716000 0 0 $X=666000 $Y=714000
+X1654 168 M4_M3_HV $T=676000 364000 0 0 $X=674000 $Y=362000
+X1655 168 M4_M3_HV $T=676000 548000 0 0 $X=674000 $Y=546000
+X1656 213 M4_M3_HV $T=708000 644000 0 0 $X=706000 $Y=642000
+X1657 213 M4_M3_HV $T=708000 700000 0 0 $X=706000 $Y=698000
+X1658 229 M4_M3_HV $T=812000 412000 0 0 $X=810000 $Y=410000
+X1659 229 M4_M3_HV $T=812000 612000 0 0 $X=810000 $Y=610000
+X1660 251 M4_M3_HV $T=828000 660000 0 0 $X=826000 $Y=658000
+X1661 251 M4_M3_HV $T=828000 692000 0 0 $X=826000 $Y=690000
+X1662 250 M4_M3_HV $T=868000 596000 0 0 $X=866000 $Y=594000
+X1663 250 M4_M3_HV $T=868000 652000 0 0 $X=866000 $Y=650000
+X1664 256 M4_M3_HV $T=876000 124000 0 0 $X=874000 $Y=122000
+X1665 256 M4_M3_HV $T=876000 260000 0 0 $X=874000 $Y=258000
+X1666 292 M4_M3_HV $T=884000 596000 0 0 $X=882000 $Y=594000
+X1667 292 M4_M3_HV $T=884000 660000 0 0 $X=882000 $Y=658000
+X1668 318 M4_M3_HV $T=932000 404000 0 0 $X=930000 $Y=402000
+X1669 318 M4_M3_HV $T=932000 500000 0 0 $X=930000 $Y=498000
+X1670 314 M4_M3_HV $T=932000 548000 0 0 $X=930000 $Y=546000
+X1671 314 M4_M3_HV $T=932000 660000 0 0 $X=930000 $Y=658000
+X1672 307 M4_M3_HV $T=940000 740000 0 0 $X=938000 $Y=738000
+X1673 307 M4_M3_HV $T=940000 812000 0 0 $X=938000 $Y=810000
+X1674 313 M4_M3_HV $T=948000 436000 0 0 $X=946000 $Y=434000
+X1675 313 M4_M3_HV $T=948000 548000 0 0 $X=946000 $Y=546000
+X1676 263 M4_M3_HV $T=964000 372000 0 0 $X=962000 $Y=370000
+X1677 263 M4_M3_HV $T=964000 436000 0 0 $X=962000 $Y=434000
+X1678 263 M4_M3_HV $T=964000 484000 0 0 $X=962000 $Y=482000
+X1679 345 M4_M3_HV $T=1020000 204000 0 0 $X=1018000 $Y=202000
+X1680 345 M4_M3_HV $T=1020000 244000 0 0 $X=1018000 $Y=242000
+X1681 287 M4_M3_HV $T=1020000 660000 0 0 $X=1018000 $Y=658000
+X1682 287 M4_M3_HV $T=1020000 676000 0 0 $X=1018000 $Y=674000
+X1683 287 M4_M3_HV $T=1020000 700000 0 0 $X=1018000 $Y=698000
+X1684 371 M4_M3_HV $T=1092000 700000 0 0 $X=1090000 $Y=698000
+X1685 371 M4_M3_HV $T=1092000 876000 0 0 $X=1090000 $Y=874000
+X1686 368 M4_M3_HV $T=1116000 332000 0 0 $X=1114000 $Y=330000
+X1687 368 M4_M3_HV $T=1116000 476000 0 0 $X=1114000 $Y=474000
+X1688 401 M4_M3_HV $T=1196000 308000 0 0 $X=1194000 $Y=306000
+X1689 401 M4_M3_HV $T=1196000 332000 0 0 $X=1194000 $Y=330000
+X1690 400 M4_M3_HV $T=1204000 244000 0 0 $X=1202000 $Y=242000
+X1691 400 M4_M3_HV $T=1204000 372000 0 0 $X=1202000 $Y=370000
+X1692 enable VSS VDD 16 414 BUFX2 $T=84000 456000 0 0 $X=84000 $Y=453000
+X1693 8 VSS VDD 17 415 BUFX2 $T=84000 568000 0 0 $X=84000 $Y=565000
+X1694 18 VSS VDD 26 416 BUFX2 $T=124000 344000 1 0 $X=124000 $Y=285000
+X1695 13 VSS VDD 30 417 BUFX2 $T=124000 568000 0 0 $X=124000 $Y=565000
+X1696 16 VSS VDD 18 418 BUFX2 $T=144000 232000 0 0 $X=144000 $Y=229000
+X1697 24 VSS VDD 37 419 BUFX2 $T=144000 792000 0 0 $X=144000 $Y=789000
+X1698 44 VSS VDD 53 420 BUFX2 $T=184000 792000 0 0 $X=184000 $Y=789000
+X1699 72 VSS VDD 32 421 BUFX2 $T=284000 456000 1 0 $X=284000 $Y=397000
+X1700 90 VSS VDD 97 422 BUFX2 $T=344000 792000 1 0 $X=344000 $Y=733000
+X1701 93 VSS VDD 54 423 BUFX2 $T=364000 904000 0 0 $X=364000 $Y=901000
+X1702 95 VSS VDD 46 424 BUFX2 $T=384000 232000 1 0 $X=384000 $Y=173000
+X1703 109 VSS VDD 61 425 BUFX2 $T=404000 344000 1 0 $X=404000 $Y=285000
+X1704 29 VSS VDD 102 426 BUFX2 $T=404000 568000 1 0 $X=404000 $Y=509000
+X1705 53 VSS VDD 14 427 BUFX2 $T=404000 904000 0 0 $X=404000 $Y=901000
+X1706 82 VSS VDD 124 428 BUFX2 $T=424000 456000 1 0 $X=424000 $Y=397000
+X1707 64 VSS VDD 73 429 BUFX2 $T=424000 568000 0 0 $X=424000 $Y=565000
+X1708 45 VSS VDD 127 430 BUFX2 $T=424000 904000 1 0 $X=424000 $Y=845000
+X1709 130 VSS VDD 140 431 BUFX2 $T=464000 344000 0 0 $X=464000 $Y=341000
+X1710 135 VSS VDD 44 432 BUFX2 $T=464000 904000 0 0 $X=464000 $Y=901000
+X1711 139 VSS VDD 135 433 BUFX2 $T=484000 1016000 0 0 $X=484000 $Y=1013000
+X1712 153 VSS VDD 159 434 BUFX2 $T=524000 1016000 1 0 $X=524000 $Y=957000
+X1713 158 VSS VDD 69 435 BUFX2 $T=544000 904000 0 0 $X=544000 $Y=901000
+X1714 136 VSS VDD 183 436 BUFX2 $T=584000 120000 0 0 $X=584000 $Y=117000
+X1715 118 VSS VDD 184 437 BUFX2 $T=584000 568000 0 0 $X=584000 $Y=565000
+X1716 172 VSS VDD 187 438 BUFX2 $T=584000 904000 1 0 $X=584000 $Y=845000
+X1717 127 VSS VDD 104 439 BUFX2 $T=624000 904000 0 0 $X=624000 $Y=901000
+X1718 188 VSS VDD 203 440 BUFX2 $T=644000 232000 1 0 $X=644000 $Y=173000
+X1719 201 VSS VDD 176 441 BUFX2 $T=664000 1016000 0 0 $X=664000 $Y=1013000
+X1720 207 VSS VDD 215 442 BUFX2 $T=684000 120000 1 0 $X=684000 $Y=61000
+X1721 214 VSS VDD 228 443 BUFX2 $T=704000 120000 0 0 $X=704000 $Y=117000
+X1722 184 VSS VDD 231 444 BUFX2 $T=704000 680000 1 0 $X=704000 $Y=621000
+X1723 222 VSS VDD 190 445 BUFX2 $T=704000 792000 1 0 $X=704000 $Y=733000
+X1724 225 VSS VDD 235 446 BUFX2 $T=704000 1016000 0 0 $X=704000 $Y=1013000
+X1725 237 VSS VDD 248 447 BUFX2 $T=744000 232000 1 0 $X=744000 $Y=173000
+X1726 243 VSS VDD 260 448 BUFX2 $T=764000 456000 1 0 $X=764000 $Y=397000
+X1727 218 VSS VDD 261 449 BUFX2 $T=764000 904000 0 0 $X=764000 $Y=901000
+X1728 256 VSS VDD 265 450 BUFX2 $T=784000 120000 1 0 $X=784000 $Y=61000
+X1729 244 VSS VDD 238 451 BUFX2 $T=784000 568000 0 0 $X=784000 $Y=565000
+X1730 180 VSS VDD 269 452 BUFX2 $T=784000 792000 1 0 $X=784000 $Y=733000
+X1731 290 VSS VDD 225 453 BUFX2 $T=864000 1016000 0 0 $X=864000 $Y=1013000
+X1732 300 VSS VDD 311 454 BUFX2 $T=904000 120000 0 0 $X=904000 $Y=117000
+X1733 267 VSS VDD 294 455 BUFX2 $T=924000 232000 1 0 $X=924000 $Y=173000
+X1734 320 VSS VDD 302 456 BUFX2 $T=944000 344000 0 0 $X=944000 $Y=341000
+X1735 242 VSS VDD 339 457 BUFX2 $T=964000 456000 0 0 $X=964000 $Y=453000
+X1736 333 VSS VDD 345 458 BUFX2 $T=984000 120000 0 0 $X=984000 $Y=117000
+X1737 341 VSS VDD 316 459 BUFX2 $T=1004000 904000 1 0 $X=1004000 $Y=845000
+X1738 338 VSS VDD 296 460 BUFX2 $T=1004000 1016000 1 0 $X=1004000 $Y=957000
+X1739 342 VSS VDD 358 461 BUFX2 $T=1024000 120000 1 0 $X=1024000 $Y=61000
+X1740 343 VSS VDD 354 462 BUFX2 $T=1024000 232000 1 0 $X=1024000 $Y=173000
+X1741 350 VSS VDD 360 463 BUFX2 $T=1024000 680000 1 0 $X=1024000 $Y=621000
+X1742 332 VSS VDD 362 464 BUFX2 $T=1024000 1016000 0 0 $X=1024000 $Y=1013000
+X1743 287 VSS VDD 371 465 BUFX2 $T=1044000 680000 0 0 $X=1044000 $Y=677000
+X1744 366 VSS VDD 383 466 BUFX2 $T=1084000 120000 0 0 $X=1084000 $Y=117000
+X1745 375 VSS VDD 355 467 BUFX2 $T=1084000 344000 1 0 $X=1084000 $Y=285000
+X1746 370 VSS VDD 386 468 BUFX2 $T=1084000 680000 1 0 $X=1084000 $Y=621000
+X1747 372 VSS VDD 255 469 BUFX2 $T=1084000 1016000 0 0 $X=1084000 $Y=1013000
+X1748 382 VSS VDD 349 470 BUFX2 $T=1124000 232000 1 0 $X=1124000 $Y=173000
+X1749 302 VSS VDD 398 471 BUFX2 $T=1144000 344000 1 0 $X=1144000 $Y=285000
+X1750 347 VSS VDD 381 472 BUFX2 $T=1144000 904000 0 0 $X=1144000 $Y=901000
+X1751 396 VSS VDD 400 473 BUFX2 $T=1164000 232000 0 0 $X=1164000 $Y=229000
+X1752 391 VSS VDD 404 474 BUFX2 $T=1164000 568000 0 0 $X=1164000 $Y=565000
+X1753 399 VSS VDD out<0> 475 BUFX2 $T=1184000 680000 0 0 $X=1184000 $Y=677000
+X1754 401 VSS VDD 406 476 BUFX2 $T=1204000 232000 0 0 $X=1204000 $Y=229000
+X1755 406 VSS VDD 392 477 BUFX2 $T=1204000 344000 1 0 $X=1204000 $Y=285000
+X1756 401 VSS VDD 407 478 BUFX2 $T=1204000 344000 0 0 $X=1204000 $Y=341000
+X1757 400 VSS VDD 388 479 BUFX2 $T=1204000 456000 1 0 $X=1204000 $Y=397000
+X1758 386 VSS VDD out<3> 480 BUFX2 $T=1204000 568000 0 0 $X=1204000 $Y=565000
+X1759 82 66 VSS VDD INVX1 $T=324000 456000 1 0 $X=324000 $Y=397000
+X1760 75 95 VSS VDD INVX1 $T=364000 232000 1 0 $X=364000 $Y=173000
+X1761 121 128 VSS VDD INVX1 $T=444000 904000 0 0 $X=444000 $Y=901000
+X1762 131 101 VSS VDD INVX1 $T=464000 456000 1 0 $X=464000 $Y=397000
+X1763 149 153 VSS VDD INVX1 $T=524000 1016000 0 0 $X=524000 $Y=1013000
+X1764 106 152 VSS VDD INVX1 $T=564000 568000 0 0 $X=564000 $Y=565000
+X1765 203 207 VSS VDD INVX1 $T=664000 120000 1 0 $X=664000 $Y=61000
+X1766 156 210 VSS VDD INVX1 $T=664000 904000 0 0 $X=664000 $Y=901000
+X1767 208 205 VSS VDD INVX1 $T=684000 680000 1 0 $X=684000 $Y=621000
+X1768 240 222 VSS VDD INVX1 $T=744000 792000 1 0 $X=744000 $Y=733000
+X1769 190 191 VSS VDD INVX1 $T=764000 792000 1 0 $X=764000 $Y=733000
+X1770 237 259 VSS VDD INVX1 $T=784000 232000 1 0 $X=784000 $Y=173000
+X1771 284 289 VSS VDD INVX1 $T=864000 904000 1 0 $X=864000 $Y=845000
+X1772 299 366 VSS VDD INVX1 $T=1064000 120000 0 0 $X=1064000 $Y=117000
+X1773 363 370 VSS VDD INVX1 $T=1064000 680000 1 0 $X=1064000 $Y=621000
+X1774 362 372 VSS VDD INVX1 $T=1064000 1016000 0 0 $X=1064000 $Y=1013000
+X1775 369 376 VSS VDD INVX1 $T=1104000 568000 0 0 $X=1104000 $Y=565000
+X1776 387 375 VSS VDD INVX1 $T=1124000 344000 1 0 $X=1124000 $Y=285000
+X1777 310 391 VSS VDD INVX1 $T=1124000 568000 0 0 $X=1124000 $Y=565000
+X1778 392 374 VSS VDD INVX1 $T=1144000 232000 0 0 $X=1144000 $Y=229000
+X1779 368 396 VSS VDD INVX1 $T=1184000 344000 1 0 $X=1184000 $Y=285000
+X1780 398 401 VSS VDD INVX1 $T=1184000 344000 0 0 $X=1184000 $Y=341000
+X1781 409 399 VSS VDD INVX1 $T=1224000 792000 1 0 $X=1224000 $Y=733000
+X1782 13 VDD VSS 21 31 71 481 482 483 484
++ 485 486 487 787 786 788 DFFX1 $T=104000 680000 0 0 $X=104000 $Y=677000
+X1783 4 VDD VSS 65 31 107 488 489 490 491
++ 492 493 494 790 789 791 DFFX1 $T=224000 792000 0 0 $X=224000 $Y=789000
+X1784 129 VDD VSS 131 168 140 495 496 497 498
++ 499 500 501 793 792 794 DFFX1 $T=504000 344000 0 0 $X=504000 $Y=341000
+X1785 170 VDD VSS 181 168 229 502 503 504 505
++ 506 507 508 796 795 797 DFFX1 $T=564000 456000 1 0 $X=564000 $Y=397000
+X1786 244 VDD VSS 243 263 318 509 510 511 512
++ 513 514 515 799 798 800 DFFX1 $T=764000 456000 0 0 $X=764000 $Y=453000
+X1787 262 VDD VSS 278 292 329 516 517 518 519
++ 520 521 522 802 801 803 DFFX1 $T=824000 568000 0 0 $X=824000 $Y=565000
+X1788 335 VDD VSS 340 263 385 523 524 525 526
++ 527 528 529 805 804 806 DFFX1 $T=984000 344000 0 0 $X=984000 $Y=341000
+X1789 337 VDD VSS 373 371 380 530 531 532 533
++ 534 535 536 808 807 809 DFFX1 $T=1044000 904000 1 0 $X=1044000 $Y=845000
+X1790 104 111 VSS VDD 115 810 NOR2X1 $T=384000 904000 1 0 $X=384000 $Y=845000
+X1791 161 172 VSS VDD 174 811 NOR2X1 $T=544000 904000 1 0 $X=544000 $Y=845000
+X1792 144 188 VSS VDD 169 812 NOR2X1 $T=604000 232000 1 0 $X=604000 $Y=173000
+X1793 163 219 VSS VDD 228 813 NOR2X1 $T=684000 232000 1 0 $X=684000 $Y=173000
+X1794 294 293 VSS VDD 311 814 NOR2X1 $T=884000 232000 1 0 $X=884000 $Y=173000
+X1795 296 308 VSS VDD 312 815 NOR2X1 $T=884000 904000 1 0 $X=884000 $Y=845000
+X1796 297 309 VSS VDD 304 816 NOR2X1 $T=884000 1016000 1 0 $X=884000 $Y=957000
+X1797 265 342 VSS VDD 301 817 NOR2X1 $T=984000 120000 1 0 $X=984000 $Y=61000
+X1798 334 343 VSS VDD 346 818 NOR2X1 $T=984000 232000 1 0 $X=984000 $Y=173000
+X1799 349 333 VSS VDD 358 819 NOR2X1 $T=1024000 120000 0 0 $X=1024000 $Y=117000
+X1800 374 382 VSS VDD 383 820 NOR2X1 $T=1084000 232000 1 0 $X=1084000 $Y=173000
+X1801 32 VSS VDD 38 46 NAND2X1 $T=164000 344000 1 0 $X=164000 $Y=285000
+X1802 76 VSS VDD 84 22 NAND2X1 $T=304000 792000 1 0 $X=304000 $Y=733000
+X1803 85 VSS VDD 100 108 NAND2X1 $T=364000 344000 1 0 $X=364000 $Y=285000
+X1804 34 VSS VDD 83 47 NAND2X1 $T=364000 568000 1 0 $X=364000 $Y=509000
+X1805 128 VSS VDD 139 149 NAND2X1 $T=484000 1016000 1 0 $X=484000 $Y=957000
+X1806 121 VSS VDD 158 159 NAND2X1 $T=504000 904000 0 0 $X=504000 $Y=901000
+X1807 182 VSS VDD 192 159 NAND2X1 $T=604000 1016000 1 0 $X=604000 $Y=957000
+X1808 193 VSS VDD 201 202 NAND2X1 $T=624000 1016000 0 0 $X=624000 $Y=1013000
+X1809 183 VSS VDD 214 215 NAND2X1 $T=664000 120000 0 0 $X=664000 $Y=117000
+X1810 236 VSS VDD 247 215 NAND2X1 $T=744000 120000 0 0 $X=744000 $Y=117000
+X1811 202 VSS VDD 254 255 NAND2X1 $T=744000 1016000 0 0 $X=744000 $Y=1013000
+X1812 272 VSS VDD 281 246 NAND2X1 $T=824000 120000 1 0 $X=824000 $Y=61000
+X1813 266 VSS VDD 300 301 NAND2X1 $T=864000 120000 0 0 $X=864000 $Y=117000
+X1814 304 VSS VDD 290 297 NAND2X1 $T=904000 1016000 0 0 $X=904000 $Y=1013000
+X1815 VDD VSS DECAP4 $T=64000 120000 1 0 $X=64000 $Y=61000
+X1816 VDD VSS DECAP4 $T=64000 120000 0 0 $X=64000 $Y=117000
+X1817 VDD VSS DECAP4 $T=64000 232000 1 0 $X=64000 $Y=173000
+X1818 VDD VSS DECAP4 $T=64000 232000 0 0 $X=64000 $Y=229000
+X1819 VDD VSS DECAP4 $T=64000 792000 1 0 $X=64000 $Y=733000
+X1820 VDD VSS DECAP4 $T=64000 792000 0 0 $X=64000 $Y=789000
+X1821 VDD VSS DECAP4 $T=64000 904000 0 0 $X=64000 $Y=901000
+X1822 VDD VSS DECAP4 $T=64000 1016000 1 0 $X=64000 $Y=957000
+X1823 VDD VSS DECAP4 $T=64000 1016000 0 0 $X=64000 $Y=1013000
+X1824 VDD VSS DECAP4 $T=144000 120000 1 0 $X=144000 $Y=61000
+X1825 VDD VSS DECAP4 $T=144000 120000 0 0 $X=144000 $Y=117000
+X1826 VDD VSS DECAP4 $T=144000 232000 1 0 $X=144000 $Y=173000
+X1827 VDD VSS DECAP4 $T=144000 904000 0 0 $X=144000 $Y=901000
+X1828 VDD VSS DECAP4 $T=144000 1016000 1 0 $X=144000 $Y=957000
+X1829 VDD VSS DECAP4 $T=144000 1016000 0 0 $X=144000 $Y=1013000
+X1830 VDD VSS DECAP4 $T=224000 120000 1 0 $X=224000 $Y=61000
+X1831 VDD VSS DECAP4 $T=224000 120000 0 0 $X=224000 $Y=117000
+X1832 VDD VSS DECAP4 $T=224000 232000 1 0 $X=224000 $Y=173000
+X1833 VDD VSS DECAP4 $T=224000 904000 0 0 $X=224000 $Y=901000
+X1834 VDD VSS DECAP4 $T=224000 1016000 1 0 $X=224000 $Y=957000
+X1835 VDD VSS DECAP4 $T=224000 1016000 0 0 $X=224000 $Y=1013000
+X1836 VDD VSS DECAP4 $T=304000 120000 1 0 $X=304000 $Y=61000
+X1837 VDD VSS DECAP4 $T=304000 120000 0 0 $X=304000 $Y=117000
+X1838 VDD VSS DECAP4 $T=304000 1016000 1 0 $X=304000 $Y=957000
+X1839 VDD VSS DECAP4 $T=304000 1016000 0 0 $X=304000 $Y=1013000
+X1840 VDD VSS DECAP4 $T=384000 120000 1 0 $X=384000 $Y=61000
+X1841 VDD VSS DECAP4 $T=384000 120000 0 0 $X=384000 $Y=117000
+X1842 VDD VSS DECAP4 $T=384000 1016000 1 0 $X=384000 $Y=957000
+X1843 VDD VSS DECAP4 $T=384000 1016000 0 0 $X=384000 $Y=1013000
+X1844 VDD VSS DECAP4 $T=464000 120000 1 0 $X=464000 $Y=61000
+X1845 VDD VSS DECAP4 $T=464000 120000 0 0 $X=464000 $Y=117000
+X1846 VDD VSS DECAP4 $T=544000 120000 1 0 $X=544000 $Y=61000
+X1847 VDD VSS DECAP4 $T=1044000 1016000 1 0 $X=1044000 $Y=957000
+X1848 VDD VSS DECAP4 $T=1064000 120000 1 0 $X=1064000 $Y=61000
+X1849 VDD VSS DECAP4 $T=1124000 120000 0 0 $X=1124000 $Y=117000
+X1850 VDD VSS DECAP4 $T=1124000 1016000 1 0 $X=1124000 $Y=957000
+X1851 VDD VSS DECAP4 $T=1124000 1016000 0 0 $X=1124000 $Y=1013000
+X1852 VDD VSS DECAP4 $T=1144000 120000 1 0 $X=1144000 $Y=61000
+X1853 VDD VSS DECAP4 $T=1164000 232000 1 0 $X=1164000 $Y=173000
+X1854 VSS VDD DECAP2 $T=64000 456000 1 0 $X=64000 $Y=397000
+X1855 VSS VDD DECAP2 $T=64000 680000 0 0 $X=64000 $Y=677000
+X1856 VSS VDD DECAP2 $T=144000 792000 1 0 $X=144000 $Y=733000
+X1857 VSS VDD DECAP2 $T=304000 232000 1 0 $X=304000 $Y=173000
+X1858 VSS VDD DECAP2 $T=304000 904000 0 0 $X=304000 $Y=901000
+X1859 VSS VDD DECAP2 $T=544000 120000 0 0 $X=544000 $Y=117000
+X1860 VSS VDD DECAP2 $T=564000 1016000 1 0 $X=564000 $Y=957000
+X1861 VSS VDD DECAP2 $T=584000 904000 0 0 $X=584000 $Y=901000
+X1862 VSS VDD DECAP2 $T=624000 120000 1 0 $X=624000 $Y=61000
+X1863 VSS VDD DECAP2 $T=624000 120000 0 0 $X=624000 $Y=117000
+X1864 VSS VDD DECAP2 $T=944000 120000 1 0 $X=944000 $Y=61000
+X1865 VSS VDD DECAP2 $T=944000 120000 0 0 $X=944000 $Y=117000
+X1866 VSS VDD DECAP2 $T=1124000 680000 1 0 $X=1124000 $Y=621000
+X1867 VSS VDD DECAP2 $T=1184000 904000 0 0 $X=1184000 $Y=901000
+X1868 VSS VDD DECAP2 $T=1204000 120000 0 0 $X=1204000 $Y=117000
+X1869 VSS VDD DECAP2 $T=1204000 1016000 1 0 $X=1204000 $Y=957000
+X1870 VSS VDD DECAP2 $T=1204000 1016000 0 0 $X=1204000 $Y=1013000
+X1871 VDD VSS DECAP1 $T=64000 456000 0 0 $X=64000 $Y=453000
+X1872 VDD VSS DECAP1 $T=64000 568000 0 0 $X=64000 $Y=565000
+X1873 VDD VSS DECAP1 $T=104000 456000 1 0 $X=104000 $Y=397000
+X1874 VDD VSS DECAP1 $T=164000 568000 0 0 $X=164000 $Y=565000
+X1875 VDD VSS DECAP1 $T=344000 232000 1 0 $X=344000 $Y=173000
+X1876 VDD VSS DECAP1 $T=344000 904000 0 0 $X=344000 $Y=901000
+X1877 VDD VSS DECAP1 $T=424000 232000 1 0 $X=424000 $Y=173000
+X1878 VDD VSS DECAP1 $T=464000 568000 0 0 $X=464000 $Y=565000
+X1879 VDD VSS DECAP1 $T=464000 1016000 1 0 $X=464000 $Y=957000
+X1880 VDD VSS DECAP1 $T=464000 1016000 0 0 $X=464000 $Y=1013000
+X1881 VDD VSS DECAP1 $T=724000 232000 1 0 $X=724000 $Y=173000
+X1882 VDD VSS DECAP1 $T=804000 904000 0 0 $X=804000 $Y=901000
+X1883 VDD VSS DECAP1 $T=864000 1016000 1 0 $X=864000 $Y=957000
+X1884 VDD VSS DECAP1 $T=964000 232000 1 0 $X=964000 $Y=173000
+X1885 VDD VSS DECAP1 $T=1024000 680000 0 0 $X=1024000 $Y=677000
+X1886 VDD VSS DECAP1 $T=1064000 232000 1 0 $X=1064000 $Y=173000
+X1887 VDD VSS DECAP1 $T=1144000 568000 0 0 $X=1144000 $Y=565000
+X1888 VDD VSS DECAP1 $T=1164000 680000 0 0 $X=1164000 $Y=677000
+X1889 VDD VSS DECAP1 $T=1224000 120000 1 0 $X=1224000 $Y=61000
+X1890 VDD VSS DECAP1 $T=1224000 680000 0 0 $X=1224000 $Y=677000
+X1891 VDD VSS DECAP1 $T=1224000 792000 0 0 $X=1224000 $Y=789000
+X1892 VDD VSS DECAP1 $T=1224000 904000 0 0 $X=1224000 $Y=901000
+X1893 23 VDD VSS 36 39 52 MASCO__A1 $T=144000 341000 0 0 $X=144000 $Y=341000
+X1894 41 VDD VSS 59 62 34 MASCO__A1 $T=204000 453000 0 0 $X=204000 $Y=453000
+X1895 56 VDD VSS 63 66 56 MASCO__A1 $T=224000 341000 0 0 $X=224000 $Y=341000
+X1896 65 VDD VSS 87 80 68 MASCO__A1 $T=304000 677000 0 0 $X=304000 $Y=677000
+X1897 89 VDD VSS 47 102 103 MASCO__A1 $T=344000 565000 0 0 $X=344000 $Y=565000
+X1898 94 VDD VSS 81 116 123 MASCO__A1 $T=384000 341000 0 0 $X=384000 $Y=341000
+X1899 51 VDD VSS 126 133 45 MASCO__A1 $T=424000 789000 0 0 $X=424000 $Y=789000
+X1900 64 VDD VSS 146 137 117 MASCO__A1 $T=484000 565000 0 0 $X=484000 $Y=565000
+X1901 162 VDD VSS 149 176 182 MASCO__A1 $T=544000 1013000 0 0 $X=544000 $Y=1013000
+X1902 104 VDD VSS 206 210 193 MASCO__A1 $T=684000 901000 0 0 $X=684000 $Y=901000
+X1903 220 VDD VSS 230 238 189 MASCO__A1 $T=704000 341000 0 0 $X=704000 $Y=341000
+X1904 221 VDD VSS 232 232 175 MASCO__A1 $T=704000 677000 0 0 $X=704000 $Y=677000
+X1905 212 VDD VSS 249 163 267 MASCO__A1 $T=744000 229000 0 0 $X=744000 $Y=229000
+X1906 247 VDD VSS 266 259 272 MASCO__A1 $T=784000 117000 0 0 $X=784000 $Y=117000
+X1907 254 VDD VSS 271 235 245 MASCO__A1 $T=784000 1013000 0 0 $X=784000 $Y=1013000
+X1908 279 VDD VSS 277 306 318 MASCO__A1 $T=864000 341000 0 0 $X=864000 $Y=341000
+X1909 305 VDD VSS 276 286 282 MASCO__A1 $T=904000 229000 0 0 $X=904000 $Y=229000
+X1910 270 VDD VSS 315 308 331 MASCO__A1 $T=904000 901000 0 0 $X=904000 $Y=901000
+X1911 321 VDD VSS 329 336 341 MASCO__A1 $T=944000 677000 0 0 $X=944000 $Y=677000
+X1912 323 VDD VSS 332 309 323 MASCO__A1 $T=944000 1013000 0 0 $X=944000 $Y=1013000
+X1913 325 VDD VSS 348 351 361 MASCO__A1 $T=984000 901000 0 0 $X=984000 $Y=901000
+X1914 303 VDD VSS 350 353 379 MASCO__A1 $T=1024000 565000 0 0 $X=1024000 $Y=565000
+X1915 377 VDD VSS 363 390 364 MASCO__A1 $T=1084000 677000 0 0 $X=1084000 $Y=677000
+X1916 19 VDD VSS 27 33 40 15 MASCO__A2 $T=124000 397000 0 0 $X=124000 $Y=397000
+X1917 17 VDD VSS 28 16 33 48 MASCO__A2 $T=124000 509000 0 0 $X=124000 $Y=509000
+X1918 21 VDD VSS 29 35 43 49 MASCO__A2 $T=124000 621000 0 0 $X=124000 $Y=621000
+X1919 25 VDD VSS 24 45 51 54 MASCO__A2 $T=144000 845000 0 0 $X=144000 $Y=845000
+X1920 100 VDD VSS 136 92 142 147 MASCO__A2 $T=444000 285000 0 0 $X=444000 $Y=285000
+X1921 119 VDD VSS 107 86 119 148 MASCO__A2 $T=444000 509000 0 0 $X=444000 $Y=509000
+X1922 134 VDD VSS 141 143 154 157 MASCO__A2 $T=464000 845000 0 0 $X=464000 $Y=845000
+X1923 177 VDD VSS 194 197 204 211 MASCO__A2 $T=604000 285000 0 0 $X=604000 $Y=285000
+X1924 192 VDD VSS 115 193 224 202 MASCO__A2 $T=644000 957000 0 0 $X=644000 $Y=957000
+X1925 248 VDD VSS 236 249 286 293 MASCO__A2 $T=804000 173000 0 0 $X=804000 $Y=173000
+X1926 316 VDD VSS 297 328 338 316 MASCO__A2 $T=924000 957000 0 0 $X=924000 $Y=957000
+X1927 7 VDD VSS 15 MASCO__A3 $T=64000 285000 0 0 $X=64000 $Y=285000
+X1928 6 VDD VSS 9 MASCO__A3 $T=64000 509000 0 0 $X=64000 $Y=509000
+X1929 9 VDD VSS 8 MASCO__A3 $T=64000 621000 0 0 $X=64000 $Y=621000
+X1930 28 VDD VSS 50 MASCO__A3 $T=184000 733000 0 0 $X=184000 $Y=733000
+X1931 68 VDD VSS 31 MASCO__A3 $T=244000 733000 0 0 $X=244000 $Y=733000
+X1932 203 VDD VSS 246 MASCO__A3 $T=724000 61000 0 0 $X=724000 $Y=61000
+X1933 271 VDD VSS 285 MASCO__A3 $T=804000 957000 0 0 $X=804000 $Y=957000
+X1934 250 VDD VSS 314 MASCO__A3 $T=904000 621000 0 0 $X=904000 $Y=621000
+X1935 314 VDD VSS 287 MASCO__A3 $T=964000 621000 0 0 $X=964000 $Y=621000
+X1936 4 VDD VSS 12 14 22 MASCO__A4 $T=64000 845000 0 0 $X=64000 $Y=845000
+X1937 40 VDD VSS 49 27 67 MASCO__A4 $T=204000 397000 0 0 $X=204000 $Y=397000
+X1938 50 VDD VSS 35 30 48 MASCO__A4 $T=204000 509000 0 0 $X=204000 $Y=509000
+X1939 58 VDD VSS 82 101 113 MASCO__A4 $T=344000 397000 0 0 $X=344000 $Y=397000
+X1940 88 VDD VSS 91 98 121 MASCO__A4 $T=464000 733000 0 0 $X=464000 $Y=733000
+X1941 124 VDD VSS 145 150 151 MASCO__A4 $T=484000 397000 0 0 $X=484000 $Y=397000
+X1942 142 VDD VSS 164 70 177 MASCO__A4 $T=524000 285000 0 0 $X=524000 $Y=285000
+X1943 160 VDD VSS 143 200 160 MASCO__A4 $T=624000 733000 0 0 $X=624000 $Y=733000
+X1944 204 VDD VSS 226 164 211 MASCO__A4 $T=684000 285000 0 0 $X=684000 $Y=285000
+X1945 224 VDD VSS 162 245 202 MASCO__A4 $T=724000 957000 0 0 $X=724000 $Y=957000
+X1946 252 VDD VSS 270 264 223 MASCO__A4 $T=784000 845000 0 0 $X=784000 $Y=845000
+X1947 281 VDD VSS 299 299 301 MASCO__A4 $T=864000 61000 0 0 $X=864000 $Y=61000
+X1948 314 VDD VSS 313 327 326 MASCO__A4 $T=924000 509000 0 0 $X=924000 $Y=509000
+X1949 315 VDD VSS 325 233 328 MASCO__A4 $T=924000 845000 0 0 $X=924000 $Y=845000
+X1950 384 VDD VSS 394 394 397 MASCO__A4 $T=1124000 397000 0 0 $X=1124000 $Y=397000
+X1951 393 VDD VSS 365 347 409 MASCO__A4 $T=1144000 733000 0 0 $X=1144000 $Y=733000
+X1952 360 VDD VSS out<1> 404 out<2> MASCO__A4 $T=1164000 621000 0 0 $X=1164000 $Y=621000
+X1953 3 10 VDD VSS 11 10 7 MASCO__A5 $T=64000 341000 0 0 $X=64000 $Y=341000
+X1954 132 120 VDD VSS 126 80 155 MASCO__A5 $T=464000 677000 0 0 $X=464000 $Y=677000
+X1955 194 212 VDD VSS 189 219 147 MASCO__A5 $T=664000 229000 0 0 $X=664000 $Y=229000
+X1956 252 280 VDD VSS 284 280 258 MASCO__A5 $T=824000 789000 0 0 $X=824000 $Y=789000
+X1957 261 241 VDD VSS 285 289 304 MASCO__A5 $T=824000 901000 0 0 $X=824000 $Y=901000
+X1958 307 317 VDD VSS 319 322 330 MASCO__A5 $T=904000 789000 0 0 $X=904000 $Y=789000
+X1959 294 344 VDD VSS 345 295 359 MASCO__A5 $T=984000 229000 0 0 $X=984000 $Y=229000
+X1960 365 378 VDD VSS 381 378 312 MASCO__A5 $T=1064000 901000 0 0 $X=1064000 $Y=901000
+X1961 20 VDD VSS 19 34 41 47 MASCO__A6 $T=124000 453000 0 0 $X=124000 $Y=453000
+X1962 78 VDD VSS 85 70 94 85 MASCO__A6 $T=304000 341000 0 0 $X=304000 $Y=341000
+X1963 141 VDD VSS 156 160 171 98 MASCO__A6 $T=504000 789000 0 0 $X=504000 $Y=789000
+X1964 111 VDD VSS 174 184 213 217 MASCO__A6 $T=624000 677000 0 0 $X=624000 $Y=677000
+X1965 143 VDD VSS 252 258 264 253 MASCO__A6 $T=744000 789000 0 0 $X=744000 $Y=789000
+X1966 230 VDD VSS 268 273 279 282 MASCO__A6 $T=784000 341000 0 0 $X=784000 $Y=341000
+X1967 199 VDD VSS 237 194 298 302 MASCO__A6 $T=824000 229000 0 0 $X=824000 $Y=229000
+X1968 337 VDD VSS 347 307 357 331 MASCO__A6 $T=984000 789000 0 0 $X=984000 $Y=789000
+X1969 344 VDD VSS 346 359 387 367 MASCO__A6 $T=1064000 229000 0 0 $X=1064000 $Y=229000
+X1970 73 59 VDD VSS 74 23 48 83 62 72 MASCO__B7 $T=284000 453000 0 0 $X=284000 $Y=453000
+X1971 12 103 VDD VSS 79 114 117 114 125 90 MASCO__B7 $T=384000 677000 0 0 $X=384000 $Y=677000
+X1972 123 151 VDD VSS 166 165 110 170 179 178 MASCO__B7 $T=524000 453000 0 0 $X=524000 $Y=453000
+X1973 125 97 VDD VSS 148 173 171 173 132 185 MASCO__B7 $T=544000 677000 0 0 $X=544000 $Y=677000
+X1974 113 181 VDD VSS 195 150 155 198 168 208 MASCO__B7 $T=604000 453000 0 0 $X=604000 $Y=453000
+X1975 178 179 VDD VSS 138 227 227 195 220 242 MASCO__B7 $T=684000 453000 0 0 $X=684000 $Y=453000
+X1976 283 335 VDD VSS 353 320 356 339 369 368 MASCO__B7 $T=1004000 453000 0 0 $X=1004000 $Y=453000
+X1977 376 352 VDD VSS 385 327 389 388 395 389 MASCO__B7 $T=1084000 453000 0 0 $X=1084000 $Y=453000
+X1978 395 397 VDD VSS out<5> out<6> 379 407 out<4> out<7> MASCO__B7 $T=1164000 453000 0 0 $X=1164000 $Y=453000
+X1979 26 58 VSS VDD 61 70 52 3 81 92 MASCO__A9 $T=204000 285000 0 0 $X=204000 $Y=285000
+X1980 43 60 VSS VDD 60 20 74 80 37 89 MASCO__A9 $T=204000 621000 0 0 $X=204000 $Y=621000
+X1981 14 25 VSS VDD 69 76 79 88 91 98 MASCO__A9 $T=224000 845000 0 0 $X=224000 $Y=845000
+X1982 87 106 VSS VDD 84 93 120 137 105 133 MASCO__A9 $T=364000 621000 0 0 $X=364000 $Y=621000
+X1983 85 99 VSS VDD 112 144 122 163 169 108 MASCO__A9 $T=444000 173000 0 0 $X=444000 $Y=173000
+X1984 152 167 VSS VDD 167 180 166 196 185 209 MASCO__A9 $T=524000 621000 0 0 $X=524000 $Y=621000
+X1985 191 157 VSS VDD 206 218 223 234 241 253 MASCO__A9 $T=624000 845000 0 0 $X=624000 $Y=845000
+X1986 239 251 VSS VDD 257 229 209 283 287 292 MASCO__A9 $T=744000 621000 0 0 $X=744000 $Y=621000
+X1987 226 130 VSS VDD 230 197 276 256 295 273 MASCO__A9 $T=764000 285000 0 0 $X=764000 $Y=285000
+X1988 165 198 VSS VDD 262 275 278 239 216 310 MASCO__A9 $T=764000 509000 0 0 $X=764000 $Y=509000
+X1989 260 274 VSS VDD 277 291 291 306 313 263 MASCO__A9 $T=804000 397000 0 0 $X=804000 $Y=397000
+X1990 187 217 VSS VDD 288 284 275 288 269 322 MASCO__A9 $T=824000 733000 0 0 $X=824000 $Y=733000
+X1991 298 324 VSS VDD 268 295 324 334 354 367 MASCO__A9 $T=924000 285000 0 0 $X=924000 $Y=285000
+X1992 326 305 VSS VDD 340 352 355 356 274 384 MASCO__A9 $T=964000 397000 0 0 $X=964000 $Y=397000
+X1993 317 321 VSS VDD 234 319 364 336 330 377 MASCO__A9 $T=984000 733000 0 0 $X=984000 $Y=733000
+X1994 38 11 VDD VSS 55 39 36 75 77 55 MASCO__A10 $T=184000 229000 0 0 $X=184000 $Y=229000
+X1995 reset 6 VDD VSS clk 64 67 71 35 86 MASCO__A10 $T=184000 565000 0 0 $X=184000 $Y=565000
+X1996 46 96 VDD VSS 99 112 63 122 129 78 MASCO__A10 $T=344000 229000 0 0 $X=344000 $Y=229000
+X1997 52 105 VDD VSS 110 118 86 110 138 116 MASCO__A10 $T=364000 453000 0 0 $X=364000 $Y=453000
+X1998 124 109 VDD VSS 122 77 96 169 189 199 MASCO__A10 $T=504000 229000 0 0 $X=504000 $Y=229000
+X1999 175 186 VDD VSS 190 134 154 161 218 233 MASCO__A10 $T=584000 789000 0 0 $X=584000 $Y=789000
+X2000 145 200 VDD VSS 205 216 213 221 146 250 MASCO__A10 $T=624000 565000 0 0 $X=624000 $Y=565000
+X2001 196 240 VDD VSS 186 257 251 303 231 307 MASCO__A10 $T=784000 677000 0 0 $X=784000 $Y=677000
+X2002 357 380 VDD VSS 348 351 373 390 361 393 MASCO__A10 $T=1064000 789000 0 0 $X=1064000 $Y=789000
+.ends counter

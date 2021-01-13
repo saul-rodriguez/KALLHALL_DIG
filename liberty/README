@@ -1,0 +1,15 @@
+Liberty files for KALLHALL process
+
+Author: Saul Rodriguez
+Date: 2021-01-07
+
+
+kallhall.lib uses liberty models from the  slow_vdd1v2_basicCells.lib from the Cadence 45nm GPDK.
+The following cells are supported:
+
+BUFX2                   
+INVX1                   
+NAND2X1                 
+NOR2X1                  
+DFFX1                   
+

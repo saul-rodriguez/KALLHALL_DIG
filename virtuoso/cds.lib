@@ -1,0 +1,12 @@
+INCLUDE $CDSHOME/share/cdssetup/cds.lib
+INCLUDE $IUSHOME/tools/inca/files/cds.lib
+DEFINE KAL3 ./KAL3
+DEFINE KALLHALL_STD_LIB2 ./KALLHALL_STD_LIB2
+DEFINE KALLHALL_STD_LIB3 ./KALLHALL_STD_LIB3
+DEFINE KALLHALL_STD_LIB_TECH ./KALLHALL_STD_LIB_TECH
+
+DEFINE COUNTER /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER
+DEFINE avTech /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/etc/avtech/avTech
+DEFINE COUNTER2 /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER2
+DEFINE COUNTER3 /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER3
+DEFINE COUNTER4 /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER4

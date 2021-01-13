@@ -1,0 +1,658 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v18.16-s077_1, built Fri Nov 8 08:48:16 PST 2019
+Options:	
+Date:		Fri Jan  8 00:47:55 2021
+Host:		s2424 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 20480KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	18.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading PVS 16.15 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+default_rc_corner
+**WARN: (IMPOAX-775):	Layer 'OVERLAP' has already been defined in Innovus database, the contents will be skipped.
+**WARN: (IMPOAX-1645):	'minWidth' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+**WARN: (IMPOAX-1645):	'minSpacing' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PO' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_DIFF' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PSUB' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NWELL' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+Loading view definition file from /home/saul/projects/KALLHALL_DIG/innovus/FEOADesignlib/counter/counter_loaded_power_pin_placed_cts_routed/viewDefinition.tcl
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/saul/projects/KALLHALL_DIG/liberty/fast_vdd1v2_basicCells.lib)
+*** End library_loading (cpu=0.02min, real=0.02min, mem=14.1M, fe_cpu=0.27min, fe_real=0.72min, fe_mem=650.0M) ***
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /home/saul/projects/KALLHALL_DIG/innovus/FEOADesignlib/counter/counter_loaded_power_pin_placed_cts_routed/inn_data/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+counter
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPOAX-571):	Property 'lxInternal' on Design FEOADesignlib/counter/counter_loaded_power_pin_placed_cts_routed is a hierarchical property which is not supported in Innovus. This property is not translated and it will be lost in round trip unless updateMode is enabled.
+**WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.0736 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+'set_default_switching_activity' finished successfully.
+**WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+<CMD> redraw
+<CMD> fit
+<CMD> selectWire 28.0000 187.0000 468.0000 189.0000 1 VDD
+<CMD> fit
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Free PSO.
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+default_rc_corner
+**WARN: (IMPOAX-775):	Layer 'OVERLAP' has already been defined in Innovus database, the contents will be skipped.
+**WARN: (IMPOAX-1645):	'minWidth' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+**WARN: (IMPOAX-1645):	'minSpacing' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PO' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_DIFF' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PSUB' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NWELL' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+Loading view definition file from /home/saul/projects/KALLHALL_DIG/innovus/FEOADesignlib/counter/counter_loaded_power_pin_placed_cts/viewDefinition.tcl
+*** End library_loading (cpu=0.02min, real=0.02min, mem=8.5M, fe_cpu=0.47min, fe_real=1.80min, fe_mem=741.3M) ***
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /home/saul/projects/KALLHALL_DIG/innovus/FEOADesignlib/counter/counter_loaded_power_pin_placed_cts/inn_data/gui.pref.tcl ...
+**WARN: analysis view fast_functional_mode not found, use default_view_setup
+**WARN: analysis view slow_functional_mode not found, use default_view_setup
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.0736 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+counter
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPOAX-571):	Property 'lxInternal' on Design FEOADesignlib/counter/counter_loaded_power_pin_placed_cts is a hierarchical property which is not supported in Innovus. This property is not translated and it will be lost in round trip unless updateMode is enabled.
+**WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+'set_default_switching_activity' finished successfully.
+**WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+<CMD> fit
+<CMD> fit
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Free PSO.
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+default_rc_corner
+**WARN: (IMPOAX-775):	Layer 'OVERLAP' has already been defined in Innovus database, the contents will be skipped.
+**WARN: (IMPOAX-1645):	'minWidth' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+**WARN: (IMPOAX-1645):	'minSpacing' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PO' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_DIFF' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PSUB' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+**WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NWELL' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+Loading view definition file from /home/saul/projects/KALLHALL_DIG/innovus/FEOADesignlib/counter/counter_loaded_power_pin_placed_cts_routed/viewDefinition.tcl
+*** End library_loading (cpu=0.02min, real=0.02min, mem=7.0M, fe_cpu=0.56min, fe_real=2.18min, fe_mem=776.6M) ***
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /home/saul/projects/KALLHALL_DIG/innovus/FEOADesignlib/counter/counter_loaded_power_pin_placed_cts_routed/inn_data/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: analysis view fast_functional_mode not found, use default_view_setup
+**WARN: analysis view slow_functional_mode not found, use default_view_setup
+**WARN: analysis view fast_functional_mode not found, use default_view_setup
+**WARN: analysis view slow_functional_mode not found, use default_view_setup
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.0736 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+counter
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view slow_functional_mode.
+**WARN: (IMPOAX-571):	Property 'lxInternal' on Design FEOADesignlib/counter/counter_loaded_power_pin_placed_cts_routed is a hierarchical property which is not supported in Innovus. This property is not translated and it will be lost in round trip unless updateMode is enabled.
+**WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+'set_default_switching_activity' finished successfully.
+**WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Fri Jan  8 00:50:34 2021
+
+Design Name: counter
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (504.0000, 416.0000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Fri Jan  8 00:50:34 2021
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix counter_postRoute -outDir timingReports
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+Extraction called for design 'counter' of instances=221 and nets=234 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design counter.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+**WARN: (IMPEXT-3032):	Because the cap table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.15
+      Min Width        : 2
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.18
+      Min Width        : 2
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.18
+      Min Width        : 2
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.18
+      Min Width        : 2
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile /tmp/innovus_temp_6918_s2424_saul_LD7Drj/counter_6918_7QyIoC.rcdb.d  -basic
+RC Mode: PostRoute -effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 973.1M)
+Extracted 10.177% (CPU Time= 0:00:00.0  MEM= 993.1M)
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M2_M1_HV' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+Extracted 20.1327% (CPU Time= 0:00:00.0  MEM= 1017.1M)
+Extracted 30.1991% (CPU Time= 0:00:00.0  MEM= 1017.1M)
+Extracted 40.1549% (CPU Time= 0:00:00.0  MEM= 1017.1M)
+Extracted 50.2212% (CPU Time= 0:00:00.0  MEM= 1017.1M)
+Extracted 60.177% (CPU Time= 0:00:00.0  MEM= 1017.1M)
+Extracted 70.1327% (CPU Time= 0:00:00.0  MEM= 1017.1M)
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M3_M2_VH' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+Extracted 80.1991% (CPU Time= 0:00:00.0  MEM= 1017.1M)
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M4_M3_HV' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+Extracted 90.1549% (CPU Time= 0:00:00.0  MEM= 1017.1M)
+Extracted 100% (CPU Time= 0:00:00.0  MEM= 1017.1M)
+Number of Extracted Resistors     : 1718
+Number of Extracted Ground Cap.   : 1946
+Number of Extracted Coupling Cap. : 1576
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1001.1M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1009.125M)
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: counter
+# Design Mode: 250nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1009.12)
+Initializing multi-corner resistance tables ...
+Total number of fetched objects 232
+AAE_INFO-618: Total number of nets in the design is 234,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1103.72 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1092.18 CPU=0:00:00.4 REAL=0:00:00.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1092.2M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1092.2M)
+Starting SI iteration 2
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1065.46)
+Glitch Analysis: View slow_functional_mode -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View slow_functional_mode -- Total Number of Nets Analyzed = 232. 
+Total number of fetched objects 232
+AAE_INFO-618: Total number of nets in the design is 234,  2.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1052.54 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1052.54 CPU=0:00:00.1 REAL=0:00:00.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ slow_functional_mode 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 94.756  | 94.756  | 97.662  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   16    |    8    |   16    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      8 (8)       |   -0.595   |      8 (8)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 37.626%
+Total number of glitch violations: 0
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.43 sec
+Total Real time: 3.0 sec
+Total Memory Usage: 1050.492188 Mbytes
+Reset AAE Options
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix counter_postRoute -outDir timingReports
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+Extraction called for design 'counter' of instances=221 and nets=234 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design counter.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+**WARN: (IMPEXT-3032):	Because the cap table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.15
+      Min Width        : 2
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.18
+      Min Width        : 2
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.18
+      Min Width        : 2
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.18
+      Min Width        : 2
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile /tmp/innovus_temp_6918_s2424_saul_LD7Drj/counter_6918_7QyIoC.rcdb.d -maxResLength 200  -basic
+RC Mode: PostRoute -effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1050.5M)
+Extracted 10.177% (CPU Time= 0:00:00.0  MEM= 1086.5M)
+Extracted 20.1327% (CPU Time= 0:00:00.0  MEM= 1110.5M)
+Extracted 30.1991% (CPU Time= 0:00:00.0  MEM= 1110.5M)
+Extracted 40.1549% (CPU Time= 0:00:00.0  MEM= 1110.5M)
+Extracted 50.2212% (CPU Time= 0:00:00.0  MEM= 1110.5M)
+Extracted 60.177% (CPU Time= 0:00:00.0  MEM= 1110.5M)
+Extracted 70.1327% (CPU Time= 0:00:00.0  MEM= 1110.5M)
+Extracted 80.1991% (CPU Time= 0:00:00.0  MEM= 1110.5M)
+Extracted 90.1549% (CPU Time= 0:00:00.0  MEM= 1110.5M)
+Extracted 100% (CPU Time= 0:00:00.0  MEM= 1110.5M)
+Number of Extracted Resistors     : 1718
+Number of Extracted Ground Cap.   : 1946
+Number of Extracted Coupling Cap. : 1576
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1087.2M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:01.0  MEM: 1091.242M)
+Starting delay calculation for hold views
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: counter
+# Design Mode: 250nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate late delays in OCV mode...
+Calculate early delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1033.19)
+*** Calculating scaling factor for fast_liberty libraries using the default operating condition of each library.
+Initializing multi-corner resistance tables ...
+Total number of fetched objects 232
+AAE_INFO-618: Total number of nets in the design is 234,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1097.17 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1097.17 CPU=0:00:00.3 REAL=0:00:00.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1097.2M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1097.2M)
+Starting SI iteration 2
+Calculate late delays in OCV mode...
+Calculate early delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1068.67)
+Glitch Analysis: View fast_functional_mode -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View fast_functional_mode -- Total Number of Nets Analyzed = 11. 
+Total number of fetched objects 232
+AAE_INFO-618: Total number of nets in the design is 234,  1.7 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1074.82 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1074.82 CPU=0:00:00.1 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.8 real=0:00:00.0 totSessionCpu=0:00:42.3 mem=1074.8M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Hold  views included:
+ fast_functional_mode 
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.016  |  0.112  |  0.016  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   16    |    8    |   16    |
++--------------------+---------+---------+---------+
+
+Density: 37.626%
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.12 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 1000.078125 Mbytes
+Reset AAE Options
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix counter_postRoute -outDir timingReports
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+Extraction called for design 'counter' of instances=221 and nets=234 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design counter.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+**WARN: (IMPEXT-3032):	Because the cap table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.15
+      Min Width        : 2
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.18
+      Min Width        : 2
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.18
+      Min Width        : 2
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.18
+      Min Width        : 2
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile /tmp/innovus_temp_6918_s2424_saul_LD7Drj/counter_6918_7QyIoC.rcdb.d -maxResLength 200  -basic
+RC Mode: PostRoute -effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1008.1M)
+Extracted 10.177% (CPU Time= 0:00:00.0  MEM= 1044.1M)
+Extracted 20.1327% (CPU Time= 0:00:00.0  MEM= 1068.1M)
+Extracted 30.1991% (CPU Time= 0:00:00.0  MEM= 1068.1M)
+Extracted 40.1549% (CPU Time= 0:00:00.0  MEM= 1068.1M)
+Extracted 50.2212% (CPU Time= 0:00:00.0  MEM= 1068.1M)
+Extracted 60.177% (CPU Time= 0:00:00.0  MEM= 1068.1M)
+Extracted 70.1327% (CPU Time= 0:00:00.0  MEM= 1068.1M)
+Extracted 80.1991% (CPU Time= 0:00:00.0  MEM= 1068.1M)
+Extracted 90.1549% (CPU Time= 0:00:00.0  MEM= 1068.1M)
+Extracted 100% (CPU Time= 0:00:00.0  MEM= 1068.1M)
+Number of Extracted Resistors     : 1718
+Number of Extracted Ground Cap.   : 1946
+Number of Extracted Coupling Cap. : 1576
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1052.1M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:01.0  MEM: 1056.094M)
+Starting delay calculation for hold views
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: counter
+# Design Mode: 250nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate late delays in OCV mode...
+Calculate early delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1035.38)
+*** Calculating scaling factor for fast_liberty libraries using the default operating condition of each library.
+Initializing multi-corner resistance tables ...
+Total number of fetched objects 232
+AAE_INFO-618: Total number of nets in the design is 234,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1099.36 CPU=0:00:00.1 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=1099.36 CPU=0:00:00.3 REAL=0:00:01.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1099.4M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1099.4M)
+Starting SI iteration 2
+Calculate late delays in OCV mode...
+Calculate early delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1068.09)
+Glitch Analysis: View fast_functional_mode -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View fast_functional_mode -- Total Number of Nets Analyzed = 11. 
+Total number of fetched objects 232
+AAE_INFO-618: Total number of nets in the design is 234,  1.7 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1075.25 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1075.25 CPU=0:00:00.1 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.8 real=0:00:01.0 totSessionCpu=0:01:18 mem=1075.2M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Hold  views included:
+ fast_functional_mode 
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.016  |  0.112  |  0.016  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   16    |    8    |   16    |
++--------------------+---------+---------+---------+
+
+Density: 37.626%
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.18 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 998.484375 Mbytes
+Reset AAE Options
+<CMD> saveDesign -cellview {COUNTER counter layout}
+The in-memory database contained RC information but was not saved. To save 
+the RC information, use saveDesign's -rc option. Note: Saving RC information can be quite large, 
+so it should only be saved when it is really desired.
+#% Begin save design ... (date=01/08 00:55:13, mem=849.2M)
+----- oaOut ---------------------------
+Saving OA database: Lib: COUNTER, Cell: counter, View: layout
+**WARN: (IMPOAX-1313):	The library 'COUNTER' has its data compression level set to '0', while the compression level for this Innovus session is 1. Any new data being saved into this library will be saved with its compression settings, irrespective of the global value.
+Type 'man IMPOAX-1313' for more detail.
+FE units: 0.0005 microns/dbu, OA units: 0.0005 microns/dbu, Conversion factor: 1
+Special routes: 65 strips and 46 vias are created in OA database.
+Signal Routes: Created 347 routes.
+Created 221 insts; 442 instTerms; 234 nets; 0 routes.
+TIMER: Write OA to disk: 0h 0m  0.01s cpu {0h 0m 0s elapsed} Memory = 0.0.
+TIMER: Purge OA from memory: 0h 0m  0.00s cpu {0h 0m 0s elapsed} Memory = 0.0.
+TIMER: oaOut total process: 0h 0m  0.05s cpu {0h 0m 0s elapsed} Memory = 0.0.
+% Begin Save AAE data ... (date=01/08 00:55:14, mem=850.7M)
+Saving AAE Data ...
+% End Save AAE data ... (date=01/08 00:55:14, total cpu=0:00:00.0, real=0:00:00.0, peak res=850.7M, current mem=850.7M)
+% Begin Save clock tree data ... (date=01/08 00:55:14, mem=858.2M)
+% End Save clock tree data ... (date=01/08 00:55:14, total cpu=0:00:00.0, real=0:00:00.0, peak res=858.2M, current mem=858.2M)
+Saving preference file /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER/counter/layout/inn_data/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+#Saving pin access data to file /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER/counter/layout/inn_data/counter.apa ...
+Saving thumbnail file...
+% Begin Save ccopt configuration ... (date=01/08 00:55:14, mem=862.7M)
+% End Save ccopt configuration ... (date=01/08 00:55:14, total cpu=0:00:00.0, real=0:00:00.0, peak res=864.3M, current mem=864.3M)
+% Begin Save power constraints data ... (date=01/08 00:55:14, mem=864.3M)
+% End Save power constraints data ... (date=01/08 00:55:14, total cpu=0:00:00.0, real=0:00:01.0, peak res=864.3M, current mem=864.3M)
+Saving property file /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER/counter/layout/inn_data/counter.prop
+*** Completed saveOALibCellAnnotation (cpu=0:00:00.0 real=0:00:00.0 mem=1002.7M) ***
+#% End save design ... (date=01/08 00:55:15, total cpu=0:00:00.3, real=0:00:02.0, peak res=864.5M, current mem=864.5M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPOAX-1313          1  The library '%s' has its data compressio...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Jan  8 00:59:43 2021
+  Total CPU time:     0:02:02
+  Total real time:    0:11:49
+  Peak memory (main): 900.90MB
+
+
+*** Memory Usage v#1 (Current mem = 1002.711M, initial mem = 261.809M) ***
+*** Message Summary: 185 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:58, real=0:11:48, mem=1002.7M) ---
