@@ -11,7 +11,7 @@ LVS Comparison Report    : counter.rep.cls
 LVS Softchk Report       : counter.softchk
 Layout Name              : /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/counter.gds ("counter")
 User Name                : saul
-Creation Time            : Tue Jan 12 14:46:53 2021
+Creation Time            : Wed Jan 13 15:03:20 2021
 Current directory        : /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
@@ -33,6 +33,7 @@ Clean cell list (added by extraction report parser )
  for cell "DECAP2"
  for cell "DECAP4"
  for cell "DFFX1"
+ for cell "FILL1"
  for cell "INVX1"
  for cell "M1_NWELL_CDNS_4"
  for cell "M1_NWELL_CDNS_9"

@@ -5,7 +5,7 @@ hierDepth	32
 labelCase	"preserve"
 labelDepth	32
 layerMap	"/home/saul/projects/KALLHALL_DIG/virtuoso/pvs/gpdk045.layermap"
-library	"COUNTER4"
+library	"COUNTER5"
 logFile	"/home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/PIPO1.LOG"
 maxVertices	2048
 pinAttNum	0

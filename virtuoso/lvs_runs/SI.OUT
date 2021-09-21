@@ -8,7 +8,7 @@ INFO (TECH-150003): The technology database "basic" has been automatically
 updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 Running Artist Hierarchical Netlisting ...
 Loading cdf.cxt 
-End netlisting Jan 12 14:46:49 2021
+End netlisting Jan 13 15:03:16 2021
 
 Running simin
 
@@ -16,8 +16,8 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Jan 12 14:46:49 2021
+Begin simulation:    Jan 13 15:03:16 2021
 
 auCdl netlisting completed
-End simulation:      Jan 12 14:46:49 2021
+End simulation:      Jan 13 15:03:16 2021
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.

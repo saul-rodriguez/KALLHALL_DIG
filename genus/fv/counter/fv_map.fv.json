@@ -228,14 +228,14 @@
 "type":"instance"},
 
 {"index": "1", 
- "date": "Thu Jan 07 23:46:04 CET 2021",
- "seconds": 1610059564.970283,
+ "date": "Tue Sep 21 20:16:36 CEST 2021",
+ "seconds": 1632248196.629263,
  "netlist": "fv/counter/fv_map.v.gz", 
  "design_name": "counter", 
  "synth_workdir": "/home/saul/projects/KALLHALL_DIG/genus", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.414604 
+ "write_verif_file_runtime": 0.413935 
  }
 ]

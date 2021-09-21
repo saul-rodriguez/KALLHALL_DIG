@@ -3,7 +3,7 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Tue Jan 12 14:46:55 2021
+#####  NVN Run Start                 :   Wed Jan 13 15:03:22 2021
 #####  ERC Summary File              :   counter.sum
 #####  Extraction Report File        :   counter.rep
 #####  Comparison Report File        :   counter.rep.cls
@@ -14,20 +14,20 @@
 #####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
-#####  Layout Design                 :   COUNTER4 counter layout
+#####  Layout Design                 :   COUNTER5 counter layout
 #####  Schematic File                :   /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/counter.cdl (cdl)
 #####  Rules File                    :   .technology.rul
 #####  Pin Swap File                 :   counter.rep.cps
 #####  
-#####  Extraction CPU Time           :   0h 0m 0s - (0s)
+#####  Extraction CPU Time           :   0h 0m 1s - (1s)
 #####  Extraction Exec Time          :   0h 0m 1s - (1s)
 #####  Extraction Peak Memory Usage  :   39.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
-#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
-#####  NVN Peak Memory Usage         :   232.68MB
-#####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
-#####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   232.68MB
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Peak Memory Usage         :   232.67MB
+#####  LVS Total CPU Time            :   0h 0m 1s - (1s)                 
+#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Peak Memory Usage   :   232.67MB
 #####  
 ##############################################################################################################
 
@@ -395,21 +395,21 @@ Effective LVS Rule Values
 +=============================================================================================================
 
 
-                  |       Original        |       Filtered        |       Reduced        
-Cell              |    lay    :    sch    |    lay    :    sch    |    lay    :   sch
-------------------+-----------+-----------+-----------+-----------+-----------+----------
-MP [4 pins]       |           :           |           :           |           :          
- MP(G45P1SVT)     |      *999 :       960 |      *999 :       960 |       748 :       748
- MP:SerMos2#1     |         - :         - |         - :         - |        63 :        63
-MN [4 pins]       |           :           |           :           |           :          
- MN(G45N1SVT)     |      *999 :       960 |      *999 :       960 |       798 :       798
- MN:SerMos2#1     |         - :         - |         - :         - |        38 :        38
-------------------+-----------+-----------+-----------+-----------+-----------+----------
-Total             |     1,998 :     1,920 |     1,998 :     1,920 |     1,647 :     1,647
-==================+===========+===========+===========+===========+===========+==========
-Pins              |           :           |           :           |        13 :        13
-Nets              |           :           |           :           |       772 :       772
-==================+===========+===========+===========+===========+===========+==========
+                  |        Original        |        Filtered        |       Reduced        
+Cell              |    lay     :    sch    |    lay     :    sch    |    lay    :   sch
+------------------+------------+-----------+------------+-----------+-----------+----------
+MP [4 pins]       |            :           |            :           |           :          
+ MP(G45P1SVT)     |     *1,011 :       976 |     *1,011 :       976 |       788 :       788
+ MP:SerMos2#1     |          - :         - |          - :         - |        63 :        63
+MN [4 pins]       |            :           |            :           |           :          
+ MN(G45N1SVT)     |     *1,011 :       976 |     *1,011 :       976 |       838 :       838
+ MN:SerMos2#1     |          - :         - |          - :         - |        38 :        38
+------------------+------------+-----------+------------+-----------+-----------+----------
+Total             |      2,022 :     1,952 |      2,022 :     1,952 |     1,727 :     1,727
+==================+============+===========+============+===========+===========+==========
+Pins              |            :           |            :           |        13 :        13
+Nets              |            :           |            :           |       812 :       812
+==================+============+===========+============+===========+===========+==========
 
 +===[counter]=================================================================================================
 |                                      DEVICES REMOVED DURING REDUCTION                                       
@@ -420,9 +420,9 @@ Nets              |           :           |           :           |       772 : 
 Cell              |   lay   :   sch   |   lay   :   sch   |   lay   :   sch    |    lay    :   sch
 ------------------+---------+---------+---------+---------+---------+----------+-----------+----------
 MP [4 pins]       |         :         |         :         |         :          |           :          
- MP(G45P1SVT)     |     125 :      86 |       - :       - |       - :        - |         0 :         0
+ MP(G45P1SVT)     |      97 :      62 |       - :       - |       - :        - |         0 :         0
 MN [4 pins]       |         :         |         :         |         :          |           :          
- MN(G45N1SVT)     |     125 :      86 |       - :       - |       - :        - |         0 :         0
+ MN(G45N1SVT)     |      97 :      62 |       - :       - |       - :        - |         0 :         0
 ------------------+---------+---------+---------+---------+---------+----------+-----------+----------
 
 +===[counter]=================================================================================================

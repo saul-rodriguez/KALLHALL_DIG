@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 18.15-s055_1 on Thu Jan 07 23:46:05 CET 2021
+#  Created by Genus(TM) Synthesis Solution 18.15-s055_1 on Tue Sep 21 20:16:37 CEST 2021
 
 # ####################################################################
 
@@ -52,7 +52,7 @@ set_input_delay -clock [get_clocks CLK] -network_latency_included -add_delay -ma
 set_input_delay -clock [get_clocks CLK] -network_latency_included -add_delay -min 0.1 [get_ports enable]
 set_input_delay -clock [get_clocks CLK] -network_latency_included -add_delay -min 0.1 [get_ports clk]
 set_input_delay -clock [get_clocks CLK] -network_latency_included -add_delay -min 0.1 [get_ports reset]
-set_operating_conditions PVT_1P08V_125C
+set_operating_conditions PVT_1P5V_25C
 set_driving_cell -lib_cell BUFX2 -library kallhall -pin "Y" [get_ports enable]
 set_driving_cell -lib_cell BUFX2 -library kallhall -pin "Y" [get_ports clk]
 set_driving_cell -lib_cell BUFX2 -library kallhall -pin "Y" [get_ports reset]

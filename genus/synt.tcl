@@ -11,9 +11,11 @@ set_db information_level 9
 
 set_db lib_search_path "../liberty"
 #set_db library "D_CELLS_HD_LPMOS_slow_1_62V_125C.lib"
-set_db library "kallhall.lib"
+#set_db library "kallhall.lib"
+set_db library merged_ecsm.lib
 
-set_db operating_conditions PVT_1P08V_125C
+#set_db operating_conditions PVT_1P08V_125C
+set_db operating_conditions PVT_1P5V_25C
 
 #--------------------------
 # Read Design

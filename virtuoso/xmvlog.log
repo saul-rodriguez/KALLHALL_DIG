@@ -1,20 +1,20 @@
 xmvlog: *W,DLNOHV: Unable to find an 'hdl.var' file to load in.
-TOOL:	xmvlog(64)	18.03-s018: Started on Jan 12, 2021 at 14:38:53 CET
+TOOL:	xmvlog(64)	18.03-s018: Started on Jan 13, 2021 at 15:00:56 CET
 xmvlog
     -use5x
     -work __nclib
     -view module
     -logfile xmvlog.log
-    -cdslib /tmp/ihdl_cdslibb7233_7233
+    -cdslib /tmp/ihdl_cdslibb0984_10984
     -messages
     -nostdout
     -nocopyright
     -ESCAPEDNAME
-    /home/saul/projects/KALLHALL_DIG/innovus4/output/counter_pnr_cap.v
+    /home/saul/projects/KALLHALL_DIG/innovus5/output/counter_pnr_cap.v
 
-file: /home/saul/projects/KALLHALL_DIG/innovus4/output/counter_pnr_cap.v
+file: /home/saul/projects/KALLHALL_DIG/innovus5/output/counter_pnr_cap.v
 	module __nclib.counter:module
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xmvlog(64)	18.03-s018: Exiting on Jan 12, 2021 at 14:38:53 CET  (total: 00:00:00)
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Jan 13, 2021 at 15:00:56 CET  (total: 00:00:00)

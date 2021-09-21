@@ -6,8 +6,8 @@ KALLHALL_STD_LIB3/DECAP2/schematic DECAP2
 KALLHALL_STD_LIB3/DECAP1/schematic DECAP1
 KALLHALL_STD_LIB3/INVX1/schematic INVX1
 KALLHALL_STD_LIB3/DFFX1/schematic DFFX1
-COUNTER4/counter/schematic counter
 KALLHALL_STD_LIB3/NOR2X1/schematic NOR2X1
+COUNTER5/counter/schematic counter
 KALLHALL_STD_LIB3/BUFX2/schematic BUFX2
 $endmodel
 $net

@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KALLHALL_DIG/virtuoso
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/.preset.autosave
-"Job Signature" internal none IPVS_1610459205_31879
+"Job Signature" internal none IPVS_1610546590_7494
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs
 "Technology Mapping File" internal none /home/saul/projects/KALLHALL_DIG/virtuoso/pvtech.lib
@@ -12,7 +12,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1610459207
+"PVS Job Time" internal none 1610546594
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic
@@ -20,8 +20,8 @@
 "DFII version" internal none 6.1.8.0
 "Do not check rules files before run" internal none ENABLED
 "Extracted Spice File" output text /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/counter.spi
-"Input Layout" input none OA: COUNTER4 counter layout
-"Input Schematic" input none OA: COUNTER4 counter schematic
+"Input Layout" input none OA: COUNTER5 counter layout
+"Input Schematic" input none OA: COUNTER5 counter schematic
 "Intermediate GDSII File" output none /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/counter.gds
 "Intermediate GDSII File creation Errors" output none /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/PIPO1.LOG
 "Intermediate OASIS File creation Errors" output none /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/PIPO1.LOG
@@ -30,7 +30,7 @@
 "Layout GDSII" input none /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/counter.gds
 "Layout HierDepth" internal none 32
 "Layout Layermap" internal text /home/saul/projects/KALLHALL_DIG/virtuoso/pvs/gpdk045.layermap
-"Layout Library Name" internal none COUNTER4
+"Layout Library Name" internal none COUNTER5
 "Layout MaxVertices" internal none 2048
 "Layout NoConvertHalfWidthPath" input none nil
 "Layout ReplaceBusBitChar" input none nil
@@ -51,7 +51,7 @@
 "SI Output" log text  /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/SI.OUT
 "SI Setup File" internal text  /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/si.env
 "Schematic Cell Name" internal none counter
-"Schematic Library Name" internal none COUNTER4
+"Schematic Library Name" internal none COUNTER5
 "Schematic Netlist" output text /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/counter.cdl
 "Schematic Top Cell" internal none counter
 "Schematic View Name" internal none schematic
@@ -59,7 +59,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1610459212
+"PVS Job Time" internal none 1610546599
 "Comparison Report" output cls /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/counter.rep.cls
 "ERC Result" internal none EMPTY
 "ERC Summary" output text /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/counter.sum
@@ -79,7 +79,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1610459213
+"PVS Job Time" internal none 1610546599
 "Comparison Result" internal none MATCH
 "LVS Run Name" internal none counter.rep
 "Run Directory" internal none /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/
@@ -88,4 +88,4 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1610459215
+"PVS Job Time" internal none 1610546602

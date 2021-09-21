@@ -1,6 +1,6 @@
 ######################################################################
 
-# Created by Genus(TM) Synthesis Solution 18.15-s055_1 on Thu Jan 07 23:46:05 CET 2021
+# Created by Genus(TM) Synthesis Solution 18.15-s055_1 on Tue Sep 21 20:16:37 CEST 2021
 
 # This file contains the RC script for design:counter
 
@@ -18,13 +18,13 @@ set_db -quiet phys_use_invs_extraction true
 set_db -quiet phys_route_time_out 120.0
 set_db -quiet capacitance_per_unit_length_mmmc {}
 set_db -quiet resistance_per_unit_length_mmmc {}
-set_db -quiet runtime_by_stage {{PBS_Generic-Start 0 18 0.0 6.0} {to_generic 1 19 0 6} {first_condense 0 19 0 6} {PBS_Generic_Opt-Post 1 19 -0.011185000000000223 5.988815} {{PBS_Generic-Postgen HBO Optimizations} 0 19 0.0 5.988815} {PBS_TechMap-Start 0 19 0.0 5.988815} {{PBS_TechMap-Premap HBO Optimizations} 0 19 0.0 5.988815} {first_condense 0 19 0 6} {reify 0 19 0 6} {global_incr_map 0 19 0 6} {{PBS_Techmap-Global Mapping} 0 19 0.9288860000000003 6.917701} {{PBS_TechMap-Datapath Postmap Operations} 0 19 0.0 6.917701} {{PBS_TechMap-Postmap HBO Optimizations} 0 20 0.0 6.917701} {{PBS_TechMap-Postmap Clock Gating} 0 20 0.0 6.917701} {{PBS_TechMap-Postmap Cleanup} 0 20 0.0 6.917701} {PBS_Techmap-Post_MBCI 0 20 0.0 6.917701} {incr_opt 0 20 0 7} }
+set_db -quiet runtime_by_stage {{PBS_Generic-Start 0 180 0.0 6.0} {to_generic 0 180 0 6} {first_condense 0 180 0 6} {PBS_Generic_Opt-Post 0 180 0.9907729999999999 6.990773} {{PBS_Generic-Postgen HBO Optimizations} 0 180 0.0 6.990773} {PBS_TechMap-Start 0 180 0.0 6.990773} {{PBS_TechMap-Premap HBO Optimizations} 0 180 0.0 6.990773} {first_condense 0 180 0 6} {reify 1 181 0 7} {global_incr_map 0 181 0 7} {{PBS_Techmap-Global Mapping} 1 181 -0.06048899999999957 6.930284} {{PBS_TechMap-Datapath Postmap Operations} 0 181 0.0 6.930284} {{PBS_TechMap-Postmap HBO Optimizations} 0 181 0.0 6.930284} {{PBS_TechMap-Postmap Clock Gating} 0 181 0.0 6.930284} {{PBS_TechMap-Postmap Cleanup} 0 181 0.0 7.930284} {PBS_Techmap-Post_MBCI 0 181 0.0 7.930284} {incr_opt 1 182 0 7} }
 set_db -quiet hdl_error_on_latch true
 set_db -quiet hdl_error_on_blackbox true
 set_db -quiet tinfo_tstamp_file .rs_saul.tstamp
 set_db -quiet metric_enable true
 set_db -quiet metric_page_cfg {}
-set_db -quiet flow_metrics_snapshot_uuid af40feb1-7cc5-4ce4-94f8-32f839bc0d3d
+set_db -quiet flow_metrics_snapshot_uuid 870e0b13-606b-49db-8e38-976cc19c366b
 set_db -quiet compensative_dpul_driver 0
 set_db -quiet phys_use_segment_parasitics true
 set_db -quiet probabilistic_extraction true
@@ -33,8 +33,8 @@ set_db -quiet maximum_interval_of_vias inf
 set_db -quiet layer_aware_buffer true
 set_db -quiet interconnect_mode wireload
 set_db -quiet wireload_mode enclosed
-set_db -quiet operating_conditions operating_condition:default_emulate_libset_max/kallhall/PVT_1P08V_125C
-set_db -quiet operating_condition:default_emulate_libset_max/kallhall/PVT_1P08V_125C .tree_type balanced_tree
+set_db -quiet operating_conditions operating_condition:default_emulate_libset_max/kallhall/PVT_1P5V_25C
+set_db -quiet operating_condition:default_emulate_libset_max/kallhall/PVT_1P5V_25C .tree_type balanced_tree
 set_db -quiet operating_condition:default_emulate_libset_max/kallhall/_nominal_ .tree_type balanced_tree
 # BEGIN MSV SECTION
 # END MSV SECTION
@@ -93,7 +93,7 @@ path_group -paths [specify_paths -to clock:counter/CLK]  -name CLK -group cost_g
 set_db -quiet dft_scan_style muxed_scan
 set_db -quiet dft_scanbit_waveform_analysis false
 # END DFT SECTION
-set_db -quiet design:counter .qos_by_stage {{to_generic {wns -11111111} {tns -111111111} {vep -111111111} {area 68} {cell_count 26} {utilization  0.00} {runtime 1 19 0 6} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 82} {cell_count 36} {utilization  0.00} {runtime 0 19 0 6} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 82} {cell_count 36} {utilization  0.00} {runtime 0 19 0 6} }{reify {wns 98350} {tns 0} {vep 0} {area 141} {cell_count 105} {utilization  0.00} {runtime 0 19 0 6} }{global_incr_map {wns 98350} {tns 0} {vep 0} {area 141} {cell_count 105} {utilization  0.00} {runtime 0 19 0 6} }{incr_opt {wns 214748365} {tns 0} {vep 0} {area 133} {cell_count 80} {utilization  0.00} {runtime 0 20 0 7} }}
+set_db -quiet design:counter .qos_by_stage {{to_generic {wns -11111111} {tns -111111111} {vep -111111111} {area 30053} {cell_count 26} {utilization  0.00} {runtime 0 180 0 6} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 36913} {cell_count 37} {utilization  0.00} {runtime 0 180 0 6} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 36260} {cell_count 36} {utilization  0.00} {runtime 0 180 0 6} }{reify {wns 85169} {tns 0} {vep 0} {area 56000} {cell_count 75} {utilization  0.00} {runtime 1 181 0 7} }{global_incr_map {wns 85169} {tns 0} {vep 0} {area 56000} {cell_count 75} {utilization  0.00} {runtime 0 181 0 7} }{incr_opt {wns 214748365} {tns 0} {vep 0} {area 53760} {cell_count 67} {utilization  0.00} {runtime 1 182 0 7} }}
 set_db -quiet design:counter .seq_mbci_coverage 0.0
 set_db -quiet design:counter .hdl_filelist {{default -v2001 {SYNTHESIS} {../src/counter.v} {} {}}}
 set_db -quiet design:counter .hdl_user_name counter
@@ -209,7 +209,7 @@ set_db -quiet source_verbose true
 ##
 ## Written by Genus(TM) Synthesis Solution version 18.15-s055_1
 ## flowkit v18.10-p016_1
-## Written on 23:46:05 07-Jan 2021
+## Written on 20:16:37 21-Sep 2021
 #############################################################
 #####   Flow Definitions   ##################################
 
@@ -252,7 +252,7 @@ if {[is_attribute flow_mail_on_error -obj_type root]} {set_db flow_mail_on_error
 if {[is_attribute flow_mail_to -obj_type root]} {set_db flow_mail_to {}}
 if {[is_attribute flow_metrics_file -obj_type root]} {set_db flow_metrics_file {}}
 if {[is_attribute flow_metrics_snapshot_parent_uuid -obj_type root]} {set_db flow_metrics_snapshot_parent_uuid {}}
-if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid af40feb1-7cc5-4ce4-94f8-32f839bc0d3d}
+if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid 870e0b13-606b-49db-8e38-976cc19c366b}
 if {[is_attribute flow_overwrite_db -obj_type root]} {set_db flow_overwrite_db false}
 if {[is_attribute flow_report_directory -obj_type root]} {set_db flow_report_directory reports}
 if {[is_attribute flow_run_tag -obj_type root]} {set_db flow_run_tag {}}

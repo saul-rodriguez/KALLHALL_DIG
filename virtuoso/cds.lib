@@ -10,3 +10,4 @@ DEFINE avTech /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/etc/avtech/avTec
 DEFINE COUNTER2 /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER2
 DEFINE COUNTER3 /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER3
 DEFINE COUNTER4 /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER4
+DEFINE COUNTER5 /home/saul/projects/KALLHALL_DIG/virtuoso/COUNTER5

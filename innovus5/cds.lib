@@ -1,1 +1,2 @@
 INCLUDE ../virtuoso/cds.lib
+DEFINE FEOADesignlib FEOADesignlib
