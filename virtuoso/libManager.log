@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/03/2019 21:35 (ip-172-18-22-89) $
 \o Sub version:		sub-version  s061 
-\o Arguments:		-unmapped -mpssession virtuoso7651 -mpshost s2424 
+\o Arguments:		-unmapped -mpssession virtuoso26762 -mpshost s2424 
 \o Working Directory:	s2424:/home/saul/projects/KALLHALL_DIG/virtuoso
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -11,28 +11,209 @@
 \a nrSetWindowVisibility(cdsLibManager "show")
 \o MPS service: map window
 \o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(1993 91 923 894))
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2145 131 922 894))
-\a cdsLibManager->libListBox->value = "KAL3"
-\a cdsLibManager->libLineEdit->value = "KAL3"
-\a cdsLibManager->libListBox->value = "COUNTER"
-\a cdsLibManager->libLineEdit->value = "COUNTER"
-\a cdsLibManager->libListBox->value = "COUNTER2"
-\a cdsLibManager->libLineEdit->value = "COUNTER2"
-\a cdsLibManager->libListBox->value = "COUNTER3"
-\a cdsLibManager->libLineEdit->value = "COUNTER3"
-\a cdsLibManager->libListBox->value = "COUNTER4"
-\a cdsLibManager->libLineEdit->value = "COUNTER4"
-\a cdsLibManager->libListBox->value = "COUNTER5"
-\a cdsLibManager->libLineEdit->value = "COUNTER5"
-\a cdsLibManager->libListBox->value = "KAL3"
-\a cdsLibManager->libLineEdit->value = "KAL3"
-\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
-\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a nrResizeWindow(cdsLibManager list(1993 91 923 894))
+\a nrResizeWindow(cdsLibManager list(2024 73 923 894))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1982 37 923 894))
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
 \a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->cellListBox->value = "INVX1"
+\a cdsLibManager->cellLineEdit->value = "INVX1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 46 60 2 "schematic")
+\a cdsLibManager->FileOpenButton->value = t
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->cellListBox->value = "INVX1"
+\a cdsLibManager->cellLineEdit->value = "INVX1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->cellListBox->value = "INVX1"
+\a cdsLibManager->cellLineEdit->value = "INVX1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2441 30 923 894))
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KAL3"
+\a cdsLibManager->libLineEdit->value = "KAL3"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
 \a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libListBox->value = "KAL3"
+\a cdsLibManager->libLineEdit->value = "KAL3"
+\a cdsLibManager->cellListBox->value = "skill"
+\a cdsLibManager->cellLineEdit->value = "skill"
+\a lmgrLogShowPopup("mainListPopup1" 13 92 2 "skill")
+\a cdsLibManager->cellListBox->value = "nmos4"
+\a cdsLibManager->cellLineEdit->value = "nmos4"
+\a cdsLibManager->viewListBox->value = "hspiceD"
+\a cdsLibManager->viewLineEdit->value = "hspiceD"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "nmos4"
+\a cdsLibManager->cellLineEdit->value = "nmos4"
+\a cdsLibManager->viewListBox->value = "hspiceD"
+\a cdsLibManager->viewLineEdit->value = "hspiceD"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 31 7 2 "nmos4")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 6 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\a cdsLibManager->viewListBox->value = "spectre"
+\a cdsLibManager->viewLineEdit->value = "spectre"
+\a cdsLibManager->viewListBox->value = "layout_bk"
+\a cdsLibManager->viewLineEdit->value = "layout_bk"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "hspiceD"
+\a cdsLibManager->viewLineEdit->value = "hspiceD"
+\a cdsLibManager->viewListBox->value = "auLvs"
+\a cdsLibManager->viewLineEdit->value = "auLvs"
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\a cdsLibManager->viewListBox->value = "auLvs"
+\a cdsLibManager->viewLineEdit->value = "auLvs"
+\a cdsLibManager->viewListBox->value = "hspiceD"
+\a cdsLibManager->viewLineEdit->value = "hspiceD"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "layout_bk"
+\a cdsLibManager->viewLineEdit->value = "layout_bk"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown

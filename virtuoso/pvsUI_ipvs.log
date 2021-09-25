@@ -1,2 +1,4 @@
-2021/09/06 11:10:52 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2021/09/06 11:10:52 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2021/09/25 09:38:25 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2021/09/25 09:38:25 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Critical error was reached - ignoring getData()
+Critical error was reached - ignoring getData()

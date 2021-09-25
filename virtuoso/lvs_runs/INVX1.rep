@@ -1,0 +1,27 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : INVX1.rep
+ERC Summary File         : INVX1.sum
+LVS Comparison Report    : INVX1.rep.cls
+LVS Softchk Report       : INVX1.softchk
+Layout Name              : /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs/INVX1.gds ("INVX1")
+User Name                : saul
+Creation Time            : Sat Sep 25 10:26:10 2021
+Current directory        : /home/saul/projects/KALLHALL_DIG/virtuoso/lvs_runs
+PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK psubstrate -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK nwell_conn -TYPE CONTACT   Total Result        0 (       0)
